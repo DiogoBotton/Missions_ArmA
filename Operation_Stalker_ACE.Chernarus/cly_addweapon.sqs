@@ -1,0 +1,81 @@
+;addWeapon script written by Celery
+;Add weapons and ammo the easy way by only having to know weapon classnames.
+;
+;Init line syntax:
+;[this,["weaponclass",mags,magtype,secondarymags,secondarymagtype],"itemclass"] exec "cly_addweapon.sqs"
+;
+;You can add multiple weapons like this:
+;[this,["AA12_PMC",3,2],["RPG7V",3,3],["Makarov",4],"Binocular"] exec "cly_addweapon.sqs"
+;This adds an AA-12 with 3 magazines of exploding rounds, an RPG-7 with 3 frag rounds,
+;a Makarov PM with 4 magazines and binoculars (use a string for magless items).
+;
+;The second, optional number after the weapon class determines the type of magazine the weapon
+;uses, 0 being the default one. It's useful in changing the type of rocket of a launcher or
+;picking a different sized magazine if the weapon is compatible. A classname can be used in
+;place of a number if the desired magazine isn't found otherwise.
+;
+;Add hand grenades, satchels and the like the same way:
+;[this,["G36C",2],["HandGrenade",3],["SmokeShell",2],["PipeBomb",2]] exec "cly_addweapon.sqs"
+;
+;Add secondary muzzle (grenade launcher) ammo:
+;[this,["M4A1_RCO_GL",4,0,6,1]] exec "cly_addweapon.sqs"
+;The third number is the number of secondary ammunition added. A fourth, optional value can be
+;set to define the secondary ammo's type.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+_unit=_this select 0
+?!local _unit:exit
+_i=1
+
+removeAllWeapons _unit
+
+;Don't remove countermeasures
+{if !(_x in ["FlareLauncher","SmokeLauncher","CMFlareLauncher"]+items _unit) then {_unit removeWeapon _x}} forEach weapons _unit
+{if !(_x in getArray (configFile/"CfgWeapons"/"FlareLauncher"/"magazines")+getArray (configFile/"CfgWeapons"/"SmokeLauncher"/"magazines")+getArray (configFile/"CfgWeapons"/"CMFlareLauncher"/"magazines")) then {_unit removeMagazine _x}} forEach magazines _unit
+
+;Lower case array of Throw and Put magazines
+_throwputmags=[]
+{_throwputmags=_throwputmags+getArray (configFile/"CfgWeapons"/"Throw"/_x/"magazines")} forEach getArray (configFile/"CfgWeapons"/"Throw"/"muzzles")
+{_throwputmags=_throwputmags+getArray (configFile/"CfgWeapons"/"Put"/_x/"magazines")} forEach getArray (configFile/"CfgWeapons"/"Put"/"muzzles")
+{_throwputmags set [_throwputmags find _x,toLower _x]} forEach _throwputmags
+
+#start
+_weaponarray=_this select _i
+
+?typeName _weaponarray=="STRING":_unit addWeapon _weaponarray;goto "skipselect"
+_gun=_weaponarray select 0
+_weapontype=getNumber (configFile/"CfgWeapons"/_gun/"type")
+_magcount=_weaponarray select 1
+
+;Throw and Put magazine detection
+?toLower _gun in _throwputmags:for "_x" from 1 to _magcount do {_unit addMagazine _gun};goto "skipselect"
+
+;Primary ammo
+_magtype=0
+?count _weaponarray>2:_magtype=_weaponarray select 2
+?typeName _magtype=="STRING":_mag=_magtype
+?typeName _magtype=="SCALAR":_mag=getArray (configFile/"CfgWeapons"/_gun/"magazines") select _magtype
+_muzzles=getArray (configFile/"CfgWeapons"/_gun/"muzzles")
+
+;Add magazines
+#mag
+for "_x" from 1 to _magcount do {_unit addMagazine _mag}
+
+;Secondary ammo
+_magtype=0
+?count _weaponarray>4:_magtype=_weaponarray select 4
+?typeName _magtype=="STRING" and count _muzzles>1 and count _weaponarray>3:_mag=_magtype;_magcount=_weaponarray select 3;for "_x" from 1 to _magcount do {_unit addMagazine _mag}
+?typeName _magtype=="SCALAR" and count _muzzles>1 and count _weaponarray>3:_mag=getArray (configFile/"CfgWeapons"/_gun/(_muzzles select 1)/"magazines") select _magtype;_magcount=_weaponarray select 3;for "_x" from 1 to _magcount do {_unit addMagazine _mag}
+
+;Add weapon and select it if the unit doesn't already have one
+_unit addWeapon _gun
+_muzzle=_gun
+?!("this" in _muzzles):_muzzle=_muzzles select 0
+_currentweapontype=getNumber (configFile/"CfgWeapons"/(currentWeapon _unit)/"type")
+?!(_currentweapontype in [1,2,4,5]) and _weapontype in [1,2,4,5] and _unit isKindOf "Man":_unit selectWeapon _muzzle;if (vehicle _unit==_unit) then {if (_weapontype in [1,5]) then {_unit switchMove "amovpercmstpsraswrfldnon"};if (_weapontype==2) then {_unit switchMove "amovpercmstpsraswpstdnon"};if (_weapontype==4) then {_unit switchMove "amovpercmstpsraswlnrdnon"}}
+?_currentweapontype==0 and !(_unit isKindOf "Man"):_unit selectWeapon _muzzle
+
+#skipselect
+?count _this>_i+1:_i=_i+1;_weaponarray=_this select _i;goto "start"
+
+exit

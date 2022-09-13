@@ -1,0 +1,1 @@
+_this addaction ["Fire From Gunner Seat","SFV\SUV\startG.sqf", "", 0, false, true, "MoveForward", "_this == gunner _target"];

@@ -1,0 +1,42 @@
+?!isServer:exit
+
+_logic=_this select 0
+_radius=_this select 1
+_amount=round (_this select 2)
+_hordename=_this select 3
+
+~random 1
+
+#start
+~1
+?_hordename!="" and CLY_hordetrigger!=_hordename:goto "start"
+
+#skipwait
+~1
+_zombies=[]
+
+_victims=CLY_players
+?count _victims==0:goto "skipwait"
+
+#newzombie
+~0.05
+@{side _x==east or side _x==west or side _x==resistance} count allGroups<432
+_side=east
+?{side _x==east} count allGroups>=144:_side=west
+?_side==west and {side _x==west} count allGroups>=144:_side=resistance
+_group=createGroup _side
+_type=call CLY_randomzombie
+_zombietype="normal"
+_zombie=_group createUnit [_type,getPos zombiespawner,[],_radius,"NONE"]
+_zombie enableSimulation false
+_zombies=_zombies+[_zombie]
+
+_victim=_victims select (floor random count _victims)
+_horde=true
+_pos=[(getPos _logic select 0)+(getPos zombiespawner select 0)-(getPos _zombie select 0),(getPos _logic select 1)+(getPos zombiespawner select 1)-(getPos _zombie select 1),0]
+
+[_zombie,_zombietype,_victim,_horde,1000,_pos] exec "zombie_scripts\cly_z_init.sqs"
+
+?count _zombies<_amount:goto "newzombie"
+
+exit

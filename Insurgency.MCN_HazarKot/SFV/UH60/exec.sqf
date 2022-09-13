@@ -1,0 +1,2 @@
+_this addaction ["Fire From Left Door Seat","SFV\UH60\startBL.sqf", "", 0, false, true, "", "_this in assignedCargo _target"];
+_this addaction ["Fire From Right Door Seat","SFV\UH60\startBR.sqf", "", 0, false, true, "", "_this in assignedCargo _target"];

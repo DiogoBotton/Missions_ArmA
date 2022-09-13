@@ -1,0 +1,611 @@
+onLoadMission="Operação S.T.A.L.K.E.R - O Massacre de Chernarus";
+
+respawn="BIRD";
+disabledAI=1;
+respawnDialog=0;
+
+class Header
+{
+	gameType=COOP;
+	minPlayers=1;
+	maxPlayers=16;
+};
+
+onPauseScript="cly_jukebox.sqf";
+
+class Params
+{
+	class CLY_friendlyfire
+	{
+	title="Friendly fire damage:";
+	values[]={1,2,0};
+	texts[]={"Full","Reduced","Off"};
+	default=1;
+	};
+	class CLY_terraingrid
+	{
+	title="Terrain detail:";
+	values[]={0,50,25};
+	texts[]={"Individual choice","Very low (no grass)","Low (default)"};
+	default=25;
+	};
+	class ParamDEBUGAR
+	{
+	title = "DEBUGAR";
+	values[] = {0 ,1};
+	texts[] = {"OFF", "ON"};
+	default = 0;
+	};
+};
+
+class CfgIdentities
+{
+	class unknown
+	{
+		name="Unknown speaker";
+		face="Default";
+		glasses="None";
+		speaker="Male01RU";
+		pitch=1.0;
+	};
+	class nikita
+	{
+		name="Nikita";
+		face="Default";
+		glasses="None";
+		speaker="Male03RU";
+		pitch=1.0;
+	};
+};
+
+class CfgSounds
+{
+	class attack1
+	{
+		name="attack1";
+		sound[]={\sound\attack1.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class attack2
+	{
+		name="attack2";
+		sound[]={\sound\attack2.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class attack3
+	{
+		name="attack3";
+		sound[]={\sound\attack3.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class chase1
+	{
+		name="chase1";
+		sound[]={\sound\chase1.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class chase2
+	{
+		name="chase2";
+		sound[]={\sound\chase2.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class chase3
+	{
+		name="chase3";
+		sound[]={\sound\chase3.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class chase4
+	{
+		name="chase4";
+		sound[]={\sound\chase4.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class chase5
+	{
+		name="chase5";
+		sound[]={\sound\chase5.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class chase6
+	{
+		name="chase6";
+		sound[]={\sound\chase6.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class chase7
+	{
+		name="chase7";
+		sound[]={\sound\chase7.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class chase8
+	{
+		name="chase8";
+		sound[]={\sound\chase8.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class idle1
+	{
+		name="idle1";
+		sound[]={\sound\idle1.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class idle2
+	{
+		name="idle2";
+		sound[]={\sound\idle2.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class idle3
+	{
+		name="idle3";
+		sound[]={\sound\idle3.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class idle4
+	{
+		name="idle4";
+		sound[]={\sound\idle4.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class idle5
+	{
+		name="idle5";
+		sound[]={\sound\idle5.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class idle6
+	{
+		name="idle6";
+		sound[]={\sound\idle6.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class idle7
+	{
+		name="idle7";
+		sound[]={\sound\idle7.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class idle8
+	{
+		name="idle8";
+		sound[]={\sound\idle8.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class scream1
+	{
+		name="scream1";
+		sound[]={\sound\scream1.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class scream2
+	{
+		name="scream2";
+		sound[]={\sound\scream2.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class scream3
+	{
+		name="scream3";
+		sound[]={\sound\scream3.ogg, 0.1, 1.0};
+		titles[]={};
+	};
+	class radionoise
+	{
+		name="radionoise";
+		sound[]={\sound\radionoise.ogg, 0.05, 1.0};
+		titles[]={};
+	};
+	sounds[]={nam, choque, batida1, batida2, batida3, grito1, grito2, grito3};
+	class nam 
+	{
+		name = "nam";
+		sound[] = {\sound\nuke.ogg, db 20, 1.0};
+		titles[] = {""};
+	}
+	class choque 
+	{
+		name = "choque";
+		sound[] = {\sound\choque.ogg, db 1, 1};
+		titles[] = {""};
+	}
+	class batida1 
+	{
+		name = "batida1";
+		sound[] = {\sound\batida1.ogg, db 1, 1};
+		titles[] = {""};
+	}
+	class batida2 
+	{
+		name = "batida2";
+		sound[] = {\sound\batida2.ogg, db 1, 1};
+		titles[] = {""};
+	}
+	class batida3 
+	{
+		name = "batida3";
+		sound[] = {\sound\batida3.ogg, db 1, 1};
+		titles[] = {""};
+	}
+	class gritoFeminino1 
+	{
+		name = "gritoFeminino1";
+		sound[] = {\sound\gritoFeminino1.ogg, db 1, 1};
+		titles[] = {""};
+	}
+	class gritoFeminino2 
+	{
+		name = "gritoFeminino2";
+		sound[] = {\sound\gritoFeminino2.ogg, db 1, 1};
+		titles[] = {""};
+	}
+	class gritoFeminino3 
+	{
+		name = "gritoFeminino3";
+		sound[] = {\sound\gritoFeminino3.ogg, db 1, 1};
+		titles[] = {""};
+	}
+};
+
+class CfgMusic
+{
+	class auldale
+	{
+		name="auldale";
+		sound[]={\music\auldale.ogg,1,1};
+		titles[]={};
+	};
+	class cradle
+	{
+		name="cradle";
+		sound[]={\music\cradle.ogg,1,1};
+		titles[]={};
+	};
+	class kurshok
+	{
+		name="kurshok";
+		sound[]={\music\kurshok.ogg,1,1};
+		titles[]={};
+	};
+	class oldquarter
+	{
+		name="oldquarter";
+		sound[]={\music\oldquarter.ogg,1,1};
+		titles[]={};
+	};
+	class pavelock
+	{
+		name="pavelock";
+		sound[]={\music\pavelock.ogg,1,1};
+		titles[]={};
+	};
+};
+
+class cfgRadio
+{
+	class tower1
+	{
+		name="tower1";
+		sound[]={};
+		title="Found a map on the policeman's body.";
+	};
+	class tower2
+	{
+		name="tower2";
+		sound[]={};
+		title="He marked the airfield with a red X. Looks like the logical place to check out.";
+	};
+	class radio1
+	{
+		name="radio1";
+		sound[]={};
+		title="Hello? Who's there?";
+	};
+	class radio2
+	{
+		name="radio2";
+		sound[]={};
+		title="Is someone alive there? Hold on a moment... Boss, survivors on the radio!";
+	};
+	class radio3
+	{
+		name="radio3";
+		sound[]={};
+		title="Hello? My name is Nikita and I represent a group of survivors in the northeast region. Where are you hailing from?";
+	};
+	class radio4
+	{
+		name="radio4";
+		sound[]={};
+		title="Krasnostav airfield control tower. A large number of zombies just failed to take this place.";
+	};
+	class radio4a
+	{
+		name="radio4a";
+		sound[]={};
+		title="Krasnostav airfield control tower. There are a lot of zombies around here but fortunately they haven't taken notice.";
+	};
+	class radio5
+	{
+		name="radio5";
+		sound[]={};
+		title="Our camp is not too far away from you, then. You seem to hold your own against the zombies so I have a proposition for you.";
+	};
+	class radio5a
+	{
+		name="radio5a";
+		sound[]={};
+		title="Our camp is not too far away from you, then. You seem to manage well amidst the zombies so I have a proposition for you.";
+	};
+	class radio6
+	{
+		name="radio6";
+		sound[]={};
+		title="We had a headquarters in Krasnostav but we had to abandon it when the town was assaulted by a sizeable horde.";
+	};
+	class radio7
+	{
+		name="radio7";
+		sound[]={};
+		title="We left behind some very important photographs and we would very much want them back.";
+	};
+	class radio8
+	{
+		name="radio8";
+		sound[]={};
+		title="Get the photos in the large brick house in the middle of the town and you are welcome to join our camp.";
+	};
+	class radio9
+	{
+		name="radio9";
+		sound[]={};
+		title="When you have them, wait for my soldiers at the top of Klen.";
+	};
+	class radio10
+	{
+		name="radio10";
+		sound[]={};
+		title="If it's the only way, I guess that will have to do. Is there any place to get more ammo?";
+	};
+	class radio10a
+	{
+		name="radio10a";
+		sound[]={};
+		title="If it's the only way, I guess that will have to do. Is there any place to get a weapon if the need comes?";
+	};
+	class radio11
+	{
+		name="radio11";
+		sound[]={};
+		title="The store on the eastern side of the town was our armory. There might still be something worth taking there.";
+	};
+	class radio12
+	{
+		name="radio12";
+		sound[]={};
+		title="Got it. See you in your camp.";
+	};
+	class radio13
+	{
+		name="radio13";
+		sound[]={};
+		title="I really hope so. Nikita out.";
+	};
+	class klen1
+	{
+		name="klen1";
+		sound[]={};
+		title="Got the photos. The faster to Klen, the better!";
+	};
+	class klen2
+	{
+		name="klen2";
+		sound[]={};
+		title="Defending this hill is the only way to make it!";
+	};
+	class klen2a
+	{
+		name="klen2a";
+		sound[]={};
+		title="Almost at the top! Let's hope someone's there.";
+	};
+	class klen3
+	{
+		name="klen3";
+		sound[]={};
+		title="Those soldiers better be here soon!";
+	};
+	class klen4
+	{
+		name="klen4";
+		sound[]={};
+		title="Fuck, he had the photos!";
+	};
+};
+
+class RscTitleText
+{
+	type=0;
+	idc=-1;
+	style=2;
+	colorBackground[]={0,0,0,0};
+	colorText[]={1,1,1,1};
+	font="Zeppelin32";
+	x=0;
+	y=0;
+	w=0;
+	h=0;
+	size=1;
+};
+
+class RscTitles
+{
+	titles[]={};
+
+	class outro
+	{
+	  	idd=-1;
+	  	movingEnable=0;
+	  	duration=11;
+	  	fadein=1;
+	  	fadeout=1;
+	  	name="outro";
+	  	controls[]={"title1","title2","title3"};
+
+	  	class title1
+		{
+			type=0;
+			idc=-1;
+			colorBackground[]={0,0,0,0};
+			colorText[]={0.2,0.2,0.4,1};
+			font="Zeppelin32";
+			size=1;
+	  	  	text="...in";
+			style=0;
+	  	  	sizeEx=0.04;
+			x=0.18;
+	  	  	y=0.33;
+	  	  	w=0.1;
+	  	  	h=0.1;
+		};
+	  	class title2
+		{
+			type=0;
+			idc=-1;
+			size=1;
+			colorBackground[]={0,0,0,0};
+			colorText[]={1,1,1,1};
+			font="Zeppelin32";
+	  	  	text="chernarus_apocalypse_logo.paa";
+			style=48;
+	  	  	sizeEx=0.15;
+			x=0.2;
+	  	  	y=0.4;
+	  	  	w=0.6;
+	  	  	h=0.168;
+		};
+	  	class title3
+		{
+			type=0;
+			idc=-1;
+			colorBackground[]={0,0,0,0};
+			colorText[]={0.2,0.2,0.4,1};
+			font="Zeppelin32";
+			size=1;
+	  	  	text="part two";
+			style=0;
+	  	  	sizeEx=0.04;
+			x=0.7;
+	  	  	y=0.52;
+	  	  	w=0.2;
+	  	  	h=0.1;
+		};
+	};
+	class claw1
+	{
+	  	idd=-1;
+	  	movingEnable=0;
+	  	duration=0;
+	  	fadein=0.25;
+	  	fadeout=0.75;
+	  	name="claw1";
+	  	controls[]={"title1"};
+	  	
+	  	class title1
+		{
+			type=0;
+			idc=-1;
+			size=1;
+			colorBackground[]={0,0,0,0};
+			colorText[]={1,1,1,1};
+			font="Zeppelin32";
+	  	  	text="claw1.paa";
+			style=48;
+	  	  	sizeEx=0.15;
+			x=0.275;
+	  	  	y=0.2;
+	  	  	w=0.45;
+	  	  	h=0.6;
+		};
+	};
+	class claw2
+	{
+	  	idd=-1;
+	  	movingEnable=0;
+	  	duration=0;
+	  	fadein=0.25;
+	  	fadeout=0.75;
+	  	name="claw2";
+	  	controls[]={"title1"};
+	  	
+	  	class title1
+		{
+			type=0;
+			idc=-1;
+			size=1;
+			colorBackground[]={0,0,0,0};
+			colorText[]={1,1,1,1};
+			font="Zeppelin32";
+	  	  	text="claw2.paa";
+			style=48;
+	  	  	sizeEx=0.15;
+			x=0.275;
+	  	  	y=0.2;
+	  	  	w=0.45;
+	  	  	h=0.6;
+		};
+	};
+	class claw3
+	{
+	  	idd=-1;
+	  	movingEnable=0;
+	  	duration=0;
+	  	fadein=0;
+	  	fadeout=0.2;
+	  	name="claw3";
+	  	controls[]={"title1"};
+	  	
+	  	class title1
+		{
+			type=0;
+			idc=-1;
+			size=1;
+			colorBackground[]={0,0,0,0};
+			colorText[]={1,1,1,1};
+			font="Zeppelin32";
+	  	  	text="claw3.paa";
+			style=48;
+	  	  	sizeEx=0.15;
+			x=0.275;
+	  	  	y=0.2;
+	  	  	w=0.45;
+	  	  	h=0.6;
+		};
+	};
+	class hud
+   	{
+		idd=-1;
+		movingEnable=0;
+	  	fadein=0;
+		duration=0.3;
+	  	fadeout=0.5;
+		name="hud";
+		onLoad="uiNamespace setVariable [""hud"",_this select 0]";
+		controlsBackground[]={};
+		objects[]={};
+		class controls
+		{
+			class hud1 : RscTitleText
+			{
+				idc=23501;
+				style=48;
+	  	  		sizeEx=0.15;
+				w=0.06;
+				h=0.08;
+				text="";
+			};
+		};   
+ 	};
+};

@@ -1,0 +1,2 @@
+_this addaction ["Fire From Back (Front)","SFV\Hilux\startBF.sqf", "", 0, false, true, "", "_this in assignedCargo _target"];
+_this addaction ["Fire From Back (Rear)","SFV\Hilux\startBR.sqf", "", 0, false, true, "", "_this in assignedCargo _target"];

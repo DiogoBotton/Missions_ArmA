@@ -1,0 +1,15 @@
+civil_1 setDamage 1;
+civil_2 setDamage 1;
+civil_3 setDamage 1;
+civil_4 setDamage 1;
+civil_5 setDamage 1;
+civil_6 setDamage 1;
+civil_7 setDamage 1;
+civil_8 setDamage 1;
+civil_9 setDamage 1;
+civil_10 setDamage 1;
+sheriff_1 setDamage 1;
+sheriff_2 setDamage 1;
+sheriff_3 setDamage 1;
+sheriff_4 setDamage 1;
+sheriff_5 setDamage 1;

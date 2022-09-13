@@ -1,0 +1,18 @@
+_zombie=_this select 0
+_caller=_this select 1
+
+_caller setVariable ["CLY_healings",(_caller getVariable "CLY_healings")+1,true]
+titleText ["1 bandage taken","PLAIN DOWN",0.5]
+
+_zombie removeAction 0
+CLY_z_bandagepv=[_zombie]
+publicVariable "CLY_z_bandagepv"
+
+~30
+
+_wait=0
+?getPosATL _zombie select 2<1.5:hideBody _zombie;_wait=6
+~_wait
+deleteVehicle _zombie
+
+exit
