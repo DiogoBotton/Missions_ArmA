@@ -1,0 +1,83 @@
+#define LOADSCREEN "img\LoadingScreen.paa"
+onLoadMission="UFO Down - Alienz - Created by WolFros_Fay4";
+loadScreen = LOADSCREEN;
+respawn = "bird";
+respawndelay = 3;
+
+class Params
+{
+	class HEADLESS
+	{
+	title = "HEADLESS";
+	values[] = {0 ,1};
+	texts[] = {"OFF", "ON"};
+	default = 0;	
+	};
+    class ParamDEBUGAR
+	{
+	title = "DEBUGAR";
+	values[] = {0 ,1};
+	texts[] = {"OFF", "ON"};
+	default = 0;
+	};
+    class ParamDificuldade
+	{
+	title = "Dificuldade";
+	values[] = {0,1,2};
+	texts[] = {"Fácil", "Médio", "Difícil"};
+	default = 2;
+	};
+    class ParamDrones
+	{
+	title = "Drones Disponíveis";
+	values[] = {0,1,2,3};
+	texts[] = {"0","1","2","3"};
+	default = 2;
+	};
+};
+
+class CfgSounds{
+    sounds[]={timeBomb, gerador, satelite, warp, grito1, grito2, tripod};
+    class timeBomb
+    {
+        name = "timeBomb";
+        sound[] = {\sound\timeBomb.ogg, db 2, 1.0};
+        titles[] = {""};
+    };
+    class gerador
+    {
+        name = "gerador";
+        sound[] = {\sound\gerador.ogg, db 0.1, 1.0};
+        titles[] = {""};
+    };
+    class satelite
+    {
+        name = "satelite";
+        sound[] = {\sound\satelite.ogg, db 0.1, 1.0};
+        titles[] = {""};
+    };
+    class warp
+    {
+        name = "warp";
+        sound[] = {\sound\warp.ogg, db 1, 1.0};
+        titles[] = {""};
+    };
+    class grito1
+    {
+        name = "grito1";
+        sound[] = {\sound\grito1.ogg, db 0.2, 1.0};
+        titles[] = {""};
+    };
+    class grito2
+    {
+        name = "grito2";
+        sound[] = {\sound\grito2.ogg, db 0.2, 1.0};
+        titles[] = {""};
+    };
+    class tripod
+    {
+        name = "tripod";
+        sound[] = {\sound\tripod.ogg, db 1, 1.0};
+        titles[] = {""};
+    };
+};

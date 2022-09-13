@@ -1,0 +1,38 @@
+onLoadMission = "Dark Hole";
+onLoadMissionTime = False;
+
+class Header
+{
+  gameType = Coop;
+  minPlayers = 1;
+  maxPlayers = 5;
+  playerCountMultipleOf =1;
+};
+
+respawn = "GROUP";
+respawnDelay = 5;
+
+class Params
+{
+	class Rain 
+	{
+    		title = "Rain";
+    		values[] = {0,1,2,3};
+    		texts[] = {"None","Light","Moderate","Heavy"};
+    		default = 3;
+  	};
+  	class Fog 
+	{
+    		title = "Fog";
+    		values[] = {0,1,2,3};
+    		texts[] = {"None","Light","Moderate","Heavy"};
+    		default = 3;
+	};
+	class Difficulty 
+	{
+    		title = "Difficulty:";
+    		values[] = {0,1};
+    		texts[] = {"Cadet","Veteran"};
+    		default = 1;
+  	};
+};
