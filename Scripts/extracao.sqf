@@ -69,7 +69,7 @@ if(isServer) then {
 	while {_altitudeHeli >= 1} do {
 		_heliXYZ = getPosATL _heli;
 		_altitudeHeli = floor (_heliXYZ select 2);
-		hint format ["altitude: %1", _altitudeHeli];
+		//hint format ["altitude: %1", _altitudeHeli];
 		sleep 1;
 	};
 
