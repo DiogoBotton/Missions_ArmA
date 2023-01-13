@@ -1,2 +1,0 @@
-_this addaction ["Fire From Back Seat","SFV\ATV\startC.sqf", "", 0, false, true, "", "_this in assignedCargo _target"];
-_this addaction ["Fire From Driver Seat","SFV\ATV\startD.sqf", "", 0, false, true, "", "_this == driver _target"];

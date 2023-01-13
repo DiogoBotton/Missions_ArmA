@@ -1,0 +1,13 @@
+onLoadMission="E25 - Campanha Liberdade do Iraque EP3 - Criado por WolFros_Fay4";
+respawn = "bird";
+respawndelay = 3;
+
+class CfgSounds{
+    sounds[]={allahuakbar};
+    class allahuakbar
+    {
+        name = "allahuakbar";
+        sound[] = {\sounds\AllahuAkbar.ogg, 0.50, 1.0};
+        titles[] = {""};
+    };
+};

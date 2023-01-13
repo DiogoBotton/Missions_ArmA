@@ -1,0 +1,45 @@
+// Mission Header
+class Header {
+#ifndef __TT__
+	gameType = Coop;
+#else
+	gameType = Team;
+#endif
+	minPlayers = 1;
+	maxPlayers = __D_NUM_PLAYERS__;
+	playerCountMultipleOf = 1;
+};
+
+disableAI = true;
+
+onLoadMission = "A Favela";
+OnLoadMissionTime = FALSE;
+
+loadScreen = "img\bope_intro.paa";
+
+class Params
+{
+  class TimeOfDay {
+    title = "Time of Day";
+    values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
+    texts[] = {"0000","0100","0200","0300","0400","0500","0600","0700","0800","0900","1000","1100","1200","1300","1400","1500","1600","1700","1800","1900","2000","2100","2200","2300"};
+    default = 0;
+  };
+};
+
+class CfgSounds
+{
+	sounds[] = {
+		SireneA,SireneP,caveira,grito1,grito2,grito3,grito4,grito5,grito6
+	};
+
+	class SireneA {name="Rojao";sound[]={\Missao\SireneA.ogg, 0.5, 1.0};titles[] = {};};
+	class msc {name="msc";sound[]={\Missao\msc.ogg, 0.50, 1.0};titles[] = {};};
+	class caveira {name="caveira";sound[]={\Missao\caveira.ogg, db+2, 1.0};titles[] = {};};
+	class grito1 {name="grito1";sound[]={\Missao\grito1.ogg, 0.25, 1.0};titles[] = {};};
+	class grito2 {name="grito2";sound[]={\Missao\grito2.ogg, 0.25, 1.0};titles[] = {};};
+	class grito3 {name="grito3";sound[]={\Missao\grito3.ogg, 0.25, 1.0};titles[] = {};};
+	class grito4 {name="grito4";sound[]={\Missao\grito4.ogg, 0.25, 1.0};titles[] = {};};
+	class grito5 {name="grito5";sound[]={\Missao\grito5.ogg, 0.25, 1.0};titles[] = {};};
+	class grito6 {name="grito6";sound[]={\Missao\grito6.ogg, 0.25, 1.0};titles[] = {};};
+};

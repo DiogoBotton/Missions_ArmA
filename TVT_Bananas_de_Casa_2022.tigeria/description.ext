@@ -1,0 +1,113 @@
+
+
+respawn = "bird";
+respawndelay = 3;
+
+
+class CfgSounds
+{
+  sounds[]={mst1, mst2, mst3, mst4, mst5, mst6, mst7, mst8};
+  
+    class mst1
+        {
+            name = "mst1";
+            sound[] = {\sound\MST_1.ogg, db-5, 1.0};
+            titles[] = {""};
+        };
+    class mst2
+        {
+            name = "mst2";
+            sound[] = {\sound\MST_2.ogg, db-5, 1.0};
+            titles[] = {""};
+        };
+            class mst3
+        {
+            name = "mst3";
+            sound[] = {\sound\MST_3.ogg, db-5, 1.0};
+            titles[] = {""};
+        };
+            class mst4
+        {
+            name = "mst4";
+            sound[] = {\sound\MST_4.ogg, db-5, 1.0};
+            titles[] = {""};
+        };
+            class mst5
+        {
+            name = "mst5";
+            sound[] = {\sound\MST_5.ogg, db-5, 1.0};
+            titles[] = {""};
+        };
+            class mst6
+        {
+            name = "mst6";
+            sound[] = {\sound\MST_6.ogg, db-5, 1.0};
+            titles[] = {""};
+        };
+            class mst7
+        {
+            name = "mst7";
+            sound[] = {\sound\MST_7.ogg, db-5, 1.0};
+            titles[] = {""};
+        };
+            class mst8
+        {
+            name = "mst8";
+            sound[] = {\sound\MST_8.ogg, db-5, 1.0};
+            titles[] = {""};
+        };
+            class latir1
+        {
+            name = "latir1";
+            sound[] = {\sound\LATIR_1.ogg, db-10, 1.0};
+            titles[] = {""};
+        };
+         class latir2
+        {
+            name = "latir2";
+            sound[] = {\sound\LATIR_2.ogg, db-10, 1.0};
+            titles[] = {""};
+        };
+        class latir3
+        {
+            name = "latir3";
+            sound[] = {\sound\LATIR_3.ogg, db-10, 1.0};
+            titles[] = {""};
+        };
+        class rosnar1
+        {
+            name = "rosnar1";
+            sound[] = {\sound\ROSNAR_1.ogg, db-10, 1.0};
+            titles[] = {""};
+        };
+        class rosnar2
+        {
+            name = "rosnar2";
+            sound[] = {\sound\ROSNAR_2.ogg, db-10, 1.0};
+            titles[] = {""};
+        };
+        class rosnar3
+        {
+            name = "rosnar3";
+            sound[] = {\sound\ROSNAR_3.ogg, db-10, 1.0};
+            titles[] = {""};
+        };
+        class morder1
+        {
+            name = "morder1";
+            sound[] = {\sound\MORDER_1.ogg, db-10, 1.0};
+            titles[] = {""};
+        };
+        class morder2
+        {
+            name = "morder2";
+            sound[] = {\sound\MORDER_2.ogg, db-10, 1.0};
+            titles[] = {""};
+        };
+        class morder3
+        {
+            name = "morder3";
+            sound[] = {\sound\MORDER_3.ogg, db-10, 1.0};
+            titles[] = {""};
+        };
+};

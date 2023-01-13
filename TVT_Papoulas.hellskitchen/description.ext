@@ -1,0 +1,20 @@
+onLoadMission="TVT - Papoulas";
+
+respawn = "bird";
+respawndelay = 3;
+
+class CfgSounds{
+    sounds[]={rojao};
+    class rojao
+    {
+        name = "rojao";
+        sound[] = {\sound\rojao.ogg, db 4, 1.0};
+        titles[] = {""};
+    };
+    class msc
+    {
+        name = "msc";
+        sound[] = {\sound\msc.ogg, db 1, 1.0};
+        titles[] = {""};
+    };
+};

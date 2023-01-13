@@ -1,0 +1,1302 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"ace_main",
+		"ace_sys_wounds",
+		"cacharacters_e",
+		"acex_c_weapon",
+		"ace_c_weapon",
+		"acre_sys_radio",
+		"camisc3",
+		"hellskitchens",
+		"ace_c_men",
+		"CAWheeled_E",
+		"hellskitchen",
+		"camp_armory_misc_loudspeakers",
+		"cawheeled_e_btr40",
+		"camisc_e",
+		"camp_armory_misc_concrete_wall"
+	};
+	addOnsAuto[]=
+	{
+		"ace_main",
+		"ace_sys_wounds",
+		"cacharacters_e",
+		"ace_c_men",
+		"acex_c_weapon",
+		"ace_c_weapon",
+		"acre_sys_radio",
+		"camisc3",
+		"cawheeled_e_btr40",
+		"CAWheeled_E",
+		"camp_armory_misc_loudspeakers",
+		"camisc_e",
+		"camp_armory_misc_concrete_wall",
+		"hellskitchen"
+	};
+	randomSeed=2701852;
+	class Intel
+	{
+		briefingName="[TVT] Guerra das Papoulas";
+		briefingDescription="Uma guerra entre as unidades especiais da polícia e produtores de papoulas explode nas favelas de Sangin.";
+		startWeather=0;
+		forecastWeather=0;
+		year=2009;
+		day=28;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=10;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5179.6528,50.638817,3130.9214};
+					id=3;
+					side="LOGIC";
+					vehicle="ACE_Required_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5211.2271,50.49762,3129.6045};
+					id=4;
+					side="LOGIC";
+					vehicle="ACE_Wounds_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={4782.4985,6.4996948,3458.5916};
+					azimut=729.20398;
+					special="NONE";
+					id=15;
+					side="EAST";
+					vehicle="TK_Special_Forces_TL_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3_M320"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";   this addWeapon ""Binocular"";   this addWeapon ""ACE_MX2A"";  this addMagazine ""ACE_1Rnd_HE_M203"";  this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";  this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addWeapon ""ACE_BackPack"";   ";
+					description="Líder de Esquadra";
+				};
+				class Item1
+				{
+					position[]={4778.4697,6.2135773,3457.2585};
+					azimut=729.20416;
+					special="NONE";
+					id=17;
+					side="EAST";
+					vehicle="TK_Special_Forces_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeBackpack this;  removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";    this addWeapon ""ACE_BackPack"";  this addWeapon ""Binocular"";";
+					description="Fuzileiro";
+				};
+				class Item2
+				{
+					presence=0;
+					position[]={4782.3735,6.4747314,3462.3345};
+					azimut=805.41211;
+					special="FLY";
+					id=30;
+					side="WEST";
+					vehicle="CZ_Special_Forces_Scout_DES_EP1";
+					leader=1;
+					lock="UNLOCKED";
+					rank="COLONEL";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={4790.8481,8.2120209,3454.5806};
+					azimut=731.76483;
+					special="NONE";
+					id=18;
+					side="EAST";
+					vehicle="TK_Special_Forces_TL_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3_M320"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";   this addWeapon ""Binocular"";   this addMagazine ""ACE_1Rnd_HE_M203"";  this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";  this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addWeapon ""ACE_BackPack"";      ";
+					description="Líder de Equipe";
+				};
+				class Item1
+				{
+					position[]={4792.9985,8.7496643,3452.9631};
+					azimut=731.76483;
+					special="NONE";
+					id=19;
+					side="EAST";
+					vehicle="TK_Special_Forces_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="  removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";    this addWeapon ""RPG7V"";   this addMagazine ""ACE_PG7VM"";  this addMagazine ""ACE_PG7VM"";";
+					description="Fuzileiro AT";
+				};
+				class Item2
+				{
+					position[]={4795.7144,9.4286041,3451.0818};
+					azimut=731.76483;
+					special="NONE";
+					id=20;
+					side="EAST";
+					vehicle="TK_Special_Forces_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";    this addWeapon ""ACE_BackPack"";";
+					description="Fuzileiro Automático";
+				};
+				class Item3
+				{
+					position[]={4787.0952,7.4312897,3452.6602};
+					azimut=731.76483;
+					special="NONE";
+					id=21;
+					side="EAST";
+					vehicle="TK_Special_Forces_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeBackpack this;  removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";    this addWeapon ""ACE_BackPack"";  this addWeapon ""Binocular"";";
+					description="Fuzileiro";
+				};
+				class Item4
+				{
+					position[]={4783.6328,7.0162811,3450.5728};
+					azimut=731.76483;
+					special="NONE";
+					id=22;
+					side="EAST";
+					vehicle="TK_Special_Forces_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init=" removeBackpack this;  removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";    this addWeapon ""ACE_BackPack"";  this addWeapon ""Binocular"";";
+					description="Fuzileiro";
+				};
+				class Item5
+				{
+					presence=0;
+					position[]={4792.4258,8.8627319,3458.5991};
+					azimut=807.97284;
+					special="FLY";
+					id=31;
+					side="WEST";
+					vehicle="CZ_Special_Forces_Scout_DES_EP1";
+					leader=1;
+					lock="UNLOCKED";
+					rank="COLONEL";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={4771.3438,6.2134399,3455.7905};
+					azimut=731.76483;
+					special="NONE";
+					id=23;
+					side="EAST";
+					vehicle="TK_Special_Forces_TL_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3_M320"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";   this addWeapon ""Binocular"";   this addMagazine ""ACE_1Rnd_HE_M203"";  this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";  this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addMagazine ""ACE_1Rnd_HE_M203"";   this addWeapon ""ACE_BackPack"";      ";
+					description="Líder de Equipe";
+				};
+				class Item1
+				{
+					position[]={4773.4961,6.2676697,3454.1807};
+					azimut=731.76483;
+					special="NONE";
+					id=24;
+					side="EAST";
+					vehicle="TK_Special_Forces_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="  removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";    this addWeapon ""RPG7V"";   this addMagazine ""ACE_PG7VM"";  this addMagazine ""ACE_PG7VM"";";
+					description="Fuzileiro AT";
+				};
+				class Item2
+				{
+					position[]={4776.2046,6.3496704,3452.2922};
+					azimut=731.76483;
+					special="NONE";
+					id=25;
+					side="EAST";
+					vehicle="TK_Special_Forces_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";    this addWeapon ""ACE_BackPack"";";
+					description="Fuzileiro Automático";
+				};
+				class Item3
+				{
+					position[]={4767.5908,5.5261536,3453.875};
+					azimut=731.76483;
+					special="NONE";
+					id=26;
+					side="EAST";
+					vehicle="TK_Special_Forces_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeBackpack this;  removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";    this addWeapon ""ACE_BackPack"";  this addWeapon ""Binocular"";";
+					description="Fuzileiro";
+				};
+				class Item4
+				{
+					position[]={4764.1304,5.4105377,3451.7891};
+					azimut=731.76483;
+					special="NONE";
+					id=27;
+					side="EAST";
+					vehicle="TK_Special_Forces_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeBackpack this;  removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";    this addWeapon ""ACE_BackPack"";  this addWeapon ""Binocular"";";
+					description="Fuzileiro";
+				};
+				class Item5
+				{
+					presence=0;
+					position[]={4771.6802,6.4454498,3459.4106};
+					azimut=807.97284;
+					special="FLY";
+					id=32;
+					side="WEST";
+					vehicle="CZ_Special_Forces_Scout_DES_EP1";
+					leader=1;
+					lock="UNLOCKED";
+					rank="COLONEL";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={4785.751,7.3895416,3443.98};
+					azimut=731.76483;
+					special="NONE";
+					id=28;
+					side="EAST";
+					vehicle="TK_Special_Forces_MG_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M240B"";   this addMagazine ""100Rnd_762x51_M240"";  this addMagazine ""100Rnd_762x51_M240"";  this addMagazine ""100Rnd_762x51_M240"";  this addMagazine ""100Rnd_762x51_M240"";  this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";   this addweapon ""ACE_Earplugs""; ";
+					description="Operador de Metralhadora";
+				};
+				class Item1
+				{
+					position[]={4788.2661,7.7778473,3441.3545};
+					azimut=731.76483;
+					special="NONE";
+					id=29;
+					side="EAST";
+					vehicle="TK_Special_Forces_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeBackpack this;  removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";    this addWeapon ""ACE_BackPack"";  this addWeapon ""Binocular"";";
+					description="Assistente";
+				};
+				class Item2
+				{
+					presence=0;
+					position[]={4788.8882,7.8332367,3447.1448};
+					azimut=807.97284;
+					special="FLY";
+					id=33;
+					side="WEST";
+					vehicle="CZ_Special_Forces_Scout_DES_EP1";
+					leader=1;
+					lock="UNLOCKED";
+					rank="COLONEL";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4530.7642,49.948025,2798.2673};
+					azimut=1712.0724;
+					special="NONE";
+					id=34;
+					side="EAST";
+					vehicle="TK_INS_Soldier_TL_EP1";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM_GL""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East""; this addWeapon ""Binocular""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P"";  ";
+					description="Líder de Esquadra";
+				};
+				class Item1
+				{
+					position[]={4532.3867,49.888371,2796.2788};
+					azimut=1698.4547;
+					special="NONE";
+					id=35;
+					side="EAST";
+					vehicle="TK_INS_Bonesetter_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East"";  ";
+					description="Médico";
+				};
+			};
+		};
+		class Item7
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={4525.3555,49.81765,2789.8723};
+					azimut=1709.64;
+					special="NONE";
+					id=36;
+					side="EAST";
+					vehicle="ACE_TK_INS_Soldier_AKM_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM_GL""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East""; this addWeapon ""Binocular""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P"";  ";
+					description="Líder de Equipe";
+				};
+				class Item1
+				{
+					position[]={4526.457,49.806286,2791.9563};
+					azimut=1709.6423;
+					special="NONE";
+					id=37;
+					side="EAST";
+					vehicle="ACE_TK_INS_Soldier_AKM_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East""; this addWeapon ""RPG7V""; this addMagazine ""ACE_PG7VM""; this addMagazine ""ACE_PG7VM""; this addMagazine ""ACE_PG7VM"";  ";
+					description="Fuzileiro AT";
+				};
+				class Item2
+				{
+					position[]={4527.4243,49.824295,2794.1431};
+					azimut=1709.6423;
+					special="NONE";
+					id=38;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AR_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; removeBackpack this; this addWeapon ""ACE_RPK""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47"";  ";
+					description="Fuzileiro Automático";
+				};
+				class Item3
+				{
+					position[]={4530.1519,49.707302,2790.2432};
+					azimut=1712.33;
+					special="NONE";
+					id=39;
+					side="EAST";
+					vehicle="ACE_TK_INS_Soldier_AKM_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East"";  ";
+					description="Fuzileiro";
+				};
+				class Item4
+				{
+					position[]={4531.6494,49.765308,2792.1768};
+					azimut=1709.6423;
+					special="NONE";
+					id=40;
+					side="EAST";
+					vehicle="ACE_TK_INS_Soldier_AKM_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East"";  ";
+					description="Fuzileiro";
+				};
+				class Item5
+				{
+					position[]={4533.4883,49.823929,2794.1309};
+					azimut=1709.6423;
+					special="NONE";
+					id=41;
+					side="EAST";
+					vehicle="ACE_TK_INS_Soldier_AKM_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East"";  ";
+					description="Fuzileiro";
+				};
+			};
+		};
+		class Item8
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={4524.4302,49.963089,2800.7383};
+					azimut=1709.6423;
+					special="NONE";
+					id=42;
+					side="EAST";
+					vehicle="ACE_TK_INS_Soldier_AKM_EP1";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM_GL""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East""; this addWeapon ""Binocular""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P""; this addMagazine ""ACE_1Rnd_HE_GP25P"";  ";
+					description="Líder de Equipe";
+				};
+				class Item1
+				{
+					position[]={4525.5317,49.858719,2802.8257};
+					azimut=1709.6423;
+					special="NONE";
+					id=43;
+					side="EAST";
+					vehicle="ACE_TK_INS_Soldier_AKM_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East""; this addWeapon ""RPG7V""; this addMagazine ""ACE_PG7VM""; this addMagazine ""ACE_PG7VM""; this addMagazine ""ACE_PG7VM"";  ";
+					description="Fuzileiro AT";
+				};
+				class Item2
+				{
+					position[]={4526.498,49.749603,2805.0078};
+					azimut=1709.6423;
+					special="NONE";
+					id=44;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AR_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; removeBackpack this; this addWeapon ""ACE_RPK""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47"";  ";
+					description="Fuzileiro Automático";
+				};
+				class Item3
+				{
+					position[]={4529.2285,49.944473,2801.1104};
+					azimut=1712.3324;
+					special="NONE";
+					id=45;
+					side="EAST";
+					vehicle="ACE_TK_INS_Soldier_AKM_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East"";  ";
+					description="Fuzileiro";
+				};
+				class Item4
+				{
+					position[]={4530.7236,49.847855,2803.043};
+					azimut=1709.6423;
+					special="NONE";
+					id=46;
+					side="EAST";
+					vehicle="ACE_TK_INS_Soldier_AKM_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East"";  ";
+					description="Fuzileiro";
+				};
+				class Item5
+				{
+					position[]={4532.5649,49.750015,2804.9998};
+					azimut=1709.6423;
+					special="NONE";
+					id=47;
+					side="EAST";
+					vehicle="ACE_TK_INS_Soldier_AKM_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East"";  ";
+					description="Fuzileiro";
+				};
+			};
+		};
+		class Item9
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4532.6509,49.696522,2789.9502};
+					azimut=1709.6423;
+					special="NONE";
+					id=48;
+					side="EAST";
+					vehicle="TK_INS_Soldier_MG_EP1";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""PK"";   this addMagazine ""100Rnd_762x54_PK"";  this addMagazine ""100Rnd_762x54_PK"";  this addMagazine ""100Rnd_762x54_PK"";  this addMagazine ""100Rnd_762x54_PK"";  this addMagazine ""100Rnd_762x54_PK"";  this addMagazine ""100Rnd_762x54_PK"";  this addMagazine ""HandGrenade_East"";   this addMagazine ""HandGrenade_East"";   this addweapon ""ACE_Earplugs""; ";
+					description="Operador de Metralhadora";
+				};
+				class Item1
+				{
+					position[]={4534.2715,49.756886,2791.896};
+					azimut=1709.6423;
+					special="NONE";
+					id=49;
+					side="EAST";
+					vehicle="ACE_TK_INS_Soldier_AKM_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""HandGrenade_East""; this addMagazine ""HandGrenade_East""; this addWeapon ""Binocular"";  ";
+					description="Assistente";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=37;
+		class Item0
+		{
+			position[]={4535.9434,49.944748,2798.1582};
+			azimut=1249.0658;
+			special="FLY";
+			id=0;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_BIS_TK";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="  clearWeaponCargo this; clearMagazineCargo this;   this addWeaponCargo[""ACE_AKM"",10];   this addMagazineCargo[""30RND_762X39_AK47"",200];   this addMagazineCargo [""ACE_30Rnd_762x39_T_AK47"", 100];   this addMagazineCargo [""100Rnd_762x54_PK"", 20];   this addMagazineCargo [""FlareWhite_GP25"", 24];   this addMagazineCargo [""PG7VL"", 8];  this addWeaponCargo [""ACE_Earplugs"", 20];  this addWeaponCargo [""ACE_BackPack"", 20];  ";
+		};
+		class Item1
+		{
+			position[]={4537.8345,49.770931,2792.364};
+			azimut=1162.7732;
+			special="FLY";
+			id=1;
+			side="EMPTY";
+			vehicle="ACE_BandageBoxWest";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={4536.4648,49.764183,2792.1392};
+			azimut=1344.86;
+			special="FLY";
+			id=2;
+			side="EMPTY";
+			vehicle="ACE_BandageBoxWest";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={4534.8501,49.782242,2804.3552};
+			azimut=1249.0658;
+			special="FLY";
+			id=5;
+			side="EMPTY";
+			vehicle="ACE_Tbox_HandGrenade_East";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={4535.2861,49.882645,2802.3472};
+			azimut=1249.0658;
+			special="FLY";
+			id=6;
+			side="EMPTY";
+			vehicle="ACE_Tbox_SmokeGrenade_East";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={4535.5679,49.982132,2800.3574};
+			azimut=1249.0658;
+			special="FLY";
+			id=7;
+			side="EMPTY";
+			vehicle="ACE_Tbox_ACE_1Rnd_HE_GP25P";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={4783.1626,6.6325073,3465.7529};
+			azimut=1167.5396;
+			special="FLY";
+			id=8;
+			side="EMPTY";
+			vehicle="ACE_BandageBoxWest";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={4784.999,6.8954468,3465.6968};
+			azimut=1167.5396;
+			special="FLY";
+			id=9;
+			side="EMPTY";
+			vehicle="ACE_BandageBoxWest";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={4781.2124,6.2424927,3465.8496};
+			azimut=1167.5396;
+			special="FLY";
+			id=10;
+			side="EMPTY";
+			vehicle="ACE_Tbox_HandGrenade_East";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={4779.0938,6.0453033,3465.7668};
+			azimut=1167.5396;
+			special="FLY";
+			id=11;
+			side="EMPTY";
+			vehicle="ACE_Tbox_SmokeGrenade_East";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={4788.9536,7.3243866,3464.1553};
+			azimut=897.13727;
+			special="FLY";
+			id=12;
+			side="EMPTY";
+			vehicle="ACRE_RadioBox";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Fuzileiro AT";
+		};
+		class Item11
+		{
+			position[]={4540.5513,49.874741,2802.5051};
+			azimut=167.84621;
+			id=13;
+			side="EMPTY";
+			vehicle="Land_Fire_burning";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={4777.1475,6.1426239,3460.9819};
+			azimut=-2.3276243;
+			id=14;
+			side="EMPTY";
+			vehicle="Land_Fire_burning";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={4774.8306,6.2584686,3464.9502};
+			azimut=804.14758;
+			special="FLY";
+			id=16;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_BIS_US";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="  clearWeaponCargo this; clearMagazineCargo this;   this addWeaponCargo[""ACE_HK416_D14_COMPM3"",10];   this addMagazineCargo[""30Rnd_556x45_Stanag"",200];   this addMagazineCargo [""ACE_30Rnd_556x45_T_Stanag"", 100];   this addMagazineCargo [""100Rnd_762x51_M240"", 20];   this addMagazineCargo [""FlareWhite_M203"", 20];  this addMagazineCargo [""FlareRed_M203"", 20];  this addMagazineCargo [""1Rnd_Smoke_M203"", 20];   this addMagazineCargo [""1Rnd_SmokeRed_M203"", 20];   this addWeaponCargo [""ACE_BackPack"", 20];  this addMagazineCargo  [""ACE_Flashbang"", 20];  this addMagazineCargo  [""PipeBomb"", 5];  this addWeaponCargo [""ACE_Earplugs"", 20];  this addWeaponCargo [""ACE_SpareBarrel"", 2];  this addMagazineCargo [""ACE_1Rnd_HE_M203"", 40]; this addMagazineCargo [""PG7VL"", 8]; this addMagazineCargo [""ACE_M4SLAM_M"", 20];   ";
+		};
+		class Item14
+		{
+			position[]={4778.2012,7.3198395,3438.207};
+			azimut=542.56598;
+			special="NONE";
+			id=50;
+			side="EMPTY";
+			vehicle="BTR40_TK_GUE_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.61803168;
+		};
+		class Item15
+		{
+			position[]={4779.6304,6.6119995,3448.5105};
+			azimut=542.56573;
+			special="NONE";
+			id=51;
+			side="EMPTY";
+			vehicle="TT650_TK_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.61055344;
+		};
+		class Item16
+		{
+			position[]={4776.7935,6.4136047,3447.6575};
+			azimut=542.56573;
+			special="NONE";
+			id=52;
+			side="EMPTY";
+			vehicle="TT650_TK_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.61803168;
+		};
+		class Item17
+		{
+			position[]={4541.2803,49.947834,2796.9807};
+			azimut=1249.0698;
+			special="FLY";
+			id=53;
+			side="EMPTY";
+			vehicle="ACE_Tbox_ACE_1Rnd_HE_GP25P";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+			text="foguetes";
+			init="clearWeaponCargo this; clearMagazineCargo this;";
+		};
+		class Item18
+		{
+			position[]={4649.2686,50,2749.3667};
+			azimut=1169.03;
+			special="NONE";
+			id=54;
+			side="EMPTY";
+			vehicle="Loudspeakers_EP1";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+			text="alto_falante";
+		};
+		class Item19
+		{
+			position[]={4585.916,24.787384,3046.21};
+			id=55;
+			side="EMPTY";
+			vehicle="Hhedgehog_concreteBig";
+			skill=0.60000002;
+		};
+		class Item20
+		{
+			position[]={4593.7227,24.365509,3046.311};
+			id=56;
+			side="EMPTY";
+			vehicle="Hhedgehog_concreteBig";
+			skill=0.60000002;
+		};
+		class Item21
+		{
+			position[]={4528.6323,38.870823,2743.9644};
+			azimut=12.77248;
+			id=57;
+			side="EMPTY";
+			vehicle="Hhedgehog_concreteBig";
+			skill=0.60000002;
+		};
+		class Item22
+		{
+			position[]={4536.2705,39.155231,2742.2964};
+			azimut=12.77248;
+			id=58;
+			side="EMPTY";
+			vehicle="Hhedgehog_concreteBig";
+			skill=0.60000002;
+		};
+		class Item23
+		{
+			position[]={4522.1753,39.200516,2745.395};
+			azimut=12.77248;
+			id=59;
+			side="EMPTY";
+			vehicle="Hhedgehog_concreteBig";
+			skill=0.60000002;
+		};
+		class Item24
+		{
+			position[]={4526.418,40.246613,2751.0811};
+			azimut=10.565996;
+			id=60;
+			side="EMPTY";
+			vehicle="Fort_Barricade_EP1";
+			skill=0.60000002;
+		};
+		class Item25
+		{
+			position[]={4537.9653,41.328461,2748.9146};
+			azimut=10.565996;
+			id=61;
+			side="EMPTY";
+			vehicle="Fort_Barricade";
+			skill=0.60000002;
+		};
+		class Item26
+		{
+			position[]={4580.6616,25,3040.801};
+			azimut=0.61112624;
+			id=62;
+			side="EMPTY";
+			vehicle="Fort_Barricade_EP1";
+			skill=0.60000002;
+		};
+		class Item27
+		{
+			position[]={4594.8613,24.949982,3040.5};
+			azimut=0.61112624;
+			id=63;
+			side="EMPTY";
+			vehicle="Fort_Barricade";
+			skill=0.60000002;
+		};
+		class Item28
+		{
+			position[]={4525.6157,47.606461,2774.4766};
+			azimut=-5.2101989;
+			id=64;
+			side="EMPTY";
+			vehicle="Concrete_Wall_EP1";
+			skill=0.60000002;
+		};
+		class Item29
+		{
+			position[]={4523.2168,48.376827,2774.3838};
+			azimut=-5.2101989;
+			id=65;
+			side="EMPTY";
+			vehicle="Concrete_Wall_EP1";
+			skill=0.60000002;
+		};
+		class Item30
+		{
+			position[]={4520.6519,49.211678,2774.2678};
+			azimut=-5.2101989;
+			id=66;
+			side="EMPTY";
+			vehicle="Concrete_Wall_EP1";
+			skill=0.60000002;
+		};
+		class Item31
+		{
+			position[]={4518.3262,49.392334,2773.9233};
+			azimut=-5.2101989;
+			id=67;
+			side="EMPTY";
+			vehicle="Concrete_Wall_EP1";
+			skill=0.60000002;
+		};
+		class Item32
+		{
+			position[]={4535.2505,47.219585,2774.9788};
+			azimut=-5.2101989;
+			id=68;
+			side="EMPTY";
+			vehicle="Concrete_Wall_EP1";
+			skill=0.60000002;
+		};
+		class Item33
+		{
+			position[]={4532.9248,46.970863,2774.6353};
+			azimut=-5.2101989;
+			id=69;
+			side="EMPTY";
+			vehicle="Concrete_Wall_EP1";
+			skill=0.60000002;
+		};
+		class Item34
+		{
+			position[]={4528.1255,47.045547,2774.2202};
+			azimut=-5.2101989;
+			id=70;
+			side="EMPTY";
+			vehicle="Concrete_Wall_EP1";
+			skill=0.60000002;
+		};
+		class Item35
+		{
+			position[]={4525.7666,47.515575,2774.1855};
+			azimut=-5.2101989;
+			id=71;
+			side="EMPTY";
+			vehicle="Concrete_Wall_EP1";
+			skill=0.60000002;
+		};
+		class Item36
+		{
+			position[]={4537.0967,47.450077,2775.1553};
+			azimut=-5.2101989;
+			id=72;
+			side="EMPTY";
+			vehicle="Concrete_Wall_EP1";
+			skill=0.60000002;
+		};
+	};
+	class Markers
+	{
+		items=6;
+		class Item0
+		{
+			position[]={4778.6182,6.0690918,3469.4351};
+			name="0flagTak_1";
+			type="Faction_TKA_EP1";
+			a=0.80000001;
+			b=0.80000001;
+			angle=-359.8573;
+		};
+		class Item1
+		{
+			position[]={4925.335,81.720932,3604.1414};
+			name="123";
+			text="0 - 0 - 1 para iniciar a partida";
+			type="mil_objective";
+			a=0.5;
+			b=0.5;
+		};
+		class Item2
+		{
+			position[]={4924.6855,50,3555.3494};
+			name="wew";
+			text="Obj Blufor - Capturar a Área";
+			type="mil_objective";
+			colorName="ColorBlue";
+			a=0.5;
+			b=0.5;
+		};
+		class Item3
+		{
+			position[]={4925.0103,50,3504.1003};
+			name="wew_1";
+			text="Obj Opfor - Defender por 30 minutos ou eliminar todos inimigos";
+			type="mil_objective";
+			colorName="ColorRed";
+			a=0.5;
+			b=0.5;
+		};
+		class Item4
+		{
+			position[]={4583.2437,29.592072,2885.8638};
+			name="1234";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="BDiagonal";
+			a=110;
+			b=150;
+		};
+		class Item5
+		{
+			position[]={4586.3022,28.296318,2895.501};
+			name="1232";
+			type="Faction_TKM_EP1";
+			a=0.80000001;
+			b=0.80000001;
+		};
+	};
+	class Sensors
+	{
+		items=9;
+		class Item0
+		{
+			position[]={4582.9326,29.801849,2885.3718};
+			a=110;
+			b=150;
+			angle=-180.058;
+			rectangular=1;
+			activationBy="ANY";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			name="blue";
+			expCond="{side _x==west} count thisList > 0 && {side _x==east} count thisList == 0;";
+			expActiv="blue=true;";
+			class Effects
+			{
+				titleType="TEXT";
+				title="Vitoria Blufor";
+			};
+		};
+		class Item1
+		{
+			position[]={5193.5688,50.951435,3349.0776};
+			a=5e+009;
+			b=4.9999999e+010;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+				titleType="TEXT";
+				title="Vitoria Blufor";
+			};
+		};
+		class Item2
+		{
+			position[]={5193.8325,51.046238,3334.9341};
+			a=5e+009;
+			b=4.9999999e+010;
+			activationBy="WEST";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+				titleType="TEXT";
+				title="Vitoria Opfor";
+			};
+		};
+		class Item3
+		{
+			position[]={5199.7769,50.926266,3349.3418};
+			a=5e+009;
+			b=4.9999999e+010;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			timeoutMin=3;
+			timeoutMid=3;
+			timeoutMax=3;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={5201.229,51.025555,3334.4053};
+			a=5e+009;
+			b=4.9999999e+010;
+			activationBy="WEST";
+			activationType="NOT PRESENT";
+			timeoutMin=3;
+			timeoutMid=3;
+			timeoutMax=3;
+			interruptable=1;
+			type="END2";
+			age="UNKNOWN";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={5084.4165,50,3262.8062};
+			a=50000;
+			b=50000;
+			activationBy="ALPHA";
+			interruptable=1;
+			age="UNKNOWN";
+			name="radio";
+			expActiv="radio=true;";
+			class Effects
+			{
+				titleType="TEXT";
+				title="Partida iniciada";
+			};
+		};
+		class Item6
+		{
+			position[]={4576.6812,73.399895,2807.4705};
+			a=999999;
+			b=999999;
+			activationBy="ANY";
+			timeoutMin=5;
+			timeoutMid=5;
+			timeoutMax=5;
+			interruptable=1;
+			type="END4";
+			age="UNKNOWN";
+			expCond="blue";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={4541.3281,49.90855,2795.6235};
+			a=0;
+			b=0;
+			angle=80.039879;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="rojoes == 0";
+			expActiv="foguetes removeAction 0;";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={4656.4097,49.442719,2748.4211};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="tocouMsc";
+			expActiv="alto_falante removeAction 0;";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"hellskitchens",
+		"hellskitchen"
+	};
+	addOnsAuto[]=
+	{
+		"hellskitchen"
+	};
+	randomSeed=7810963;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"hellskitchens",
+		"hellskitchen"
+	};
+	addOnsAuto[]=
+	{
+		"hellskitchen"
+	};
+	randomSeed=6546179;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"hellskitchens",
+		"hellskitchen"
+	};
+	addOnsAuto[]=
+	{
+		"hellskitchen"
+	};
+	randomSeed=7208398;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.40000001;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+	};
+};

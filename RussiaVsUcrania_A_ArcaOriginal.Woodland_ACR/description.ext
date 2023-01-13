@@ -1,0 +1,71 @@
+onLoadMission="Rússia vs Ucrânia - A Arca - Created by WolFros_Fay4";
+respawn = "bird";
+respawndelay = 3;
+
+class Params
+{
+	class HEADLESS
+	{
+	title = "HEADLESS";
+	values[] = {0 ,1};
+	texts[] = {"OFF", "ON"};
+	default = 0;	
+	};
+    class ParamDEBUGAR
+	{
+	title = "DEBUGAR";
+	values[] = {0 ,1};
+	texts[] = {"OFF", "ON"};
+	default = 0;
+	};
+    class ParamTempoInicio
+	{
+	title = "Tempo para início";
+	values[] = {180, 300, 600, 900, 1200, 1800, -1};
+	texts[] = {"3 minutos", "5 minutos", "10 minutos", "15 minutos", "20 minutos", "30 minutos", "Aleatório"};
+	default = 600;
+	};
+    class ParamTempoOndas
+	{
+	title = "Tempo entre ataques (ondas)";
+	values[] = {180, 300, 480, 600, 780, -1};
+	texts[] = {"3 a 5 minutos", "5 a 7 minutos", "8 a 10 minutos", "10 a 12 minutos", "13 a 15 minutos", "Aleatório"};
+	default = 480;
+	};
+    class ParamTempoReforcos
+	{
+	title = "Tempo para chegada de reforços";
+	values[] = {3600, 5400, 7200, 10800, 14400};
+	texts[] = {"1 hora", "1 hora e 30 minutos", "2 horas", "3 horas", "4 horas"};
+	default = 3600;
+	};
+};
+
+class CfgSounds
+{
+  	sounds[]={mort1, mort2, mort3, mort4};
+    class mort1
+    {
+        name = "mort1";
+        sound[] = {\sounds\mort1.ogg, db-3, 1.0};
+        titles[] = {""};
+    };
+    class mort2
+    {
+        name = "mort2";
+        sound[] = {\sounds\mort2.ogg, db-3, 1.0};
+        titles[] = {""};
+    };
+    class mort3
+    {
+        name = "mort3";
+        sound[] = {\sounds\mort3.ogg, db-3, 1.0};
+        titles[] = {""};
+    };        
+    class mort4
+    {
+        name = "mort4";
+        sound[] = {\sounds\mort4.ogg, db-3, 1.0};
+        titles[] = {""};
+    };        
+};

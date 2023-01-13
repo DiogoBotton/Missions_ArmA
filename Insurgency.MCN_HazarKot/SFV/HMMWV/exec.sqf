@@ -1,1 +1,0 @@
-_this addaction ["Fire From Gunner Seat","SFV\HMMWV\startG.sqf", "", 0, false, true, "MoveForward", "_this == gunner _target"];

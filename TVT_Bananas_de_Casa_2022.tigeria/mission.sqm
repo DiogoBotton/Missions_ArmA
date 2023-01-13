@@ -1,0 +1,1675 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"ace_main",
+		"ace_sys_wounds",
+		"cacharacters_e",
+		"ace_c_men",
+		"acex_c_weapon",
+		"ace_c_weapon",
+		"acre_sys_radio",
+		"camisc3",
+		"mbg_killhouses",
+		"CAWheeled_E",
+		"tigeria",
+		"ibr_civilian_patch",
+		"cacharacters_pmc",
+		"cacharacters_baf",
+		"CAWheeled_E_LandRover",
+		"cawheeled_pmc_armoredsuv",
+		"CAWheeled2_Ikarus",
+		"CAWheeled",
+		"CAWheeled_E_Old_moto",
+		"CAWheeled2_VWGolf",
+		"cacharacters2",
+		"cawheeled_acr_octavia",
+		"cawheeled_acr_t810",
+		"cawheeled_d_baf",
+		"ca_animals2_cow",
+		"ca_animals2_goat",
+		"ca_animals2_chicken",
+		"ca_animals2_wildboar",
+		"ca_animals2_dogs_fin",
+		"ca_animals2_dogs_pastor"
+	};
+	addOnsAuto[]=
+	{
+		"ace_main",
+		"ace_sys_wounds",
+		"cacharacters_e",
+		"cacharacters_pmc",
+		"cacharacters_baf",
+		"ibr_civilian_patch",
+		"cacharacters2",
+		"acex_c_weapon",
+		"ace_c_weapon",
+		"acre_sys_radio",
+		"camisc3",
+		"mbg_killhouses",
+		"CAWheeled_E_LandRover",
+		"cawheeled_pmc_armoredsuv",
+		"CAWheeled",
+		"CAWheeled2_Ikarus",
+		"CAWheeled_E",
+		"CAWheeled_E_Old_moto",
+		"CAWheeled2_VWGolf",
+		"cawheeled_acr_octavia",
+		"cawheeled_d_baf",
+		"cawheeled_acr_t810",
+		"ca_animals2_cow",
+		"ca_animals2_goat",
+		"ca_animals2_chicken",
+		"ca_animals2_wildboar",
+		"ca_animals2_dogs_fin",
+		"ca_animals2_dogs_pastor",
+		"tigeria"
+	};
+	randomSeed=14542279;
+	class Intel
+	{
+		briefingName="TVT Bananas na Nossa Casa 2022";
+		briefingDescription="Um time ataca e o outro defende";
+		startWeather=0.047477067;
+		startFog=0.16817476;
+		forecastWeather=0.09156245;
+		forecastFog=0.3476719;
+		year=2018;
+		month=6;
+		day=8;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=5;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10887.988,31.215698,7807.4102};
+					id=3;
+					side="LOGIC";
+					vehicle="ACE_Required_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10919.563,31.215698,7806.0938};
+					id=4;
+					side="LOGIC";
+					vehicle="ACE_Wounds_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=24;
+				class Item0
+				{
+					presence=0;
+					position[]={8720.5518,21.960806,7063.2559};
+					azimut=1354.89;
+					special="FLY";
+					id=14;
+					side="WEST";
+					vehicle="CZ_Special_Forces_Scout_DES_EP1";
+					leader=1;
+					lock="UNLOCKED";
+					rank="COLONEL";
+					skill=0.60000002;
+					text="B1";
+				};
+				class Item1
+				{
+					position[]={8722.3262,21.960808,7055.0522};
+					azimut=1795.59;
+					special="NONE";
+					id=26;
+					side="GUER";
+					vehicle="Soldier_M4A3_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3_M320"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addWeapon ""Binocular"";   this addWeapon ""ACE_BackPack"";      ";
+					description="Seguranca ";
+				};
+				class Item2
+				{
+					position[]={8723.1533,21.960808,7055.166};
+					azimut=1795.59;
+					special="NONE";
+					id=28;
+					side="GUER";
+					vehicle="Soldier_GL_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item3
+				{
+					position[]={8724.043,21.960808,7055.4653};
+					azimut=1795.59;
+					special="NONE";
+					id=27;
+					side="GUER";
+					vehicle="Soldier_GL_M16A2_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item4
+				{
+					position[]={8721.0557,21.960808,7054.7651};
+					azimut=1795.59;
+					special="NONE";
+					id=31;
+					side="GUER";
+					vehicle="Soldier_M4A3_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item5
+				{
+					position[]={8726.0479,21.960808,7057.1846};
+					azimut=1795.59;
+					special="NONE";
+					id=30;
+					side="GUER";
+					vehicle="CIV_Contractor1_BAF";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""M24_des_EP1"";   this addMagazine ""5Rnd_762x51_M24"";  this addMagazine ""5Rnd_762x51_M24"";  this addMagazine ""5Rnd_762x51_M24"";  this addMagazine ""5Rnd_762x51_M24"";  this addMagazine ""5Rnd_762x51_M24"";  this addMagazine ""5Rnd_762x51_M24"";  this addMagazine ""5Rnd_762x51_M24"";  this addMagazine ""5Rnd_762x51_M24"";  this addMagazine ""5Rnd_762x51_M24"";   this addMagazine ""5Rnd_762x51_M24"";  this addMagazine ""5Rnd_762x51_M24""; this addMagazine ""5Rnd_762x51_M24"";  this addWeapon ""ACE_BackPack"";    ";
+					description="Atirador de Elite";
+				};
+				class Item6
+				{
+					position[]={8720.1396,21.960808,7054.9482};
+					azimut=1795.59;
+					special="NONE";
+					id=29;
+					side="GUER";
+					vehicle="Soldier_TL_PMC";
+					player="PLAYER COMMANDER";
+					lock="UNLOCKED";
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addWeapon ""Binocular"";      this addWeapon ""ACE_BackPack"";      ";
+					description="Lider de Equipe ";
+				};
+				class Item7
+				{
+					position[]={8720.6211,21.960808,7053.1753};
+					azimut=1795.59;
+					special="NONE";
+					id=48;
+					side="GUER";
+					vehicle="Soldier_GL_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addWeapon ""Binocular"";      this addWeapon ""ACE_BackPack"";      ";
+					description="Seguranca";
+				};
+				class Item8
+				{
+					position[]={8721.5371,21.960808,7052.9922};
+					azimut=1795.59;
+					special="NONE";
+					id=50;
+					side="GUER";
+					vehicle="Soldier_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item9
+				{
+					position[]={8722.8076,21.960808,7053.2793};
+					azimut=1795.59;
+					special="NONE";
+					id=45;
+					side="GUER";
+					vehicle="CIV_Contractor1_BAF";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3_M320"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addWeapon ""Binocular"";   this addWeapon ""ACE_BackPack"";      ";
+					description="Seguranca ";
+				};
+				class Item10
+				{
+					position[]={8723.6348,21.960808,7053.3931};
+					azimut=1795.59;
+					special="NONE";
+					id=47;
+					side="GUER";
+					vehicle="CIV_Contractor2_BAF";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item11
+				{
+					position[]={8724.5244,21.960808,7053.6924};
+					azimut=1795.59;
+					special="NONE";
+					id=46;
+					side="GUER";
+					vehicle="Soldier_Sniper_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item12
+				{
+					position[]={8725.7637,21.960808,7054.1875};
+					azimut=1795.59;
+					special="NONE";
+					id=49;
+					side="GUER";
+					vehicle="Soldier_Medic_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item13
+				{
+					position[]={8720.7305,21.960808,7051.6465};
+					azimut=1795.59;
+					special="NONE";
+					id=54;
+					side="GUER";
+					vehicle="Soldier_MG_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addWeapon ""Binocular"";      this addWeapon ""ACE_BackPack"";      ";
+					description="Seguranca";
+				};
+				class Item14
+				{
+					position[]={8721.6465,21.960808,7051.4634};
+					azimut=1795.59;
+					special="NONE";
+					id=56;
+					side="GUER";
+					vehicle="Soldier_AT_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item15
+				{
+					position[]={8722.917,21.960808,7051.7505};
+					azimut=1795.59;
+					special="NONE";
+					id=51;
+					side="GUER";
+					vehicle="Soldier_MG_PKM_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3_M320"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addWeapon ""Binocular"";   this addWeapon ""ACE_BackPack"";      ";
+					description="Seguranca";
+				};
+				class Item16
+				{
+					position[]={8723.7441,21.960808,7051.8643};
+					azimut=1795.59;
+					special="NONE";
+					id=53;
+					side="GUER";
+					vehicle="Soldier_Engineer_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item17
+				{
+					position[]={8724.6338,21.960808,7052.1636};
+					azimut=1795.59;
+					special="NONE";
+					id=52;
+					side="GUER";
+					vehicle="Soldier_GL_M16A2_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item18
+				{
+					position[]={8725.873,21.960808,7052.6587};
+					azimut=1795.59;
+					special="NONE";
+					id=55;
+					side="GUER";
+					vehicle="Soldier_M4A3_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item19
+				{
+					position[]={8721.0859,21.960808,7050.5171};
+					azimut=1795.59;
+					special="NONE";
+					id=59;
+					side="GUER";
+					vehicle="Soldier_Crew_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addWeapon ""Binocular"";      this addWeapon ""ACE_BackPack"";      ";
+					description="Seguranca";
+				};
+				class Item20
+				{
+					position[]={8722.002,21.960808,7050.334};
+					azimut=1795.59;
+					special="NONE";
+					id=60;
+					side="GUER";
+					vehicle="Soldier_Sniper_KSVK_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item21
+				{
+					position[]={8723.2725,21.960808,7050.6211};
+					azimut=1795.59;
+					special="NONE";
+					id=57;
+					side="GUER";
+					vehicle="Soldier_AA_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removeAllWeapons this; this addWeapon ""ACE_HK416_D14_COMPM3_M320"";   this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";  this addMagazine ""30Rnd_556x45_Stanag"";   this addWeapon ""Binocular"";   this addWeapon ""ACE_BackPack"";      ";
+					description="Seguranca";
+				};
+				class Item22
+				{
+					position[]={8724.9893,21.960808,7051.0342};
+					azimut=1795.59;
+					special="NONE";
+					id=58;
+					side="GUER";
+					vehicle="Soldier_GL_M16A2_PMC";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="removebackpack this;  removeAllWeapons this; this addWeapon ""ACE_M27_IAR_CCO"";   this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addMagazine ""100Rnd_556x45_BetaCMag"";  this addWeapon ""ACE_BackPack"";";
+					description="Seguranca";
+				};
+				class Item23
+				{
+					position[]={8722.1289,21.960808,7057.4805};
+					azimut=1354.89;
+					special="FLY";
+					id=95;
+					side="GUER";
+					vehicle="CIV_Contractor1_BAF";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					rank="CAPTAIN";
+					skill=0.60000002;
+					description="Team Leader";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=17;
+				class Item0
+				{
+					position[]={10193.669,24.274521,7438.2202};
+					azimut=1442.34;
+					special="NONE";
+					id=15;
+					side="EAST";
+					vehicle="ibr_rebel66";
+					player="PLAY CDG";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A17";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM_GL""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addWeapon ""Binocular""; ";
+					description="Líder de Equipe";
+				};
+				class Item1
+				{
+					position[]={10193.016,24.274521,7436.1436};
+					azimut=1442.34;
+					special="NONE";
+					id=16;
+					side="EAST";
+					vehicle="ibr_rebel83";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A2";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Militante Profissional";
+				};
+				class Item2
+				{
+					position[]={10194.408,24.274521,7434.9155};
+					azimut=1442.34;
+					special="NONE";
+					id=17;
+					side="EAST";
+					vehicle="ibr_rebel77";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A7";
+					init="removeAllWeapons this; removeBackpack this; this addWeapon ""ACE_RPK"";  this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47"";  ";
+					description="Militante Profissional";
+				};
+				class Item3
+				{
+					position[]={10191.873,24.274521,7436.4634};
+					azimut=1445.03;
+					special="NONE";
+					id=18;
+					side="EAST";
+					vehicle="ibr_rebel44";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A1";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47"";   ";
+					description="Militante Profissional";
+				};
+				class Item4
+				{
+					position[]={10192.591,24.274521,7435.1465};
+					azimut=1442.34;
+					special="NONE";
+					id=19;
+					side="EAST";
+					vehicle="ibr_rebel11";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A5";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Militante Profissional";
+				};
+				class Item5
+				{
+					position[]={10193.475,24.274521,7434.8872};
+					azimut=1442.34;
+					special="NONE";
+					id=20;
+					side="EAST";
+					vehicle="ibr_rebel22";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A6";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Militante Profissional";
+				};
+				class Item6
+				{
+					position[]={10195.509,24.274521,7437.1431};
+					azimut=1354.89;
+					special="NONE";
+					id=42;
+					side="CIV";
+					vehicle="RU_Rocker1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A4";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Estudante Engajado";
+				};
+				class Item7
+				{
+					position[]={10194.147,24.274521,7436.0908};
+					azimut=1354.89;
+					special="NONE";
+					id=43;
+					side="CIV";
+					vehicle="RU_Citizen1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A3";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Cidadao Simpatizante";
+				};
+				class Item8
+				{
+					position[]={10195.529,24.274521,7436.0132};
+					azimut=1354.89;
+					special="NONE";
+					id=44;
+					side="CIV";
+					vehicle="RU_Citizen2";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A8";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Cidadao Simpatizante";
+				};
+				class Item9
+				{
+					position[]={10193.442,24.274521,7432.9292};
+					azimut=1445.03;
+					special="NONE";
+					id=73;
+					side="EAST";
+					vehicle="ibr_rebel145";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A9";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47"";   ";
+					description="Militante Profissional";
+				};
+				class Item10
+				{
+					position[]={10194.585,24.274521,7432.6094};
+					azimut=1442.34;
+					special="NONE";
+					id=71;
+					side="EAST";
+					vehicle="ibr_rebel22";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A10";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Militante Profissional";
+				};
+				class Item11
+				{
+					position[]={10195.717,24.274521,7432.5566};
+					azimut=1354.89;
+					special="NONE";
+					id=77;
+					side="CIV";
+					vehicle="RU_Citizen3";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A11";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Cidadao Simpatizante";
+				};
+				class Item12
+				{
+					position[]={10197.078,24.274521,7433.6089};
+					azimut=1354.89;
+					special="NONE";
+					id=76;
+					side="CIV";
+					vehicle="RU_Rocker2";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A12";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Estudante Engajado";
+				};
+				class Item13
+				{
+					position[]={10197.099,24.274521,7432.479};
+					azimut=1354.89;
+					special="NONE";
+					id=78;
+					side="CIV";
+					vehicle="RU_Citizen4";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A16";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Cidadao Simpatizante";
+				};
+				class Item14
+				{
+					position[]={10195.978,24.274521,7431.3813};
+					azimut=1442.34;
+					special="NONE";
+					id=72;
+					side="EAST";
+					vehicle="ibr_rebel55";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A15";
+					init="removeAllWeapons this; removeBackpack this; this addWeapon ""ACE_RPK"";  this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47""; this addMagazine ""ACE_75Rnd_762x39_B_AK47"";  ";
+					description="Militante Profissional";
+				};
+				class Item15
+				{
+					position[]={10195.044,24.274521,7431.353};
+					azimut=1442.34;
+					special="NONE";
+					id=75;
+					side="EAST";
+					vehicle="ibr_rebel102";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A14";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Militante Profissional";
+				};
+				class Item16
+				{
+					position[]={10194.16,24.274521,7431.6123};
+					azimut=1442.34;
+					special="NONE";
+					id=74;
+					side="EAST";
+					vehicle="ibr_rebel111";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="A13";
+					init="removeAllWeapons this; this addWeapon ""ACE_AKM""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; this addMagazine ""30Rnd_762x39_AK47""; ";
+					description="Militante Profissional";
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={10186.108,24.274521,7437.7559};
+					azimut=1354.89;
+					special="NONE";
+					id=41;
+					side="CIV";
+					vehicle="Haris_Press_EP1";
+					player="PLAY CDG";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					description="Reporter Internacional";
+				};
+				class Item1
+				{
+					presence=0;
+					position[]={10188.771,24.274521,7438.396};
+					azimut=1442.34;
+					special="NONE";
+					id=96;
+					side="EAST";
+					vehicle="RU_Soldier";
+					leader=1;
+					lock="UNLOCKED";
+					rank="CAPTAIN";
+					skill=0.60000002;
+					description="Cachorro Treinado Pastor Alemao 1";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=52;
+		class Item0
+		{
+			position[]={10184.902,24.274521,7429.9009};
+			azimut=1080.55;
+			special="FLY";
+			id=0;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_BIS_TK";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="  clearWeaponCargo this; clearMagazineCargo this;   this addWeaponCargo[""ACE_AKM"",20];   this addMagazineCargo[""30RND_762X39_AK47"",200];   this addMagazineCargo [""ACE_30Rnd_762x39_T_AK47"", 100];   this addMagazineCargo [""100Rnd_762x54_PK"", 20];   this addMagazineCargo [""FlareWhite_GP25"", 24];   this addWeaponCargo [""ACE_Earplugs"", 40];  ";
+		};
+		class Item1
+		{
+			position[]={10189.189,24.274521,7429.4189};
+			azimut=1082.7334;
+			special="FLY";
+			id=1;
+			side="EMPTY";
+			vehicle="ACE_BandageBoxWest";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={10189.167,24.274521,7428.3755};
+			azimut=1264.8202;
+			special="FLY";
+			id=2;
+			side="EMPTY";
+			vehicle="ACE_BandageBoxWest";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={10184.974,24.274521,7427.8994};
+			azimut=1080.55;
+			special="FLY";
+			id=5;
+			side="EMPTY";
+			vehicle="ACE_Tbox_SmokeGrenade_East";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={8722.9746,21.960804,7065.7993};
+			azimut=1621.2971;
+			special="FLY";
+			id=6;
+			side="EMPTY";
+			vehicle="ACE_BandageBoxWest";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={8722.7969,21.960804,7063.9648};
+			azimut=1621.2971;
+			special="FLY";
+			id=7;
+			side="EMPTY";
+			vehicle="ACE_BandageBoxWest";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={8723.1123,21.960802,7067.5273};
+			azimut=1621.2971;
+			special="FLY";
+			id=8;
+			side="EMPTY";
+			vehicle="ACE_Tbox_SmokeGrenade_East";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={10193.335,24.274521,7429.1304};
+			azimut=898.84088;
+			special="FLY";
+			id=9;
+			side="EMPTY";
+			vehicle="ACRE_RadioBox";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Fuzileiro AT";
+		};
+		class Item8
+		{
+			position[]={8718.0479,21.960808,7060.6831};
+			azimut=1350.8925;
+			special="FLY";
+			id=10;
+			side="EMPTY";
+			vehicle="ACRE_RadioBox";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Fuzileiro AT";
+		};
+		class Item9
+		{
+			position[]={10188.965,24.274521,7433.875};
+			id=11;
+			side="EMPTY";
+			vehicle="Land_Fire_burning";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={8717.4473,21.960804,7065.3364};
+			azimut=451.4274;
+			id=12;
+			side="EMPTY";
+			vehicle="Land_Fire_burning";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={8719.0889,21.9608,7069.9814};
+			azimut=1257.9;
+			special="FLY";
+			id=13;
+			side="EMPTY";
+			vehicle="ACE_WeaponBox_BIS_US";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="  clearWeaponCargo this; clearMagazineCargo this;   this addWeaponCargo[""ACE_HK416_D14_COMPM3"",10];   this addMagazineCargo[""30Rnd_556x45_Stanag"",200];   this addMagazineCargo [""ACE_30Rnd_556x45_T_Stanag"", 100];   this addMagazineCargo [""100Rnd_762x51_M240"", 20];   this addMagazineCargo [""FlareWhite_M203"", 20];  this addMagazineCargo [""FlareRed_M203"", 20];  this addMagazineCargo [""1Rnd_Smoke_M203"", 20];   this addMagazineCargo [""1Rnd_SmokeRed_M203"", 20];   this addWeaponCargo [""ACE_BackPack"", 20];  this addMagazineCargo  [""ACE_Flashbang"", 20];  this addMagazineCargo  [""PipeBomb"", 5];  this addWeaponCargo [""ACE_Earplugs"", 20];  this addWeaponCargo [""ACE_SpareBarrel"", 2];     ";
+		};
+		class Item12
+		{
+			position[]={10175.619,21.9608,7592.9517};
+			azimut=1350.2136;
+			special="NONE";
+			id=21;
+			side="EMPTY";
+			vehicle="MBG_Killhouse_5_InEditor";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={10266.902,21.9608,7597.896};
+			azimut=1530.5642;
+			special="NONE";
+			id=22;
+			side="EMPTY";
+			vehicle="MBG_Killhouse_3_InEditor";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={10251.766,29.548546,7624.249};
+			azimut=1440.2122;
+			special="NONE";
+			id=23;
+			side="EMPTY";
+			vehicle="MBG_Killhouse_4_InEditor";
+			leader=1;
+			lock="UNLOCKED";
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={8735.2041,21.960808,7049.8257};
+			azimut=809.44501;
+			special="NONE";
+			id=24;
+			side="EMPTY";
+			vehicle="LandRover_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.80449265;
+		};
+		class Item16
+		{
+			position[]={8735.5898,21.960808,7054.2998};
+			azimut=810.34198;
+			special="NONE";
+			id=25;
+			side="EMPTY";
+			vehicle="ArmoredSUV_PMC";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.87634575;
+			ammo=0;
+		};
+		class Item17
+		{
+			position[]={10233.079,21.9608,7347.7983};
+			azimut=901.44598;
+			special="NONE";
+			id=32;
+			side="EMPTY";
+			vehicle="car_hatchback";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.61803168;
+		};
+		class Item18
+		{
+			position[]={10174.141,21.735584,7315.8125};
+			azimut=901.81702;
+			special="NONE";
+			id=33;
+			side="EMPTY";
+			vehicle="Ikarus";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.61803168;
+		};
+		class Item19
+		{
+			position[]={10229.879,21.9608,7356.1748};
+			azimut=897.48798;
+			special="NONE";
+			id=34;
+			side="EMPTY";
+			vehicle="hilux1_civil_3_open_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.61803168;
+		};
+		class Item20
+		{
+			position[]={10230.172,24.274521,7413.415};
+			azimut=897.48798;
+			special="NONE";
+			id=35;
+			side="EMPTY";
+			vehicle="datsun1_civil_1_open";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.61803168;
+		};
+		class Item21
+		{
+			position[]={10210.695,24.274521,7440.584};
+			azimut=897.48798;
+			special="NONE";
+			id=36;
+			side="EMPTY";
+			vehicle="Old_moto_TK_Civ_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.61803168;
+		};
+		class Item22
+		{
+			position[]={10212.496,24.274521,7442.2227};
+			azimut=897.48798;
+			special="NONE";
+			id=37;
+			side="EMPTY";
+			vehicle="Old_moto_TK_Civ_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.61803168;
+		};
+		class Item23
+		{
+			position[]={10229.391,24.274521,7435.1738};
+			azimut=897.48798;
+			special="NONE";
+			id=38;
+			side="EMPTY";
+			vehicle="Old_moto_TK_Civ_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.61803168;
+		};
+		class Item24
+		{
+			position[]={8707.2217,21.960808,7053.8428};
+			azimut=809.44501;
+			special="NONE";
+			id=39;
+			side="EMPTY";
+			vehicle="VWGolf";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.78758591;
+		};
+		class Item25
+		{
+			position[]={8711.2832,21.960808,7049.5825};
+			azimut=809.44501;
+			special="NONE";
+			id=40;
+			side="EMPTY";
+			vehicle="Octavia_ACR";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.96510559;
+		};
+		class Item26
+		{
+			position[]={8743.8086,21.960808,7049.4077};
+			azimut=809.44501;
+			special="NONE";
+			id=61;
+			side="EMPTY";
+			vehicle="LandRover_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			fuel=0.80449265;
+		};
+		class Item27
+		{
+			position[]={10046.861,20.407696,7311.751};
+			azimut=901.81702;
+			special="NONE";
+			id=62;
+			side="EMPTY";
+			vehicle="Ikarus";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			health=0;
+			fuel=0;
+			ammo=0;
+		};
+		class Item28
+		{
+			position[]={10160.986,21.960804,7476.8096};
+			azimut=901.81702;
+			special="NONE";
+			id=63;
+			side="EMPTY";
+			vehicle="Ikarus";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			health=0;
+			fuel=0;
+			ammo=0;
+		};
+		class Item29
+		{
+			position[]={10200.706,21.9608,7312.9971};
+			azimut=972.03601;
+			special="NONE";
+			id=64;
+			side="EMPTY";
+			vehicle="LandRover_TK_CIV_EP1";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			health=0;
+			fuel=0;
+			ammo=0;
+		};
+		class Item30
+		{
+			position[]={10227.766,21.9608,7325.5962};
+			azimut=993.086;
+			special="NONE";
+			id=65;
+			side="EMPTY";
+			vehicle="SUV_PMC_BAF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			health=0;
+			fuel=0;
+			ammo=0;
+		};
+		class Item31
+		{
+			position[]={10234.495,21.9608,7328.5718};
+			azimut=961.91901;
+			special="NONE";
+			id=66;
+			side="EMPTY";
+			vehicle="car_hatchback";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			health=0;
+			fuel=0;
+			ammo=0;
+		};
+		class Item32
+		{
+			position[]={10170.953,21.9608,7477.9775};
+			azimut=961.91901;
+			special="NONE";
+			id=67;
+			side="EMPTY";
+			vehicle="T810_Des_ACR";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			health=0;
+			fuel=0;
+			ammo=0;
+		};
+		class Item33
+		{
+			position[]={10231.025,21.960808,7509.522};
+			azimut=450.18701;
+			special="NONE";
+			id=68;
+			side="EMPTY";
+			vehicle="T810_Des_ACR";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			health=0;
+			fuel=0;
+			ammo=0;
+		};
+		class Item34
+		{
+			position[]={10178.516,24.274521,7430.2363};
+			azimut=1080.4878;
+			special="NONE";
+			id=69;
+			side="EMPTY";
+			vehicle="SUV_PMC_BAF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			health=0;
+			fuel=0;
+			ammo=0;
+		};
+		class Item35
+		{
+			position[]={10204.269,21.9608,7307.6904};
+			azimut=831.05768;
+			special="NONE";
+			id=70;
+			side="EMPTY";
+			vehicle="SUV_PMC_BAF";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			health=0;
+			fuel=0;
+			ammo=0;
+		};
+		class Item36
+		{
+			position[]={10110.236,21.068876,7313.0322};
+			azimut=1442.34;
+			special="NONE";
+			id=79;
+			side="AMBIENT LIFE";
+			vehicle="Cow04";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Militante Profissional";
+		};
+		class Item37
+		{
+			position[]={10066.578,21.9608,7344.0034};
+			azimut=1442.34;
+			special="NONE";
+			id=80;
+			side="AMBIENT LIFE";
+			vehicle="Cow01";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Militante Profissional";
+		};
+		class Item38
+		{
+			position[]={10032.725,21.9608,7360.9639};
+			azimut=1442.34;
+			special="NONE";
+			id=81;
+			side="AMBIENT LIFE";
+			vehicle="Goat";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Militante Profissional";
+		};
+		class Item39
+		{
+			position[]={10213.858,24.274521,7407.6748};
+			azimut=1442.34;
+			special="NONE";
+			id=82;
+			side="AMBIENT LIFE";
+			vehicle="Cock";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Militante Profissional";
+		};
+		class Item40
+		{
+			position[]={10216.567,24.274521,7406.6333};
+			azimut=1442.34;
+			special="NONE";
+			id=83;
+			side="AMBIENT LIFE";
+			vehicle="Hen";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Militante Profissional";
+		};
+		class Item41
+		{
+			position[]={10215.316,24.274521,7405.1743};
+			azimut=1442.34;
+			special="NONE";
+			id=84;
+			side="AMBIENT LIFE";
+			vehicle="Hen";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Militante Profissional";
+		};
+		class Item42
+		{
+			position[]={10229.687,23.984497,7388.8818};
+			azimut=1442.34;
+			special="NONE";
+			id=85;
+			side="AMBIENT LIFE";
+			vehicle="WildBoar";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Militante Profissional";
+		};
+		class Item43
+		{
+			position[]={10118.336,21.9608,7355.9912};
+			azimut=1442.34;
+			special="NONE";
+			id=86;
+			side="AMBIENT LIFE";
+			vehicle="WildBoar";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			description="Militante Profissional";
+		};
+		class Item44
+		{
+			position[]={8725.9199,21.960808,7049.9849};
+			azimut=1442.34;
+			special="NONE";
+			id=87;
+			side="AMBIENT LIFE";
+			vehicle="Fin";
+			player="PLAY CDG";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="this addAction [""MORDER"", ""MORDER.SQF""]; this addAction [""ROSNAR"", ""ROSNAR.SQF""]; this addAction [""LATIR"", ""LATIR.SQF""]; this addAction [""FAREJAR INIMIGO"", ""FAREJAR.SQF""]; this addAction [""FAREJAR ALIADO"", ""FAREJAR_BLUFOR.SQF""];";
+			description="Cachorro Treinado Pitbull";
+		};
+		class Item45
+		{
+			position[]={8726.04,21.960808,7048.3501};
+			azimut=1442.34;
+			special="NONE";
+			id=88;
+			side="AMBIENT LIFE";
+			vehicle="Pastor";
+			player="PLAY CDG";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="this addAction [""MORDER"", ""MORDER.SQF""]; this addAction [""ROSNAR"", ""ROSNAR.SQF""]; this addAction [""LATIR"", ""LATIR.SQF""]; this addAction [""FAREJAR INIMIGO"", ""FAREJAR.SQF""]; this addAction [""FAREJAR ALIADO"", ""FAREJAR_BLUFOR.SQF""];";
+			description="Cachorro Treinado Pastor Alemao";
+		};
+		class Item46
+		{
+			position[]={8727.2246,21.960808,7051.4746};
+			azimut=1442.34;
+			special="NONE";
+			id=89;
+			side="AMBIENT LIFE";
+			vehicle="Fin";
+			player="PLAY CDG";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="this addAction [""MORDER"", ""MORDER.SQF""]; this addAction [""ROSNAR"", ""ROSNAR.SQF""]; this addAction [""LATIR"", ""LATIR.SQF""]; this addAction [""FAREJAR INIMIGO"", ""FAREJAR.SQF""]; this addAction [""FAREJAR ALIADO"", ""FAREJAR_BLUFOR.SQF""];";
+			description="Cachorro Treinado Pitbull";
+		};
+		class Item47
+		{
+			position[]={8727.3447,21.960808,7049.8398};
+			azimut=1442.34;
+			special="NONE";
+			id=90;
+			side="AMBIENT LIFE";
+			vehicle="Pastor";
+			player="PLAY CDG";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="this addAction [""MORDER"", ""MORDER.SQF""]; this addAction [""ROSNAR"", ""ROSNAR.SQF""]; this addAction [""LATIR"", ""LATIR.SQF""]; this addAction [""FAREJAR INIMIGO"", ""FAREJAR.SQF""]; this addAction [""FAREJAR ALIADO"", ""FAREJAR_BLUFOR.SQF""];";
+			description="Cachorro Treinado Pastor Alemao";
+		};
+		class Item48
+		{
+			position[]={8728.7764,21.960808,7050.3867};
+			azimut=1442.34;
+			special="NONE";
+			id=91;
+			side="AMBIENT LIFE";
+			vehicle="Fin";
+			player="PLAY CDG";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="this addAction [""MORDER"", ""MORDER.SQF""]; this addAction [""ROSNAR"", ""ROSNAR.SQF""]; this addAction [""LATIR"", ""LATIR.SQF""]; this addAction [""FAREJAR INIMIGO"", ""FAREJAR.SQF""]; this addAction [""FAREJAR ALIADO"", ""FAREJAR_BLUFOR.SQF""];";
+			description="Cachorro Treinado Pitbull";
+		};
+		class Item49
+		{
+			position[]={8728.8965,21.960808,7048.752};
+			azimut=1442.34;
+			special="NONE";
+			id=92;
+			side="AMBIENT LIFE";
+			vehicle="Pastor";
+			player="PLAY CDG";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="this addAction [""MORDER"", ""MORDER.SQF""]; this addAction [""ROSNAR"", ""ROSNAR.SQF""]; this addAction [""LATIR"", ""LATIR.SQF""]; this addAction [""FAREJAR INIMIGO"", ""FAREJAR.SQF""]; this addAction [""FAREJAR ALIADO"", ""FAREJAR_BLUFOR.SQF""];";
+			description="Cachorro Treinado Pastor Alemao";
+		};
+		class Item50
+		{
+			position[]={8730.3301,21.960808,7051.5674};
+			azimut=1442.34;
+			special="NONE";
+			id=93;
+			side="AMBIENT LIFE";
+			vehicle="Fin";
+			player="PLAY CDG";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			init="this addAction [""MORDER"", ""MORDER.SQF""]; this addAction [""ROSNAR"", ""ROSNAR.SQF""]; this addAction [""LATIR"", ""LATIR.SQF""]; this addAction [""FAREJAR INIMIGO"", ""FAREJAR.SQF""]; this addAction [""FAREJAR ALIADO"", ""FAREJAR_BLUFOR.SQF""];";
+			description="Cachorro Treinado Pitbull";
+		};
+		class Item51
+		{
+			position[]={8730.4502,21.960808,7049.9326};
+			azimut=1442.34;
+			special="NONE";
+			id=94;
+			side="AMBIENT LIFE";
+			vehicle="Pastor";
+			player="PLAY CDG";
+			lock="UNLOCKED";
+			skill=0.60000002;
+			text="cao";
+			init="this addAction [""MORDER"", ""MORDER.SQF""]; this addAction [""ROSNAR"", ""ROSNAR.SQF""]; this addAction [""LATIR"", ""LATIR.SQF""]; this addAction [""FAREJAR INIMIGO"", ""FAREJAR.SQF""]; this addAction [""FAREJAR ALIADO"", ""FAREJAR_BLUFOR.SQF""];";
+			description="Cachorro Treinado Pastor Alemao 1";
+		};
+	};
+	class Markers
+	{
+		items=6;
+		class Item0
+		{
+			position[]={8691.752,21.960808,7060.6924};
+			name="0flagTak_1";
+			type="Faction_BLUFOR_EP1";
+			a=0.80000001;
+			b=0.80000001;
+		};
+		class Item1
+		{
+			position[]={8856.6582,23.972878,7622.0381};
+			name="123";
+			text="0 - 0 - 1 para iniciar a partida";
+			type="mil_objective";
+			a=0.5;
+			b=0.5;
+		};
+		class Item2
+		{
+			position[]={8856.0078,21.9608,7573.2461};
+			name="wew";
+			text="Obj Blufor - Capturar a Área";
+			type="mil_objective";
+			colorName="ColorBlue";
+			a=0.5;
+			b=0.5;
+		};
+		class Item3
+		{
+			position[]={8856.332,21.9608,7521.998};
+			name="wew_1";
+			text="Obj Opfor - Defender por 30 minutos ou eliminar todos inimigos";
+			type="mil_objective";
+			colorName="ColorRed";
+			a=0.5;
+			b=0.5;
+		};
+		class Item4
+		{
+			position[]={10207.287,21.9608,7479.6426};
+			name="1234";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="BDiagonal";
+			a=195;
+			b=165;
+		};
+		class Item5
+		{
+			position[]={10218.797,21.9608,7472.0117};
+			name="1232";
+			text="Fazenda Ocupada";
+			type="Faction_OPFOR_EP1";
+			a=0.80000001;
+			b=0.80000001;
+		};
+	};
+	class Sensors
+	{
+		items=7;
+		class Item0
+		{
+			position[]={10210.601,21.9608,7480.0879};
+			a=290;
+			b=250;
+			angle=-179.32201;
+			rectangular=1;
+			activationBy="ANY";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			name="blue";
+			expCond="{side _x==west} count thisList > 0 && {side _x==east} count thisList == 0;";
+			expActiv="blue=true;";
+			class Effects
+			{
+				titleType="TEXT";
+				title="Vitoria Blufor";
+			};
+		};
+		class Item1
+		{
+			position[]={10901.904,31.215698,8025.5669};
+			a=5e+009;
+			b=4.9999999e+010;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+				titleType="TEXT";
+				title="Vitoria Blufor";
+			};
+		};
+		class Item2
+		{
+			position[]={10902.168,31.215698,8011.4238};
+			a=5e+009;
+			b=4.9999999e+010;
+			activationBy="WEST";
+			activationType="NOT PRESENT";
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+				titleType="TEXT";
+				title="Vitoria Opfor";
+			};
+		};
+		class Item3
+		{
+			position[]={10908.113,31.215698,8025.8325};
+			a=5e+009;
+			b=4.9999999e+010;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			timeoutMin=3;
+			timeoutMid=3;
+			timeoutMax=3;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={10909.564,31.215698,8010.8945};
+			a=5e+009;
+			b=4.9999999e+010;
+			activationBy="WEST";
+			activationType="NOT PRESENT";
+			timeoutMin=3;
+			timeoutMid=3;
+			timeoutMax=3;
+			interruptable=1;
+			type="END2";
+			age="UNKNOWN";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={10792.752,24.274521,7939.2949};
+			a=50000;
+			b=50000;
+			activationBy="ALPHA";
+			interruptable=1;
+			age="UNKNOWN";
+			name="radio";
+			expActiv="radio=true;";
+			class Effects
+			{
+				titleType="TEXT";
+				title="Partida iniciada";
+			};
+		};
+		class Item6
+		{
+			position[]={10255.396,21.9608,7533.7598};
+			a=999999;
+			b=999999;
+			activationBy="ANY";
+			timeoutMin=5;
+			timeoutMid=5;
+			timeoutMax=5;
+			interruptable=1;
+			type="END4";
+			age="UNKNOWN";
+			expCond="blue";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"tigeria"
+	};
+	addOnsAuto[]=
+	{
+		"tigeria"
+	};
+	randomSeed=3425386;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"tigeria"
+	};
+	addOnsAuto[]=
+	{
+		"tigeria"
+	};
+	randomSeed=5769181;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"tigeria"
+	};
+	addOnsAuto[]=
+	{
+		"tigeria"
+	};
+	randomSeed=13475902;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.30000001;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

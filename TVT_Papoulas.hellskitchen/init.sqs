@@ -1,0 +1,7 @@
+;Wait for JIP to load
+@isServer or !isNull player
+
+removeAllItems player;
+player addWeapon "ItemCompass";
+player addWeapon "ItemWatch";
+player addWeapon "ItemMap";

@@ -1,0 +1,36 @@
+onLoadMission="A Batalha de Chernarus - Alienz - Created by WolFros_Fay4";
+respawn = "bird";
+respawndelay = 3;
+
+class CfgSounds{
+    sounds[]={discursoInicial, nuke};
+    class discursoInicial
+    {
+        name = "discursoInicial";
+        sound[] = {\sounds\discursoInicial.ogg, db+2, 1.0};
+        titles[] = {""};
+    };
+    class nuke
+    {
+        name = "nuke";
+        sound[] = {\sounds\nuke.ogg, db+20, 1.0};
+        titles[] = {""};
+    };
+    class tripod
+    {
+        name = "tripod";
+        sound[] = {\sounds\tripod.ogg, db+4, 1.0};
+        titles[] = {""};
+    };
+};
+
+class CfgMusic
+{
+    sounds[] = {trilha};
+    class trilha
+    {
+        name = "trilha";
+        sound[] = {\sounds\sonoplastia.ogg, db+5, 1.0};
+        titles[] = {""};
+    };
+};

@@ -1,0 +1,5 @@
+#define LOADSCREEN "img\LoadingScreen.paa"
+onLoadMission="UFO Attack - Alienz - Created by WolFros_Fay4";
+loadScreen = LOADSCREEN;
+respawn = "BASE";
+respawndelay = 5;

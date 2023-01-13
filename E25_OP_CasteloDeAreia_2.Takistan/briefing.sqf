@@ -1,0 +1,41 @@
+player createDiaryRecord ["Diary", ["Missão", "
+<br/>
+Os Espartanos 25 foram designados para esta missão.
+<br/>
+<br/>
+O objetivo é fazer a distribuição de água a partir de um caminhão pipa para algumas cidades e vilas mais afetadas pela falta de fornecimento de água.
+<br/>
+<br/>
+As cidades e vilas mais prejudicadas são as seguintes: Bastam, Imarat, Zavarak, Nagara e Nur. Todas estas necessitam de fornecimento de água o mais rápido possível.
+<br/>
+<br/>
+Ao finalizar a missão, levar o caminhão pipa de volta à base de Rasman.
+<br/>
+<br/>
+A ordem das cidades para o cumprimento da missão fica a dever do líder.
+"]];
+
+player createDiaryRecord ["Diary", ["Situação", "
+<br/>
+Após a operação de invasão e controle de Rasman, foi possível que o comboio logístico passasse e contruísse uma base no aeroporto norte de Takistan.
+<br/>
+<br/>
+No momento da invasão, houve uma explosão no centro de distribuição de água de Rasman, que por sua vez é responsável pelo fornecimento de água para várias das cidades vizinhas.
+A população local culpou o exército dos EUA pelo prejuízo e a aversão dos civis aumentaram quanto à sua presença. 
+<br/>
+<br/>
+O Alto Comando então ordenou que algumas de suas tropas se mobilizassem para uma missão humanitária, onde mais informações se encontram na aba Missão.
+<br/>
+<br/>
+Há suspeitas que ainda hajam pessoas que são contra a invasão dos EUA na região, tanto dentro de Rasman quanto nas cidades vizinhas, pois então, é necessário estabelecer
+relações amigáveis com a população civil local e cautela no procedimento da missão. O Alto Comando acredita que se a missão for um sucesso a inimizade dos civis diminuirá.
+"]];
+
+player createDiaryRecord ["Diary", ["Contexto", "
+<br/>
+A Invasão do Iraque em 2003, que começou a 20 de março de 2003 e terminou em 1 de maio do mesmo ano, foi a primeira etapa do que se tornaria um longo conflito, a Guerra do Iraque. 
+Foi lançada com o nome de 'Operação Liberdade do Iraque' pelos Estados Unidos e aconteceu no contexto da Guerra Global contra o Terrorismo.
+<br/>
+<br/>
+Fonte: Wikipedia
+"]];

@@ -25,7 +25,7 @@ class Params
 	title = "Dificuldade";
 	values[] = {0,1,2};
 	texts[] = {"Fácil", "Médio", "Difícil"};
-	default = 2;
+	default = 1;
 	};
     class ParamDrones
 	{

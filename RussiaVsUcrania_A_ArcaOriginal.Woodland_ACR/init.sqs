@@ -1,0 +1,4 @@
+;Wait for JIP to load
+@isServer or !isNull player
+
+removeAllWeapons player;

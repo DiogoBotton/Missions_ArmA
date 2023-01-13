@@ -16,6 +16,10 @@ _qtdUnidades = count _unidades;
 		componentesEletricosReparo = componentesEletricosReparo + componentesPiloto;
 		publicVariable "componentesEletricosReparo";
 	};
+	if(_x == copiloto) then {
+		componentesEletricosReparo = componentesEletricosReparo + componentesCoPiloto;
+		publicVariable "componentesEletricosReparo";
+	};
 	if(_x == aaat) then {
 		componentesEletricosReparo = componentesEletricosReparo + componentesAAAT;
 		publicVariable "componentesEletricosReparo";
@@ -38,6 +42,18 @@ _qtdUnidades = count _unidades;
 	};
 	if(_x == heavy_4) then {
 		componentesEletricosReparo = componentesEletricosReparo + componentesHeavy4;
+		publicVariable "componentesEletricosReparo";
+	};
+	if(_x == heavy_5) then {
+		componentesEletricosReparo = componentesEletricosReparo + componentesHeavy5;
+		publicVariable "componentesEletricosReparo";
+	};
+	if(_x == heavy_6) then {
+		componentesEletricosReparo = componentesEletricosReparo + componentesHeavy6;
+		publicVariable "componentesEletricosReparo";
+	};
+	if(_x == heavy_7) then {
+		componentesEletricosReparo = componentesEletricosReparo + componentesHeavy7;
 		publicVariable "componentesEletricosReparo";
 	};
 } forEach _unidades;

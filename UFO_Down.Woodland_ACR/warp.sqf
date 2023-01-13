@@ -57,7 +57,7 @@ _speed = 120;
 ufo setVelocity [
 	(_vel select 0) + (sin _dir * _speed),
 	(_vel select 1) + (cos _dir * _speed),
-	(_vel select 2)
+	80
 ];
 
 sleep 5;

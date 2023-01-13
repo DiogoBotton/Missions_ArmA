@@ -1,0 +1,2 @@
+sairVeiculo = true;
+publicVariable "sairVeiculo";

@@ -11,16 +11,17 @@ class Mission
 		"ace_sys_huntir",
 		"camisc3",
 		"cacharacters2",
-		"cacharacters_e",
 		"CAWheeled3_TT650",
 		"CAWheeled",
 		"CAAir_E",
 		"ca_animals2_cow",
-		"ca_animals2_chicken",
 		"CAWheeled2_LADA",
 		"ace_sys_playerhud",
 		"ibr_zetatanks",
-		"acex_veh_m1"
+		"acex_veh_m1",
+		"ace_sys_viewblock",
+		"ace_sys_nvg",
+		"ace_sys_vehicledamage"
 	};
 	addOnsAuto[]=
 	{
@@ -33,12 +34,14 @@ class Mission
 		"CAWheeled",
 		"CAAir_E",
 		"ibr_zetatanks",
+		"ace_sys_viewblock",
+		"ace_sys_nvg",
+		"ace_sys_vehicledamage",
 		"soc",
 		"ace_sys_huntir",
 		"camisc3",
 		"CAWheeled3_TT650",
 		"ca_animals2_cow",
-		"ca_animals2_chicken",
 		"CAWheeled2_LADA",
 		"woodland_acr"
 	};
@@ -58,13 +61,13 @@ class Mission
 	};
 	class Groups
 	{
-		items=27;
+		items=30;
 		class Item0
 		{
 			side="GUER";
 			class Vehicles
 			{
-				items=8;
+				items=12;
 				class Item0
 				{
 					position[]={2163.8389,307.11362,6225.5063};
@@ -163,6 +166,54 @@ class Mission
 					init="this removeWeapon ""NVGoggles"";";
 					description="AT Marciano";
 				};
+				class Item8
+				{
+					position[]={2148.7664,304.59213,6214.2275};
+					id=77;
+					side="GUER";
+					vehicle="zetaborn_10";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="copiloto";
+					init="this removeWeapon ""NVGoggles"";";
+					description="Co-Piloto Marciano";
+				};
+				class Item9
+				{
+					position[]={2151.3293,305.02722,6216.1729};
+					id=78;
+					side="GUER";
+					vehicle="zetaborn_alien2";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="heavy_5";
+					init="this removeWeapon ""NVGoggles"";";
+					description="Marciano Blindado";
+				};
+				class Item10
+				{
+					position[]={2181.031,310.14969,6212.835};
+					id=79;
+					side="GUER";
+					vehicle="zetaborn_alien2";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="heavy_6";
+					init="this removeWeapon ""NVGoggles"";";
+					description="Marciano Blindado";
+				};
+				class Item11
+				{
+					position[]={2184.521,310.77386,6210.2935};
+					id=80;
+					side="GUER";
+					vehicle="zetaborn_alien2";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="heavy_7";
+					init="this removeWeapon ""NVGoggles"";";
+					description="Marciano Blindado";
+				};
 			};
 		};
 		class Item1
@@ -202,7 +253,7 @@ class Mission
 				class Item3
 				{
 					position[]={230.56194,326.25394,7269.8105};
-					id=74;
+					id=72;
 					side="LOGIC";
 					vehicle="ACE_SYS_Force1st_Logic";
 					lock="UNLOCKED";
@@ -519,7 +570,7 @@ class Mission
 					position[]={2167.6265,307.74347,6235.9883};
 					type="SAD";
 					combatMode="RED";
-					speed="FULL";
+					speed="NORMAL";
 					class Effects
 					{
 					};
@@ -583,7 +634,7 @@ class Mission
 					position[]={2166.4607,307.54404,6235.2573};
 					type="SAD";
 					combatMode="RED";
-					speed="FULL";
+					speed="NORMAL";
 					class Effects
 					{
 					};
@@ -647,7 +698,7 @@ class Mission
 					position[]={2168.7048,307.9433,6236.7036};
 					type="SAD";
 					combatMode="RED";
-					speed="FULL";
+					speed="NORMAL";
 					class Effects
 					{
 					};
@@ -702,7 +753,7 @@ class Mission
 					position[]={2164.0984,307.14404,6233.7773};
 					type="SAD";
 					combatMode="RED";
-					speed="FULL";
+					speed="NORMAL";
 					class Effects
 					{
 					};
@@ -766,7 +817,7 @@ class Mission
 					position[]={2165.2109,307.3324,6234.6689};
 					type="SAD";
 					combatMode="RED";
-					speed="FULL";
+					speed="NORMAL";
 					class Effects
 					{
 					};
@@ -794,7 +845,7 @@ class Mission
 				};
 				class Item1
 				{
-					presence=0.54930013;
+					presence=0.54878801;
 					position[]={1934.3887,303.02444,6847.4302};
 					azimut=-234.13901;
 					id=54;
@@ -870,7 +921,7 @@ class Mission
 					position[]={2171.457,308.45337,6235.8687};
 					type="SAD";
 					combatMode="RED";
-					speed="FULL";
+					speed="NORMAL";
 					class Effects
 					{
 					};
@@ -901,7 +952,7 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=1;
 				class Item0
 				{
 					position[]={7146.7461,312.36374,986.21643};
@@ -914,17 +965,6 @@ class Mission
 					rank="CAPTAIN";
 					skill=1;
 					init="nul = [this,""triggerthree"",""once""] execVM ""murk_spawn.sqf"";";
-				};
-				class Item1
-				{
-					position[]={7174.8711,313.23676,983.21259};
-					azimut=-38.9034;
-					special="FLY";
-					id=62;
-					side="WEST";
-					vehicle="A10_US_EP1";
-					rank="LIEUTENANT";
-					skill=1;
 				};
 			};
 			class Waypoints
@@ -963,7 +1003,7 @@ class Mission
 				{
 					presence=0;
 					position[]={1807.0095,252.53484,6190.312};
-					id=67;
+					id=65;
 					side="WEST";
 					vehicle="USMC_Soldier";
 					leader=1;
@@ -1000,7 +1040,7 @@ class Mission
 				{
 					presence=0;
 					position[]={1811.8412,252.34048,6190.4673};
-					id=68;
+					id=66;
 					side="WEST";
 					vehicle="USMC_Soldier";
 					leader=1;
@@ -1036,7 +1076,7 @@ class Mission
 				{
 					presence=0;
 					position[]={1817.0625,252.15862,6189.8442};
-					id=69;
+					id=67;
 					side="WEST";
 					vehicle="USMC_Soldier";
 					leader=1;
@@ -1074,7 +1114,7 @@ class Mission
 					position[]={2419.5083,311.8815,6061.8481};
 					azimut=-211.188;
 					special="NONE";
-					id=70;
+					id=68;
 					side="CIV";
 					vehicle="Villager1";
 					leader=1;
@@ -1095,7 +1135,7 @@ class Mission
 				class Item0
 				{
 					position[]={2425.6062,312.26599,6069.4497};
-					id=73;
+					id=71;
 					type="GETIN NEAREST";
 					class Effects
 					{
@@ -1146,7 +1186,7 @@ class Mission
 				class Item0
 				{
 					position[]={1000.3964,87.068489,-81.232819};
-					id=71;
+					id=69;
 					side="CIV";
 					vehicle="Citizen1";
 					leader=1;
@@ -1166,7 +1206,7 @@ class Mission
 					position[]={2420.1741,311.61761,6058.1167};
 					azimut=-474.01801;
 					special="NONE";
-					id=72;
+					id=70;
 					side="CIV";
 					vehicle="Farmwife1";
 					leader=1;
@@ -1198,7 +1238,7 @@ class Mission
 				{
 					position[]={2189.1438,312.39728,6247.5518};
 					azimut=-117.879;
-					id=75;
+					id=73;
 					side="GUER";
 					vehicle="lastank";
 					leader=1;
@@ -1235,7 +1275,7 @@ class Mission
 				{
 					position[]={2189.5837,312.258,6276.5469};
 					azimut=-117.879;
-					id=76;
+					id=74;
 					side="GUER";
 					vehicle="redtank";
 					leader=1;
@@ -1272,7 +1312,7 @@ class Mission
 				{
 					position[]={2213.4993,317.65509,6232.3174};
 					azimut=-117.879;
-					id=77;
+					id=75;
 					side="GUER";
 					vehicle="redtank";
 					leader=1;
@@ -1291,6 +1331,7 @@ class Mission
 					position[]={2212.9343,317.51123,6231.9497};
 					type="GUARD";
 					combatMode="RED";
+					combat="COMBAT";
 					class Effects
 					{
 					};
@@ -1298,13 +1339,68 @@ class Mission
 				};
 			};
 		};
+		class Item27
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={230.02319,326.80246,7319.2192};
+					id=81;
+					side="LOGIC";
+					vehicle="ACE_Viewblock_EnableAIGrassVB_Mod";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item28
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={230.45288,326.37143,7285.3042};
+					id=82;
+					side="LOGIC";
+					vehicle="ACE_NVG_RangeLimit_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item29
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={230.0256,326.54645,7301.3672};
+					id=83;
+					side="LOGIC";
+					vehicle="ACE_Vehicledamage_Enable_Cookoff";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=19;
+		items=18;
 		class Item0
 		{
 			position[]={2163.9688,307.12207,6240.3037};
+			azimut=-113.0943;
 			id=1;
 			side="EMPTY";
 			vehicle="soc";
@@ -1439,7 +1535,7 @@ class Mission
 		class Item13
 		{
 			position[]={2429.8303,313.74567,6083.5898};
-			id=63;
+			id=62;
 			side="AMBIENT LIFE";
 			vehicle="Cow04";
 			leader=1;
@@ -1449,7 +1545,7 @@ class Mission
 		class Item14
 		{
 			position[]={2405.864,312.36603,6071.0054};
-			id=64;
+			id=63;
 			side="AMBIENT LIFE";
 			vehicle="Cow04";
 			leader=1;
@@ -1459,7 +1555,7 @@ class Mission
 		class Item15
 		{
 			position[]={2419.155,311.48367,6057.3613};
-			id=65;
+			id=64;
 			side="AMBIENT LIFE";
 			vehicle="Cow04";
 			leader=1;
@@ -1468,35 +1564,20 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={2188.8801,308.06381,6023.1523};
-			special="NONE";
-			id=66;
-			side="AMBIENT LIFE";
-			vehicle="Hen";
-			player="PLAY CDG";
-			leader=1;
-			rank="SERGEANT";
-			skill=0.60000002;
-			text="HC_CLIENT";
-			init="this allowdamage false;";
-			description="Headless (Jojo)";
-		};
-		class Item17
-		{
 			position[]={2425.6062,312.26599,6069.4497};
 			azimut=-192.18221;
 			special="NONE";
-			id=73;
+			id=71;
 			side="EMPTY";
 			vehicle="Lada1";
 			leader=1;
 			lock="UNLOCKED";
 			skill=0.60000002;
 		};
-		class Item18
+		class Item17
 		{
 			position[]={2167.4099,307.74393,6255.3828};
-			id=78;
+			id=76;
 			side="EMPTY";
 			vehicle="HeliHEmpty";
 			skill=0.60000002;
@@ -1742,9 +1823,9 @@ class Mission
 			a=200;
 			b=200;
 			activationBy="ANY";
-			timeoutMin=15;
-			timeoutMid=15;
-			timeoutMax=15;
+			timeoutMin=20;
+			timeoutMid=20;
+			timeoutMax=20;
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="this && civilFujao in thislist";
@@ -1773,6 +1854,9 @@ class Mission
 			position[]={8105.9023,60.342442,5308.5762};
 			a=0;
 			b=0;
+			timeoutMin=40;
+			timeoutMid=40;
+			timeoutMax=40;
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="!alive civilAlertarAutoridades";
@@ -1894,9 +1978,9 @@ class Mission
 			a=200;
 			b=200;
 			activationBy="ANY";
-			timeoutMin=15;
-			timeoutMid=15;
-			timeoutMax=15;
+			timeoutMin=20;
+			timeoutMid=20;
+			timeoutMax=20;
 			interruptable=1;
 			age="UNKNOWN";
 			expCond="this && civilFujao2 in thislist";
@@ -1910,10 +1994,9 @@ class Mission
 			position[]={2192.887,308.81448,6327.6821};
 			a=5;
 			b=5;
-			activationBy="VEHICLE";
+			activationBy="ANY";
 			interruptable=1;
 			age="UNKNOWN";
-			idVehicle=2;
 			name="triggerActionPiloto";
 			expCond="this && reparoNaveFinalizado";
 			expActiv="nul = [] execVM ""actionDobra.sqf"";";
