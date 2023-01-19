@@ -1,6 +1,7 @@
 execVM "hideBuildings.sqf";
 execVM "briefing.sqf";
 execVM "functions.sqf";
+execVM "enemyWeapons.sqf";
 
 caixa1 addEventHandler["Killed", { (caixa1) spawn fnc_cacheKilled; }];
 caixa2 addEventHandler["Killed", { (caixa2) spawn fnc_cacheKilled; }];

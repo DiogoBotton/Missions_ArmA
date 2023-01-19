@@ -7,7 +7,7 @@ Vocês devem patrulhar e fazer a guarda do local até que os últimos reparos se
 
 player createDiaryRecord ["Diary", ["Situação", "
 <br/>
-Por mais que a missão humanitária auxiliou as cidades e vilas prejudicadas pela falta de fornecimento de água, o problema ainda persiste e o atual objetivo está no reparo
+Por mais que a missão humanitária auxiliou algumas cidades e vilas prejudicadas pela falta de fornecimento de água, o problema ainda persiste e o atual objetivo está no reparo
 da estação de distribuição de água.
 <br/>
 <br/>
@@ -16,11 +16,13 @@ Xeque (Sheik) da região, mas com medo de uma possível retaliação de outras f
 <br/>
 <br/>
 Apesar da negativa do Sheik em ajudar, por fruto da missão humanitária, foi possível adquirir de forma sigilosa alguns trabalhadores por meio de um cidadão nativo da região
-que se sentiu no dever de ajudar os EUA com trabalhadores após os soldados levarem água para a sua vila, mas que por motivos óbvios não quer ser identificado.
+que se sentiu no dever de ajudar os EUA com trabalhadores após os soldados levarem água para a sua vila, mas que por motivos óbvios não quer ser identificado. Um dos trabalhadores, 
+por sua vez, é seu irmão, um engenheiro.
 <br/>
 <br/>
-As facções Sunitas e Xiitas sempre brigaram por recursos nessa região, e a água é uma delas. Por isso, é necessário que a segurança do local seja reforçada para evitar
-possíveis ataques. 
+As facções Sunitas e Xiitas sempre brigaram por recursos nessa região, e a água se tornou uma delas. Por conta dos ataques insurgentes que ocorreram na 
+operação passada e pelo fato dos inimigos não serem apenas do exército iraquiano, mas também composta por outras facções armadas e homens bomba, é necessário que a 
+segurança do local seja reforçada para evitar possíveis ataques.
 <br/>
 <br/>
 Atualmente os engenheiros norte-americanos e trabalhadores locais estão fazendo os últimos reparos no Centro de Distribuição de Água marcado em carta.

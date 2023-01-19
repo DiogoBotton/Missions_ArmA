@@ -1,5 +1,3 @@
-if(qualTorre == objNull) exitWith {};
-
 if(isServer) then {
 	_aviso = "Abastecimento de água finalizado.";
 	nul = [(_aviso)] execVM "hintGlobal.sqf";
@@ -31,7 +29,3 @@ if(isServer) then {
 	abastecimentoConcluido = false;
 	publicVariable "abastecimentoConcluido";
 };
-
-sleep 1;
-caminhao_pipa setFuel 1;
-caminhao_pipa lockDriver false;

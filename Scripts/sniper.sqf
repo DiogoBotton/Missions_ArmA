@@ -17,9 +17,8 @@
 // * doTarget e doFire não funcionam no servidor dedicado sem antes do lookAt ou doWatch
 // * Apenas com lookAt ou doWatch (algum dos dois) a unidade já abrirá fogo contra o alvo
 // * Decidi manter doTarget e doFire em casos de algum dos dois comandos acima não funcionarem
-// * Apenas funcionará com unidades líder que são PLAYERS
-// * Se a unidade líder estiver muito longe do local em que o sniper spawnará, o mesmo não conseguirá revelar o alvo e abrir fogo
-// * Em casos de 2 esquadrões ou mais (+ de 1 líder player) é provavel que haja problemas, pois o script retornará apenas 1 dos líderes, aleatoriamente.
+// * Apenas funcionará com unidades líder que são PLAYERS e que estejam numa distância de no máximo 450 metros do local de spawn do sniper
+// * Caso haja 2 esquadrões ou mais, escolherá aleatoriamente um dos líderes para abrir fogo
 
 _markerName = _this select 0;
 _qtdMarkers = _this select 1;
@@ -36,7 +35,7 @@ if(isServer) then
 
 	// Retorna o atual líder de blufor
 	{
-		if (side _x == west && alive _x && isPlayer _x && (leader group _x == leader _x)) then
+		if (side _x == west && alive _x && isPlayer _x && _x distance (getMarkerPos _markerNameRandom) < 450 && (leader group _x == leader _x)) then
 			{
 				target = _x;
 			};

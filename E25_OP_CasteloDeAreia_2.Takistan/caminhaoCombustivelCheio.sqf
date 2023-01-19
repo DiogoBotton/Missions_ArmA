@@ -1,0 +1,1 @@
+caminhao_pipa setFuel 1;
