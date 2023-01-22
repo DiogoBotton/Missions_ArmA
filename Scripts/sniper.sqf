@@ -4,11 +4,11 @@
 //
 // Para spawnar um sniper, no chamamento do script coloque como o exemplo abaixo:
 //
-// 1° exemplo: nul = ["nomeDoMarker_", 2] execVM "sniper.sqf";
-// 2° exemplo: nul = ["sniper_", 3] execVM "sniper.sqf";
+// 1° exemplo: nul = ["nomeDoMarker_", 2, 100] execVM "sniper.sqf";
+// 2° exemplo: nul = ["sniper_", 3, 70] execVM "sniper.sqf";
 //
-// O 1° exemplo spawnará 1 sniper em algum dos 2 markers criados
-// O 2° exemplo spawnará 1 sniper em algum dos 3 markers criados
+// O 1° exemplo spawnará 1 sniper em algum dos 2 markers criados com 100% de chance de spawn
+// O 2° exemplo spawnará 1 sniper em algum dos 3 markers criados com 70% de chance de spawn
 //
 // Observações:
 //
@@ -22,32 +22,38 @@
 
 _markerName = _this select 0;
 _qtdMarkers = _this select 1;
+_chanceSpawn = _this select 2;
+_value = random 100;
+
+_numSpawn = 100 - _chanceSpawn;
 
 if(isServer) then
-	{
-	_numRandom = [1, _qtdMarkers] call BIS_fnc_randomInt;
-	_markerNameRandom = _markerName + str _numRandom;
-	
-	// Cria unidade sniper
-	_sniperGroup = CreateGroup east;
-	_sniperGroup createUnit ["TK_Soldier_SniperH_EP1", (getMarkerPos _markerNameRandom), [], 0, "CANCOLLIDE"];
-	sleep 2;
+{
+	if(_value >= _numSpawn) then {
+		_numRandom = [1, _qtdMarkers] call BIS_fnc_randomInt;
+		_markerNameRandom = _markerName + str _numRandom;
 
-	// Retorna o atual líder de blufor
-	{
-		if (side _x == west && alive _x && isPlayer _x && _x distance (getMarkerPos _markerNameRandom) < 450 && (leader group _x == leader _x)) then
-			{
-				target = _x;
-			};
-	} forEach allUnits;
+		// Cria unidade sniper
+		_sniperGroup = CreateGroup east;
+		_sniperGroup createUnit ["TK_Soldier_SniperH_EP1", (getMarkerPos _markerNameRandom), [], 0, "CANCOLLIDE"];
+		sleep 2;
 
-	// Faz um foreach nas unidades do grupo e ordena que abram fogo no líder
-	{
-		_x setSkill 1;
-		_x reveal target;
-		_x lookAt target;
-		_x doWatch target;
-		_x doTarget target;
-		_x doFire target;
-	} forEach units group (leader _sniperGroup);
+		// Retorna o atual líder de blufor
+		{
+			if (side _x == west && alive _x && isPlayer _x && _x distance (getMarkerPos _markerNameRandom) < 450 && (leader group _x == leader _x)) then
+				{
+					target = _x;
+				};
+		} forEach allUnits;
+
+		// Faz um foreach nas unidades do grupo e ordena que abram fogo no líder
+		{
+			_x setSkill 1;
+			_x reveal target;
+			_x lookAt target;
+			_x doWatch target;
+			_x doTarget target;
+			_x doFire target;
+		} forEach units group (leader _sniperGroup);
+	};
 };
