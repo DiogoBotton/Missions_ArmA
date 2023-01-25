@@ -18,6 +18,9 @@
 _markerNameSpawn = _this select 0;
 _markerNameLand = _this select 1;
 
+_arraySmokes = ["SmokeShell", "G_40mm_Smoke", "G_40mm_SmokeRed", "G_40mm_SmokeGreen", "G_40mm_SmokeYellow", "SmokeShellRed", "SmokeShellGreen", "SmokeShellYellow", "SmokeShellPurple", "SmokeShellBlue", "SmokeShellOrange"];
+_arraySmokesCount = count _arraySmokes;
+
 if(isServer) then {
 	_heliGroup = CreateGroup west;
 
@@ -27,20 +30,12 @@ if(isServer) then {
 	// Função que cria tripulação e move-as para o veículo
 	[_heli, _heliGroup] call BIS_fnc_SpawnCrew;
 
-	//_heliGroup createUnit ["US_Soldier_Pilot_EP1", [(getMarkerPos _markerNameSpawn select 0),(getMarkerPos _markerNameSpawn select 1),0], [], 100, "CANCOLLIDE"];
-	//_heliGroup createUnit ["US_Soldier_Pilot_EP1", [(getMarkerPos _markerNameSpawn select 0),(getMarkerPos _markerNameSpawn select 1),0], [], 100, "CANCOLLIDE"];
-
 	// Alterar IA para não sentir medo
-	//_ContagemDaEquipe = 1;
 	{
 		_x disableAI "FSM"; 
-		_x setBehaviour "CARELESS";
+		_x setBehaviour "AWARE";
 		_x allowFleeing 0;
 		_x setSkill ["courage", 1];
-
-		//if (_ContagemDaEquipe == 1) then {_x moveInDriver _heli;};
-		//if (_ContagemDaEquipe == 2) then {_x moveInGunner _heli;};
-		//_ContagemDaEquipe = _ContagemDaEquipe + 1;
 	} forEach units group (leader _heliGroup);
 
 	// Define o local de pouso baseado na posição do líder blufor (player)
@@ -55,7 +50,40 @@ if(isServer) then {
 	
 	_heli move getPosATL landTarget;
 
-	while { (alive _heli && !unitReady _heli)} do 
+	_heliPos = getPosATL _heli;
+
+	while {(alive _heli && _heliPos distance landTarget > 200)} do 
+	{
+		_heliPos = getPosATL _heli;
+		sleep 1;
+	};
+
+	// Local de pouso baseado em fumaça
+	_smokeCnt = 0;
+	_contador = 0;
+	while {_smokeCnt == 0 && isNil "lz"} do {
+		_heliPos = getPosATL _heli;
+		_smokeArray = _heliPos nearObjects[(_arraySmokes select _contador), 200];
+		_smokeCnt = count _smokeArray;
+		if (_smokeCnt > 0) then {
+	    	_smoke = _smokeArray select 0;
+	    	_smokePos = position _smoke;
+	    	lz = "HeliHEmpty" createVehicle (position _smoke);
+	    };
+
+		if(_contador < (_arraySmokesCount - 1)) then {
+			_contador = _contador + 1;
+		}
+		else {
+			_contador = 0;
+		};
+		//hint format ["smokes: %1 | contador: %2", _smokeCnt, _contador];
+		sleep 0.25;
+	};
+
+	_heli move getPosATL lz;
+
+	while {(alive _heli && !unitReady _heli)} do 
 	{
 		sleep 1;
 	};
