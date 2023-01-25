@@ -1,26 +1,9 @@
-onLoadMission="E25 - Campanha Liberdade do Iraque EP2 - Criado por WolFros_Fay4";
+onLoadMission="E25 - Campanha Liberdade do Iraque EP4 - Criado por WolFros_Fay4";
 respawn = "bird";
 respawndelay = 3;
 
-class Params
-{
-    class ParamPercentualResistencia
-	{
-	title = "Probabilidade de Resistência Hostil";
-	values[] = {80,60,50,40,30,20,10};
-	texts[] = {"20%", "40%", "50%", "60%", "70%", "80%", "90%"};
-	default = 10;
-	};
-};
-
 class CfgSounds{
-    sounds[]={pamonha, allahuakbar};
-    class pamonha
-    {
-        name = "pamonha";
-        sound[] = {\sounds\pamonha.ogg, 0.25, 1.0};
-        titles[] = {""};
-    };
+    sounds[]={allahuakbar};
     class allahuakbar
     {
         name = "allahuakbar";

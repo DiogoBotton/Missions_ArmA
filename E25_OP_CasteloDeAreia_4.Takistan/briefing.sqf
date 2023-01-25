@@ -1,6 +1,9 @@
 player createDiaryRecord ["Diary", ["Inteligência", "
 <br/>
-Foto adquirida pela inteligência.
+De acordo com informações da inteligência e conhecimentos do informante, o coronel estará em algum lugar da cidade de Feruz Abad realizando inspeções na base militar da região.
+<br/>
+<br/>
+Foto adquirida pelo informante.
 <br/>
 <br/>
 <img image='img\aziz.paa' />
@@ -8,32 +11,28 @@ Foto adquirida pela inteligência.
 "]];
 player createDiaryRecord ["Diary", ["Missão", "
 <br/>
-Os Espartanos 25 foram designados para esta missão.
+Capturar o Coronel Aziz, responsável por armar facções e estimular civis inocentes à se rebelarem contra os EUA, e consequentemente, enviando-os à morte.
 <br/>
 <br/>
-O objetivo é fazer a distribuição de água a partir de um caminhão pipa para algumas cidades e vilas mais afetadas pela falta de fornecimento de água.
-<br/>
-<br/>
-As cidades e vilas mais prejudicadas são as seguintes: Bastam, Imarat, Zavarak, Nagara e Nur. Todas estas necessitam de fornecimento de água o mais rápido possível.
-<br/>
-<br/>
-Ao finalizar a missão, levar o caminhão pipa de volta à base de Rasman.
-<br/>
-<br/>
-A ordem das cidades para o cumprimento da missão fica a dever do líder.
+O mesmo deve ser capturado COM VIDA.
 "]];
 
 player createDiaryRecord ["Diary", ["Situação", "
 <br/>
-Após o sucesso da operação de invasão e controle de Rasman, foi possível expulsar boa parte das forças iraquianas para o Sul de Takistan com auxílio de reforços que chegaram
-logo após a tomada da cidade. Um comboio logístico foi enviado e foi possível a contrução da base no aeroporto.
+Por conta do forte ataque que ocorreu na missão de guarda e patrulha anterior, novamente o Centro de Distribuição de Água foi danificado, com isso todo o esforço de reparos do 
+mesmo foi prejudicado e o tempo de conserto extendido.
 <br/>
 <br/>
-No momento da invasão, houve uma explosão no centro de distribuição de água de Rasman, que por sua vez é responsável pelo fornecimento de água para várias das cidades vizinhas.
-Pela proporção da explosão foi identificado que era uma das caixas de armas inimigas espalhadas pela cidade. Não se sabe exatamente qual foi a causa da explosão, mas suspeita-se
-que se iniciou por conta de uma IED plantada por perto, muito provávelmente deixado de próposito pelos iraquianos para ser usado como armadilha.
+Foi confirmado que as forças de ataque eram um conjunto de facções rebeldes independentes com auxilio de armamentos e apoio mecanizado. Por investigações 
+da inteligência, foi possível descobrir que todo esse poder bélico adquirido é de origem direta do exército iraquiano.
 <br/>
 <br/>
+O informante responsável por ajudar com trabalhadores nos reparos do fornecimento de água nos deu algumas informações consideráveis sobre o possível responsável pela 
+intensificação dos ataques, onde estas informações estão na aba Inteligência. Em sua visão, é ele o responsável por armar facções rebeldes e incitar civis a se se rebelarem 
+contra a presença dos EUA na região.
+<br/>
+<br/>
+O Alto Comando então ordenou que os Espartanos 25 fossem designados para uma missão de busca e apreensão do mesmo, onde o alvo deve ser capturado obrigatóriamente com vida.
 "]];
 
 player createDiaryRecord ["Diary", ["Contexto", "

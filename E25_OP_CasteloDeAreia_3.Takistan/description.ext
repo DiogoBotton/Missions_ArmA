@@ -10,4 +10,130 @@ class CfgSounds{
         sound[] = {\sounds\AllahuAkbar.ogg, 0.50, 1.0};
         titles[] = {""};
     };
+    class ultimasPalavras
+    {
+        name = "ultimasPalavras";
+        sound[] = {\sounds\ultimasPalavras.ogg, 0.50, 1.0};
+        titles[] = {""};
+    };
+    class arab1
+    {
+        name = "arab1";
+        sound[] = {\sounds\arab1.ogg, 0.50, 1.0};
+        titles[] = {""};
+    };
+    class arab2
+    {
+        name = "arab2";
+        sound[] = {\sounds\arab2.ogg, 0.50, 1.0};
+        titles[] = {""};
+    };
+    class arab3
+    {
+        name = "arab3";
+        sound[] = {\sounds\arab3.ogg, 0.50, 1.0};
+        titles[] = {""};
+    };
+    class arab4
+    {
+        name = "arab4";
+        sound[] = {\sounds\arab4.ogg, 0.50, 1.0};
+        titles[] = {""};
+    };
+};
+
+class RscText
+{
+ type = CT_STATIC;
+ idc = -1;
+ style = ST_MULTI;
+ colorBackground[] = {0,0,0,0};
+ colorText[] = {0,0,0,0};
+ font = "TahomaB";
+ sizeEx = 0.035;
+};
+
+class DiagText : RscText
+{
+ colorText[] = {1, 1, 1, 1};
+ shadow = 1;
+ x = safeZoneX+0.027;
+ y = safeZoneY+safeZoneH-0.30;
+ w = 1.151safeZoneH;
+ h = 0.057safeZoneH;
+ lineSpacing = 0.95;
+};
+
+class RscTitles {
+	Titles[] = {Fala1};
+	class Fala1
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=5;
+		FadeIn=1;
+		FadeOut=1;
+		Name="Fala1";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Por favor tirem isto de mim! Eu não sou um homem mal!";
+		};
+	};
+	class Fala2
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=5;
+		FadeIn=1;
+		FadeOut=1;
+		Name="Fala2";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Alguns homens colocaram essa bomba a força em mim, por favor tirem isto de mim, eu não sou um homem mal!";
+		};
+	};
+	class Fala3
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=5;
+		FadeIn=1;
+		FadeOut=1;
+		Name="Fala3";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Eu tenho uma família, por favor tirem isto de mim, eu não quero morrer!";
+		};
+	};
+	class Fala4
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=5;
+		FadeIn=1;
+		FadeOut=1;
+		Name="Fala4";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "A bomba tem um relógio, por favor me ajudem rápido! Eu tenho 4 filhos.";
+		};
+	};
+	class Agradecimento
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=5;
+		FadeIn=1;
+		FadeOut=1;
+		Name="Agradecimento";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Obrigado senhores, eu devo minha vida à vocês!";
+		};
+	};
 };

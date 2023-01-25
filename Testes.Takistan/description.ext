@@ -1,0 +1,181 @@
+class CfgSounds{
+    sounds[]={hinoSovietico, pamonha};
+    class hinoSovietico
+    {
+        name = "hinoSovietico";
+        sound[] = {\sound\hinoSovietico.ogg, db-10, 1.0};
+        titles[] = {""};
+    };
+	class pamonha
+    {
+        name = "pamonha";
+        sound[] = {\sound\pamonha.ogg, db-10, 1.0};
+        titles[] = {""};
+    };
+};
+
+class RscText
+{
+ type = CT_STATIC;
+ idc = -1;
+ style = ST_MULTI;
+ colorBackground[] = {0,0,0,0};
+ colorText[] = {0,0,0,0};
+ font = "TahomaB";
+ sizeEx = 0.035;
+};
+
+class DiagText : RscText
+{
+ colorText[] = {1, 1, 1, 1};
+ shadow = 1;
+ x = safeZoneX+0.027;
+ y = safeZoneY+safeZoneH-0.30;
+ w = 1.151*safeZoneH;
+ h = 0.057*safeZoneH;
+ lineSpacing = 0.95;
+};
+
+class RscTitles {
+	Titles[] = {Conversa1, Conversa2, Conversa3, ConversaDiferente1, ConversaDiferente2, ConversaDiferente3, ConversaArabe};
+	class Conversa1
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=10;
+		FadeIn=1;
+		FadeOut=1;
+		Name="Conversa1";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Olá! Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 Bla 1 BUM";
+		};
+	};
+	class Conversa2
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=10;
+		FadeIn=1;
+		FadeOut=1;
+		Name="Conversa2";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Olá! Bla bla 2";
+		};
+	};
+	class Conversa3
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=10;
+		FadeIn=1;
+		FadeOut=1;
+		Name="Conversa3";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Olá! Bla bla bla 3";
+		};
+	};
+	class ConversaDiferente1
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=10;
+		FadeIn=1;
+		FadeOut=1;
+		Name="ConversaDiferente1";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Conversa Diferente 1";
+		};
+	};
+	class ConversaDiferente2
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=10;
+		FadeIn=1;
+		FadeOut=1;
+		Name="ConversaDiferente2";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Conversa Diferente 2";
+		};
+	};
+	class ConversaDiferente3
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=10;
+		FadeIn=1;
+		FadeOut=1;
+		Name="ConversaDiferente3";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Conversa Diferente 3";
+		};
+	};
+	class ConversaDiferenciada1
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=10;
+		FadeIn=1;
+		FadeOut=1;
+		Name="ConversaDiferenciada1";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Conversa Diferenciada 1";
+		};
+	};
+	class ConversaDiferenciada2
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=10;
+		FadeIn=1;
+		FadeOut=1;
+		Name="ConversaDiferenciada2";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Conversa Diferenciada 2";
+		};
+	};
+	class ConversaDiferenciada3
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=10;
+		FadeIn=1;
+		FadeOut=1;
+		Name="ConversaDiferenciada3";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Conversa Diferenciada 3";
+		};
+	};
+	class ConversaArabe
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=10;
+		FadeIn=1;
+		FadeOut=1;
+		Name="ConversaArabe";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Allahu Akbar!";
+		};
+	};
+};

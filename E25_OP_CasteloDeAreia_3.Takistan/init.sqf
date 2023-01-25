@@ -16,4 +16,17 @@ PVEH_NetSay3D = [objNull,0];
 };
 
 stopAnim = false;
-publicVariable "stopAnim";
+hbArrependido = false;
+bombaDesarmada = false;
+bombaExplodiu = false;
+timeBomb = 240;
+cancelouDesarmamento = false;
+
+if(isServer) then {
+    publicVariable "stopAnim";
+    publicVariable "hbArrependido";
+    publicVariable "bombaDesarmada";
+    publicVariable "bombaExplodiu";
+    publicVariable "timeBomb";
+    publicVariable "cancelouDesarmamento";
+};

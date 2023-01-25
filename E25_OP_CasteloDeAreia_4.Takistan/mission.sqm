@@ -56,8 +56,8 @@ class Mission
 	randomSeed=16183980;
 	class Intel
 	{
-		briefingName="Operação Pega Ladrão";
-		briefingDescription="Prenda o Coronel iraquiano responsável por armar facções e incitar civis a lutarem contra os EUA.";
+		briefingName="Operação Amanhecer Vermelho";
+		briefingDescription="Prenda o responsável por armar facções rebeldes e incitar a lutarem contra os EUA.";
 		resistanceWest=0;
 		resistanceEast=1;
 		startWeather=0.2472083;
@@ -616,43 +616,43 @@ class Mission
 					vehicle="TK_Soldier_SL_EP1";
 					leader=1;
 					rank="LIEUTENANT";
-					skill=0.59999996;
+					skill=0.33951533;
 					init="nul = [this,""triggerPatrulhasInimigas"",""once""] execVM ""murk_spawn.sqf"";";
 				};
 				class Item1
 				{
 					position[]={5283.8223,248.289,5807.0903};
-					azimut=0.71900874;
+					azimut=0.71900898;
 					id=77;
 					side="EAST";
 					vehicle="TK_Soldier_MG_EP1";
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.3144024;
 				};
 				class Item2
 				{
 					position[]={5285.8232,247.86171,5807.061};
-					azimut=0.71900874;
+					azimut=0.71900898;
 					id=78;
 					side="EAST";
 					vehicle="TK_Soldier_AT_EP1";
 					rank="CORPORAL";
-					skill=0.41485527;
+					skill=0.29431155;
 				};
 				class Item3
 				{
 					position[]={5287.8247,247.64987,5807.0376};
-					azimut=0.71900874;
+					azimut=0.71900898;
 					id=79;
 					side="EAST";
 					vehicle="TK_Soldier_GL_EP1";
 					rank="CORPORAL";
-					skill=0.33333331;
+					skill=0.32440239;
 				};
 				class Item4
 				{
 					position[]={5289.8213,247.53021,5807.0103};
-					azimut=0.71900874;
+					azimut=0.71900898;
 					id=80;
 					side="EAST";
 					vehicle="TK_Soldier_MG_EP1";
@@ -662,7 +662,7 @@ class Mission
 				class Item5
 				{
 					position[]={5291.8232,247.41006,5806.9858};
-					azimut=0.71902782;
+					azimut=0.719028;
 					id=81;
 					side="EAST";
 					vehicle="TK_Soldier_AT_EP1";
@@ -672,7 +672,7 @@ class Mission
 				class Item6
 				{
 					position[]={5293.8267,247.17142,5806.9634};
-					azimut=0.71900874;
+					azimut=0.71900898;
 					id=82;
 					side="EAST";
 					vehicle="TK_Soldier_GL_EP1";
@@ -681,7 +681,7 @@ class Mission
 				class Item7
 				{
 					position[]={5295.8276,246.71098,5806.9307};
-					azimut=0.71902782;
+					azimut=0.719028;
 					id=83;
 					side="EAST";
 					vehicle="TK_Soldier_EP1";
@@ -690,21 +690,21 @@ class Mission
 				class Item8
 				{
 					position[]={5297.8242,246.24892,5806.9102};
-					azimut=0.71902782;
+					azimut=0.719028;
 					id=84;
 					side="EAST";
 					vehicle="TK_Soldier_EP1";
-					skill=0.37969679;
+					skill=0.30937976;
 				};
 				class Item9
 				{
 					position[]={5299.6143,245.85025,5806.9604};
-					azimut=363.66702;
+					azimut=363.66699;
 					id=85;
 					side="EAST";
 					vehicle="TK_Soldier_Medic_EP1";
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.3144024;
 				};
 			};
 			class Waypoints
@@ -797,13 +797,13 @@ class Mission
 				class Item0
 				{
 					position[]={4678.1201,155.05981,5776.1064};
-					azimut=175.27557;
+					azimut=175.276;
 					id=88;
 					side="EAST";
 					vehicle="LandRover_MG_TK_EP1";
 					leader=1;
 					rank="COLONEL";
-					skill=0.51028609;
+					skill=0.34956121;
 					init="nul = [this,""triggerPatrulhasInimigas"",""once""] execVM ""murk_spawn.sqf"";";
 				};
 			};
@@ -895,7 +895,7 @@ class Mission
 					vehicle="ACE_BTR70_TK";
 					leader=1;
 					rank="COLONEL";
-					skill=0.51028609;
+					skill=0.32947034;
 					init="nul = [this,""triggerPatrulhasInimigas"",""once""] execVM ""murk_spawn.sqf"";";
 				};
 			};
@@ -988,7 +988,7 @@ class Mission
 					leader=1;
 					skill=0.51028609;
 					text="p1";
-					init="this moveInDriver bh; this disableAI ""FSM""; this setBehaviour ""CARELESS""; this allowFleeing 0; this setSkill [""courage"", 1];";
+					init="this moveInDriver bh; this disableAI ""FSM""; this setBehaviour ""AWARE""; this allowFleeing 0; this setSkill [""courage"", 1];";
 				};
 			};
 		};
@@ -1001,39 +1001,39 @@ class Mission
 				class Item0
 				{
 					position[]={5129.4995,145.39999,6046.2896};
-					azimut=-12.312064;
+					azimut=-12.3121;
 					id=98;
 					side="EAST";
 					vehicle="TK_Soldier_SL_EP1";
 					leader=1;
 					rank="LIEUTENANT";
-					skill=0.59999996;
+					skill=0.34453797;
 					init="nul = [this,""triggerPatrulhasInimigas"",""once""] execVM ""murk_spawn.sqf"";";
 				};
 				class Item1
 				{
 					position[]={5127.2197,145.39999,6042.4121};
-					azimut=-12.312065;
+					azimut=-12.3121;
 					id=99;
 					side="EAST";
 					vehicle="TK_Soldier_MG_EP1";
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.35458386;
 				};
 				class Item2
 				{
 					position[]={5129.1758,145.39999,6042.8335};
-					azimut=-12.312065;
+					azimut=-12.3121;
 					id=100;
 					side="EAST";
 					vehicle="TK_Soldier_AT_EP1";
 					rank="CORPORAL";
-					skill=0.41485527;
+					skill=0.34453797;
 				};
 				class Item3
 				{
 					position[]={5131.1323,145.39999,6043.2617};
-					azimut=-12.312065;
+					azimut=-12.3121;
 					id=101;
 					side="EAST";
 					vehicle="TK_Soldier_GL_EP1";
@@ -1043,12 +1043,12 @@ class Mission
 				class Item4
 				{
 					position[]={5133.5542,145.40369,6043.7954};
-					azimut=350.63596;
+					azimut=350.63599;
 					id=102;
 					side="EAST";
 					vehicle="TK_Soldier_Medic_EP1";
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.31942505;
 				};
 			};
 			class Waypoints
@@ -1110,13 +1110,13 @@ class Mission
 					side="GUER";
 					vehicle="TK_GUE_Soldier_TL_EP1";
 					rank="LIEUTENANT";
-					skill=0.46666664;
+					skill=0.38974237;
 					init="nul = [this,""triggerPatrulhasInimigas"",""once""] execVM ""murk_spawn.sqf"";";
 				};
 				class Item2
 				{
 					position[]={5024.3457,148.77477,6111.9199};
-					azimut=64.526787;
+					azimut=64.526802;
 					id=104;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_MG_EP1";
@@ -1136,7 +1136,7 @@ class Mission
 				class Item4
 				{
 					position[]={5026.0664,148.78511,6108.3086};
-					azimut=64.526787;
+					azimut=64.526802;
 					id=106;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_Sniper_EP1";
@@ -1146,7 +1146,7 @@ class Mission
 				class Item5
 				{
 					position[]={5026.9263,148.78925,6106.5039};
-					azimut=64.526787;
+					azimut=64.526802;
 					id=107;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_5_EP1";
@@ -1156,7 +1156,7 @@ class Mission
 				class Item6
 				{
 					position[]={5027.7876,148.77849,6104.6982};
-					azimut=64.526787;
+					azimut=64.526802;
 					id=108;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_AT_EP1";
@@ -1166,11 +1166,11 @@ class Mission
 				class Item7
 				{
 					position[]={5028.6475,148.76527,6102.8926};
-					azimut=64.526787;
+					azimut=64.526802;
 					id=109;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_MG_EP1";
-					skill=0.2;
+					skill=0.29431155;
 				};
 				class Item8
 				{
@@ -1179,25 +1179,25 @@ class Mission
 					id=110;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_AT_EP1";
-					skill=0.2;
+					skill=0.30435681;
 				};
 				class Item9
 				{
 					position[]={5030.3677,148.74336,6099.2822};
-					azimut=64.526787;
+					azimut=64.526802;
 					id=111;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_2_EP1";
-					skill=0.2;
+					skill=0.30435681;
 				};
 				class Item10
 				{
 					position[]={5031.2295,148.72174,6097.4751};
-					azimut=64.526787;
+					azimut=64.526802;
 					id=112;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_5_EP1";
-					skill=0.2;
+					skill=0.33951533;
 				};
 			};
 			class Waypoints
@@ -1377,39 +1377,39 @@ class Mission
 				class Item0
 				{
 					position[]={5309.5308,161.4041,6041.2666};
-					azimut=-25.15097;
+					azimut=-25.150999;
 					id=129;
 					side="EAST";
 					vehicle="TK_Soldier_SL_EP1";
 					leader=1;
 					rank="LIEUTENANT";
-					skill=0.59999996;
+					skill=0.33951533;
 					init="nul = [this,""triggerPatrulhasInimigas"",""once""] execVM ""murk_spawn.sqf"";";
 				};
 				class Item1
 				{
 					position[]={5308.1675,161.90092,6036.98};
-					azimut=-25.15097;
+					azimut=-25.150999;
 					id=130;
 					side="EAST";
 					vehicle="TK_Soldier_MG_EP1";
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.33449298;
 				};
 				class Item2
 				{
 					position[]={5309.9819,161.95236,6037.8252};
-					azimut=-25.15097;
+					azimut=-25.150999;
 					id=131;
 					side="EAST";
 					vehicle="TK_Soldier_AT_EP1";
 					rank="CORPORAL";
-					skill=0.41485527;
+					skill=0.33951533;
 				};
 				class Item3
 				{
 					position[]={5311.7939,162.00606,6038.6777};
-					azimut=-25.15097;
+					azimut=-25.150999;
 					id=132;
 					side="EAST";
 					vehicle="TK_Soldier_GL_EP1";
@@ -1419,12 +1419,12 @@ class Mission
 				class Item4
 				{
 					position[]={5314.0361,162.12315,6039.7363};
-					azimut=337.79703;
+					azimut=337.797;
 					id=133;
 					side="EAST";
 					vehicle="TK_Soldier_Medic_EP1";
 					rank="SERGEANT";
-					skill=0.46666664;
+					skill=0.34453797;
 				};
 			};
 			class Waypoints
@@ -1481,18 +1481,18 @@ class Mission
 				class Item1
 				{
 					position[]={5071.6982,301.04428,6847.9707};
-					azimut=204.07208;
+					azimut=204.07201;
 					id=134;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_TL_EP1";
 					rank="LIEUTENANT";
-					skill=0.46666664;
+					skill=0.36462885;
 					init="nul = [this,""triggerPatrulhasInimigas"",""once""] execVM ""murk_spawn.sqf"";";
 				};
 				class Item2
 				{
 					position[]={5071.0015,301.07999,6853.7632};
-					azimut=204.07207;
+					azimut=204.07201;
 					id=135;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_MG_EP1";
@@ -1502,7 +1502,7 @@ class Mission
 				class Item3
 				{
 					position[]={5069.1714,301.07999,6854.5752};
-					azimut=204.07208;
+					azimut=204.07201;
 					id=136;
 					side="GUER";
 					vehicle="TK_GUE_Bonesetter_EP1";
@@ -1512,7 +1512,7 @@ class Mission
 				class Item4
 				{
 					position[]={5067.5449,301.07999,6855.4629};
-					azimut=204.07207;
+					azimut=204.07201;
 					id=137;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_AT_EP1";
@@ -1522,20 +1522,20 @@ class Mission
 				class Item5
 				{
 					position[]={5065.7192,301.07999,6856.2773};
-					azimut=204.07207;
+					azimut=204.07201;
 					id=138;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_MG_EP1";
-					skill=0.2;
+					skill=0.31431153;
 				};
 				class Item6
 				{
 					position[]={5063.8926,301.07999,6857.0981};
-					azimut=204.07208;
+					azimut=204.07201;
 					id=139;
 					side="GUER";
 					vehicle="TK_GUE_Soldier_AT_EP1";
-					skill=0.2;
+					skill=0.30435681;
 				};
 			};
 			class Waypoints
@@ -1574,10 +1574,11 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=53;
+		items=54;
 		class Item0
 		{
-			position[]={6936.6841,73.628311,11647.547};
+			position[]={6936.6841,54.429073,11647.547};
+			azimut=-178.87927;
 			id=0;
 			side="EMPTY";
 			vehicle="Land_watertower1";
@@ -1585,7 +1586,8 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={6935.8828,73.372879,11631.804};
+			position[]={6935.8828,54.443478,11631.804};
+			azimut=-179.88739;
 			id=1;
 			side="EMPTY";
 			vehicle="Land_watertower1";
@@ -1921,11 +1923,11 @@ class Mission
 		};
 		class Item37
 		{
-			position[]={5247.8643,246.1275,5806.1924};
+			position[]={5248.5371,246.14256,5806.1924};
 			azimut=90.668701;
 			id=92;
 			side="EMPTY";
-			vehicle="UAZ_MG_TK_EP1";
+			vehicle="UAZ_Unarmed_TK_EP1";
 			leader=1;
 			lock="LOCKED";
 			skill=0.51028609;
@@ -2085,6 +2087,17 @@ class Mission
 			vehicle="ACE_ConcertinaWire";
 			skill=0.33333331;
 		};
+		class Item53
+		{
+			position[]={5213.729,145.41679,6067.8193};
+			azimut=254.69299;
+			id=141;
+			side="EMPTY";
+			vehicle="Ural_ZU23_TK_EP1";
+			leader=1;
+			lock="LOCKED";
+			skill=0.51028609;
+		};
 	};
 	class Markers
 	{
@@ -2142,36 +2155,8 @@ class Mission
 	};
 	class Sensors
 	{
-		items=9;
+		items=7;
 		class Item0
-		{
-			position[]={8126.2217,147.43716,12793.506};
-			a=0;
-			b=0;
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="avisos";
-			expActiv="hint avisoMsg;";
-			class Effects
-			{
-			};
-		};
-		class Item1
-		{
-			position[]={8115.5313,145.47742,12793.652};
-			a=0;
-			b=0;
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="rolarDado";
-			expActiv="nul = execVM ""rolarDados.sqf"";";
-			class Effects
-			{
-			};
-		};
-		class Item2
 		{
 			position[]={-852.70142,230.61264,13242.428};
 			a=0;
@@ -2184,7 +2169,7 @@ class Mission
 			{
 			};
 		};
-		class Item3
+		class Item1
 		{
 			position[]={6036.7319,83.040001,11546.599};
 			a=100;
@@ -2202,7 +2187,7 @@ class Mission
 			{
 			};
 		};
-		class Item4
+		class Item2
 		{
 			position[]={-860.14819,254.57669,12827.274};
 			a=0;
@@ -2215,7 +2200,7 @@ class Mission
 			{
 			};
 		};
-		class Item5
+		class Item3
 		{
 			position[]={5829.2295,83.73439,12095.966};
 			a=0;
@@ -2229,7 +2214,7 @@ class Mission
 			{
 			};
 		};
-		class Item6
+		class Item4
 		{
 			position[]={5158.3384,145.25937,6100.9922};
 			a=1600;
@@ -2244,7 +2229,7 @@ class Mission
 			{
 			};
 		};
-		class Item7
+		class Item5
 		{
 			position[]={8139.2393,150.12407,12793.506};
 			a=0;
@@ -2258,7 +2243,7 @@ class Mission
 			{
 			};
 		};
-		class Item8
+		class Item6
 		{
 			position[]={5916.8491,67.125473,12097.235};
 			a=0;

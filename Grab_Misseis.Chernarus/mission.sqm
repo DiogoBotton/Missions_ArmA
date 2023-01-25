@@ -1,0 +1,342 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"CAWheeled",
+		"chernarus",
+		"camisc3"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"CAWheeled",
+		"camisc3",
+		"chernarus"
+	};
+	randomSeed=2812449;
+	class Intel
+	{
+		startWeather=0.60148299;
+		startFog=0.46760601;
+		forecastWeather=0.48428941;
+		forecastFog=0.37427008;
+		year=2008;
+		month=10;
+		day=11;
+		hour=15;
+		minute=0;
+	};
+	class Groups
+	{
+		items=8;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6394.4365,332.96381,8191.3501};
+					azimut=-161.52051;
+					id=0;
+					side="EAST";
+					vehicle="RU_Soldier_SL";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6391.5996,332.36401,8179.3921};
+					azimut=3.4108586;
+					id=1;
+					side="EAST";
+					vehicle="RU_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6396.0332,338.78027,8283.5254};
+					azimut=2.6824696;
+					id=2;
+					side="EAST";
+					vehicle="GRAD_RU";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="grad1";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6400.2759,336.83356,8254.793};
+					azimut=2.6824696;
+					id=4;
+					side="EAST";
+					vehicle="GRAD_RU";
+					leader=1;
+					skill=0.60000002;
+					text="grad3";
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6398.6118,337.85712,8268.8389};
+					azimut=2.6824696;
+					id=3;
+					side="EAST";
+					vehicle="GRAD_RU";
+					leader=1;
+					skill=0.60000002;
+					text="grad2";
+				};
+			};
+		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6397.0151,335.84869,8244.0068};
+					azimut=2.6824701;
+					id=8;
+					side="EAST";
+					vehicle="GRAD_RU";
+					leader=1;
+					skill=0.60000002;
+					text="grad4";
+				};
+			};
+		};
+		class Item6
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6398.5205,334.69791,8227.7021};
+					azimut=2.6824701;
+					id=9;
+					side="EAST";
+					vehicle="GRAD_RU";
+					leader=1;
+					skill=0.60000002;
+					text="grad5";
+				};
+			};
+		};
+		class Item7
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6398.7715,333.84665,8210.4004};
+					azimut=2.6824701;
+					id=10;
+					side="EAST";
+					vehicle="GRAD_RU";
+					leader=1;
+					skill=0.60000002;
+					text="grad6";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=6;
+		class Item0
+		{
+			position[]={7025.1333,324.48877,8327.5186};
+			azimut=-8.2931089;
+			id=5;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			text="alvo1";
+		};
+		class Item1
+		{
+			position[]={7026.4424,321.14966,8259.124};
+			azimut=-8.2931099;
+			id=6;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			text="alvo3";
+		};
+		class Item2
+		{
+			position[]={7027.5454,322.99423,8293.7588};
+			azimut=-8.2931099;
+			id=7;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			text="alvo2";
+		};
+		class Item3
+		{
+			position[]={7027.1152,319.67761,8232.8828};
+			azimut=-8.2931099;
+			id=11;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			text="alvo4";
+		};
+		class Item4
+		{
+			position[]={7031.1519,318.30908,8202.6025};
+			azimut=-8.2931099;
+			id=12;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			text="alvo5";
+		};
+		class Item5
+		{
+			position[]={7029.8062,317.16946,8180.3994};
+			azimut=-8.2931099;
+			id=13;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=0.60000002;
+			text="alvo6";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={6413.0874,339.50168,8286.5088};
+			a=0;
+			b=0;
+			angle=27.996099;
+			activationBy="ALPHA";
+			interruptable=1;
+			age="UNKNOWN";
+			text="Solicitar Artilharia";
+			expActiv="nul = [grad1, alvo1] execVM ""artilharia.sqf""; nul = [grad2, alvo2] execVM ""artilharia.sqf""; nul = [grad3, alvo3] execVM ""artilharia.sqf""; nul = [grad4, alvo4] execVM ""artilharia.sqf""; nul = [grad5, alvo5] execVM ""artilharia.sqf""; nul = [grad6, alvo6] execVM ""artilharia.sqf"";";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=6111118;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=7021539;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=1714267;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};

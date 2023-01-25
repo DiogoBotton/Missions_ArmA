@@ -5,6 +5,8 @@ if(isServer) then {
 	_timeSleepRandom = _timeSleep call BIS_fnc_selectRandom;
 	sleep _timeSleepRandom;
 
+	civilAtaque setDamage 1;
+
 	_hb = CreateGroup civilian;
 	_hb createUnit ["TK_CIV_Takistani01_EP1", (getMarkerPos "hb_spawn"), [], 0, "CANCOLLIDE"];
 
