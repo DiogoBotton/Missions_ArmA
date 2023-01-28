@@ -1,0 +1,77 @@
+// Crie markers nos locais desejados para spawnar o sniper com a nomenclatura "nomeDoMarker_1", "nomeDoMarker_2" e assim por diante, como no exemplo abaixo:
+//
+// "sniper_1", "sniper_2" e assim por diante
+//
+// Para spawnar um sniper, no chamamento do script coloque como o exemplo abaixo:
+//
+// 1° exemplo: nul = ["nomeDoMarker_", 2, 100] execVM "sniper.sqf";
+// 2° exemplo: nul = ["sniper_", 3, 70] execVM "sniper.sqf";
+//
+// O 1° exemplo spawnará 1 sniper em algum dos 2 markers criados com 100% de chance de spawn
+// O 2° exemplo spawnará 1 sniper em algum dos 3 markers criados com 70% de chance de spawn
+//
+// Observações:
+//
+// * IMPORTANTE: Esse script deve rodar no lado do servidor! Mate um civil para isso.
+// * Recomendado colocar o sniper em uma distância de no máximo 400 metros do alvo (motivo: IA do ArmA limitado)
+// * doTarget e doFire não funcionam no servidor dedicado sem antes do lookAt ou doWatch
+// * Apenas com lookAt ou doWatch (algum dos dois) a unidade já abrirá fogo contra o alvo
+// * Decidi manter doTarget e doFire em casos de algum dos dois comandos acima não funcionarem
+// * Apenas funcionará com unidades líder que são PLAYERS e que estejam numa distância de no máximo 450 metros do local de spawn do sniper
+// * Caso haja 2 esquadrões ou mais, escolherá aleatoriamente um dos líderes para abrir fogo
+
+_markerName = _this select 0;
+_qtdMarkers = _this select 1;
+_chanceSpawn = _this select 2;
+_tipoUnidade = "usm_soldier_80s_d_l_rm1";
+_armaPrincipal = ["M24_DES_EP1"];
+_municaoPrincipal = ["5Rnd_762x51_M24"];
+_qtdMunicao = 9;
+_value = random 100;
+_equipAmericano = true;
+
+_numSpawn = 100 - _chanceSpawn;
+
+if(isServer) then
+{
+	if(_value >= _numSpawn) then {
+		_numRandom = [1, _qtdMarkers] call BIS_fnc_randomInt;
+		_markerNameRandom = _markerName + str _numRandom;
+
+		// Cria unidade sniper
+		_sniperGroup = CreateGroup west;
+		_sniperGroup createUnit [_tipoUnidade, (getMarkerPos _markerNameRandom), [], 0, "CANCOLLIDE"];
+		sleep 2;
+
+		if(_equipAmericano) then {
+			{
+				removeAllWeapons _x;
+
+				// ADICIONAR ARMA PRINCIPAL E MUNIÇÃO			
+				_x addWeapon _armaPrincipal;
+				for [{_z=1}, {_z <= _qtdMunicao}, {_z=_z+1}] do {	
+					_x addMagazine _municaoPrincipal;
+				};
+
+			} forEach units group (leader _sniperGroup);
+		};
+
+		// Retorna o atual líder de opfor mais próximo
+		{
+			if (side _x == east && alive _x && _x distance (getMarkerPos _markerNameRandom) < 450 && (leader group _x == leader _x)) then
+				{
+					target = _x;
+				};
+		} forEach allUnits;
+
+		// Faz um foreach nas unidades do grupo e ordena que abram fogo no líder
+		{
+			_x setSkill 1;
+			_x reveal target;
+			_x lookAt target;
+			_x doWatch target;
+			_x doTarget target;
+			_x doFire target;
+		} forEach units group (leader _sniperGroup);
+	};
+};
