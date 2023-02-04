@@ -74,7 +74,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=23;
+		items=26;
 		class Item0
 		{
 			side="LOGIC";
@@ -200,7 +200,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.59999996;
 					text="c1";
-					init="this disableAI ""MOVE"";";
+					init="this disableAI ""MOVE""; nul = this execVM ""repareAnim.sqf"";";
 				};
 			};
 		};
@@ -213,7 +213,7 @@ class Mission
 				class Item0
 				{
 					position[]={6916.2979,52.937111,11657.57};
-					azimut=-445.91989;
+					azimut=-445.92001;
 					id=36;
 					side="CIV";
 					vehicle="TK_CIV_Takistani05_EP1";
@@ -221,7 +221,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.59999996;
 					text="c2";
-					init="this disableAI ""MOVE"";";
+					init="this disableAI ""MOVE""; nul = this execVM ""repareAnim.sqf"";";
 				};
 			};
 		};
@@ -242,7 +242,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.59999996;
 					text="us1";
-					init="this disableAI ""MOVE""; removeAllWeapons this;";
+					init="this disableAI ""MOVE""; removeAllWeapons this; nul = this execVM ""repareAnim.sqf"";";
 				};
 			};
 		};
@@ -263,7 +263,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.59999996;
 					text="us2";
-					init="this disableAI ""MOVE""; removeAllWeapons this;";
+					init="this disableAI ""MOVE""; removeAllWeapons this; nul = this execVM ""repareAnim.sqf"";";
 				};
 			};
 		};
@@ -870,7 +870,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.34956121;
-					init="nul = [this,""triggerOnda2"",""once""] execVM ""murk_spawn.sqf"";";
+					init="nul = [this,""triggerOnda3"",""once""] execVM ""murk_spawn.sqf"";";
 				};
 			};
 			class Waypoints
@@ -1425,10 +1425,160 @@ class Mission
 				};
 			};
 		};
+		class Item23
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6913.7637,52.77047,11654.27};
+					azimut=-259.97;
+					id=152;
+					side="CIV";
+					vehicle="TK_CIV_Worker01_EP1";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.59999996;
+					text="c3";
+					init="this disableAI ""MOVE""; nul = this execVM ""repareAnim.sqf"";";
+				};
+			};
+		};
+		class Item24
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6916.3315,52.955776,11654.186};
+					azimut=-449.21301;
+					id=153;
+					side="CIV";
+					vehicle="TK_CIV_Takistani04_EP1";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.59999996;
+					text="c4";
+					init="this disableAI ""MOVE""; nul = this execVM ""repareAnim.sqf"";";
+				};
+			};
+		};
+		class Item25
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=10;
+				class Item0
+				{
+					position[]={7313.9717,113.33857,11336.955};
+					azimut=-47.313999;
+					id=155;
+					side="EAST";
+					vehicle="TK_INS_Soldier_TL_EP1";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.36462885;
+					init="nul = [this,""triggerOnda4"",""once""] execVM ""murk_spawn.sqf"";";
+				};
+				class Item1
+				{
+					position[]={7319.689,114.43983,11335.781};
+					azimut=-47.313499;
+					id=156;
+					side="EAST";
+					vehicle="TK_INS_Soldier_MG_EP1";
+					rank="CORPORAL";
+					skill=0.36462885;
+				};
+				class Item2
+				{
+					position[]={7321.0356,114.46497,11337.248};
+					azimut=-47.313499;
+					id=157;
+					side="EAST";
+					vehicle="TK_INS_Bonesetter_EP1";
+					rank="CORPORAL";
+					skill=0.57055777;
+				};
+				class Item3
+				{
+					position[]={7322.3965,114.52158,11338.723};
+					azimut=-47.313499;
+					id=158;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AT_EP1";
+					rank="CORPORAL";
+					skill=0.29431155;
+				};
+				class Item4
+				{
+					position[]={7323.7515,114.59177,11340.185};
+					azimut=-47.313499;
+					id=159;
+					side="EAST";
+					vehicle="TK_INS_Soldier_EP1";
+					rank="CORPORAL";
+					skill=0.32444769;
+				};
+				class Item5
+				{
+					position[]={7325.1084,114.67126,11341.651};
+					azimut=-47.313499;
+					id=160;
+					side="EAST";
+					vehicle="TK_INS_Soldier_MG_EP1";
+					rank="CORPORAL";
+					skill=0.35458386;
+				};
+				class Item6
+				{
+					position[]={7326.4751,114.75776,11343.13};
+					azimut=-47.313499;
+					id=161;
+					side="EAST";
+					vehicle="TK_INS_Soldier_AR_EP1";
+					rank="CORPORAL";
+					skill=0.30937976;
+				};
+				class Item7
+				{
+					position[]={7327.8271,114.83093,11344.601};
+					azimut=-47.313499;
+					id=162;
+					side="EAST";
+					vehicle="TK_INS_Soldier_Sniper_EP1";
+					rank="CORPORAL";
+					skill=0.3696515;
+				};
+				class Item8
+				{
+					position[]={7329.1821,114.89867,11346.072};
+					azimut=-47.313499;
+					id=163;
+					side="EAST";
+					vehicle="TK_INS_Soldier_3_EP1";
+					skill=0.34453797;
+				};
+				class Item9
+				{
+					position[]={7330.5361,114.96648,11347.543};
+					azimut=-47.313499;
+					id=164;
+					side="EAST";
+					vehicle="TK_INS_Soldier_4_EP1";
+					skill=0.3596065;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=62;
+		items=63;
 		class Item0
 		{
 			position[]={6936.6841,54.429073,11647.547};
@@ -1489,6 +1639,7 @@ class Mission
 			side="EMPTY";
 			vehicle="MAP_Ind_TankBig";
 			skill=0.60000002;
+			text="big_tank";
 		};
 		class Item7
 		{
@@ -1508,6 +1659,7 @@ class Mission
 			side="EMPTY";
 			vehicle="MAP_IndPipe1_stair";
 			skill=0.60000002;
+			text="cano_quebrado2";
 		};
 		class Item9
 		{
@@ -1647,6 +1799,7 @@ class Mission
 			side="EMPTY";
 			vehicle="MAP_IndPipe1_broken";
 			skill=0.60000002;
+			text="cano_quebrado";
 		};
 		class Item24
 		{
@@ -2154,10 +2307,20 @@ class Mission
 				"Lixoaleatorio_8_3"
 			};
 		};
+		class Item62
+		{
+			position[]={6912.8765,52.621689,11673.56};
+			azimut=-179.94901;
+			id=154;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			skill=0.60000002;
+			text="bigtank_fogo";
+		};
 	};
 	class Markers
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			position[]={6911.1724,52.603668,11683.512};
@@ -2225,6 +2388,12 @@ class Mission
 			name="hbA_move";
 			type="Empty";
 		};
+		class Item10
+		{
+			position[]={6398.3906,60.997887,11334.85};
+			name="hbA_move2";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
@@ -2274,19 +2443,6 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={8113.3203,145.0509,12796.456};
-			a=0;
-			b=0;
-			interruptable=1;
-			age="UNKNOWN";
-			expCond="stopAnim";
-			expActiv="nul = execVM ""stopAnimGlobal.sqf"";";
-			class Effects
-			{
-			};
-		};
-		class Item4
-		{
 			position[]={-256.04135,601.45758,10885.261};
 			a=0;
 			b=0;
@@ -2298,7 +2454,7 @@ class Mission
 			{
 			};
 		};
-		class Item5
+		class Item4
 		{
 			position[]={6041.5786,83.040001,11550.463};
 			a=100;
@@ -2316,7 +2472,7 @@ class Mission
 			{
 			};
 		};
-		class Item6
+		class Item5
 		{
 			position[]={-253.12793,669.32751,10429.243};
 			a=0;
@@ -2332,7 +2488,7 @@ class Mission
 			{
 			};
 		};
-		class Item7
+		class Item6
 		{
 			position[]={-255.18007,618.00433,10162.463};
 			a=0;
@@ -2348,7 +2504,7 @@ class Mission
 			{
 			};
 		};
-		class Item8
+		class Item7
 		{
 			position[]={-258.04355,670.80841,9909.0439};
 			a=0;
@@ -2364,7 +2520,7 @@ class Mission
 			{
 			};
 		};
-		class Item9
+		class Item8
 		{
 			position[]={-284.09564,156.99451,12698.568};
 			a=0;
@@ -2380,7 +2536,7 @@ class Mission
 			{
 			};
 		};
-		class Item10
+		class Item9
 		{
 			position[]={6502.939,112.66823,8983.0391};
 			a=8000;
@@ -2396,7 +2552,7 @@ class Mission
 			{
 			};
 		};
-		class Item11
+		class Item10
 		{
 			position[]={-302.14722,148.53531,13161.895};
 			a=0;
@@ -2409,7 +2565,7 @@ class Mission
 			{
 			};
 		};
-		class Item12
+		class Item11
 		{
 			position[]={8140.7305,150.46628,12797.39};
 			a=0;
@@ -2418,6 +2574,19 @@ class Mission
 			age="UNKNOWN";
 			expCond="hbArrependido";
 			expActiv="nul = execVM ""arrependidoGritos.sqf""; nul = execVM ""contagemRegressiva.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item12
+		{
+			position[]={8115.3335,145.42137,12797.655};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="fogo";
+			expActiv="BIS_Effects_Burn = compile preprocessFile ""\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf""; nul = [cano_quebrado, 4, time, false, true] spawn BIS_Effects_Burn; BIS_Effects_Burn = compile preprocessFile ""\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf""; nul = [cano_quebrado2, 4, time, false, true] spawn BIS_Effects_Burn; BIS_Effects_Burn = compile preprocessFile ""\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf""; nul = [bigtank_fogo, 4, time, false, true] spawn BIS_Effects_Burn;";
 			class Effects
 			{
 			};

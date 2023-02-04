@@ -16,10 +16,10 @@ PVEH_NetSay3D = [objNull,0];
     (_array select 0) say3D (_array select 1);
 };
 
+big_tank setDamage 1;
+
 coronel_aziz addAction ["Algemar", "prender.sqf"];
 bh addAction ["Partir", "heliPartir.sqf"];
-
-nivelResistencia = (ParamPercentualResistencia);
 
 // Anim Global
 renderUnidade = false;

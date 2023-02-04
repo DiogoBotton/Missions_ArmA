@@ -30,6 +30,10 @@ if(isServer) then {
 	// Função que cria tripulação e move-as para o veículo
 	[_heli, _heliGroup] call BIS_fnc_SpawnCrew;
 
+	_heli lockDriver true;
+	_heli lockTurret [[0], true];
+	_heli lockTurret [[1], true];
+
 	// Alterar IA para não sentir medo
 	{
 		_x disableAI "FSM"; 

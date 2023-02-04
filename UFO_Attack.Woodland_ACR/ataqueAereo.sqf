@@ -44,7 +44,7 @@ if(isServer) then {
 	_newTarget = "HeliHEmpty" createVehicle (_targetPos);
 	_newTarget setPosASL [_targetPos select 0, _targetPos select 1, 50];
 
-	while {_gun distance _target > 1050} do {
+	while {_gun distance _target > 1025} do {
 		sleep 1;
 	};
 
@@ -52,7 +52,7 @@ if(isServer) then {
 
 	(gunner _gun) lookAt _newTarget;
 	_contador = 1;
-	while {alive (gunner _gun) && _contador < 20} do
+	while {alive (gunner _gun) && _contador < 30} do
 	{
 		_gun fire (weapons _gun select 2);
 		sleep 1;
@@ -61,6 +61,4 @@ if(isServer) then {
 		};
 		_contador = _contador + 1;
 	};
-
-	_gun setDamage 1;
 };

@@ -24,7 +24,6 @@ if(alive _this) then {
 	_this addWeapon "ItemRadio";
 	_this addWeapon "ACE_Earplugs";
 	_this addWeapon "ACE_KeyCuffs";
-	_this addWeapon "ItemGPS";
 	_this addWeapon "Binocular";
 
 	//ADICIONAR ARMA PRINCIPAL E MUNIÇÃO

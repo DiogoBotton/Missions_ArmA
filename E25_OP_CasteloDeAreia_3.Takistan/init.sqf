@@ -1,6 +1,5 @@
 execVM "hideBuildings.sqf";
 execVM "briefing.sqf";
-execVM "repareAnim.sqf";
 
 // Define Say3D como comando de efeito global
 fn_netSay3D = compile preprocessFileLineNumbers "fn_netSay3D.sqf";
@@ -16,6 +15,7 @@ PVEH_NetSay3D = [objNull,0];
 };
 
 stopAnim = false;
+fogo = false;
 hbArrependido = false;
 bombaDesarmada = false;
 bombaExplodiu = false;
@@ -24,6 +24,7 @@ cancelouDesarmamento = false;
 
 if(isServer) then {
     publicVariable "stopAnim";
+    publicVariable "fogo";
     publicVariable "hbArrependido";
     publicVariable "bombaDesarmada";
     publicVariable "bombaExplodiu";

@@ -44,6 +44,10 @@ if(isServer) then {
 	
 	if(alive hb) then{
 		_boom = "Sh_105_HE" createVehicle (position hb);
+		fogo = true;
+		publicVariable "fogo";
+		sleep 1;
+		big_tank setDamage 1;
 	};
 
 	civilTropasInimigas setDamage 1;
