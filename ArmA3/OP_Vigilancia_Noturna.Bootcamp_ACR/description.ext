@@ -1,0 +1,120 @@
+onLoadMission="Vigilância Noturna - WHIPLASH - Created by Lucchesi, migrated to ArmA 3 by WolFros_Fay4";
+respawn = "bird";
+respawndelay = 3;
+
+class Params
+{
+    class ParamDEBUGAR
+	{
+	title = "DEBUGAR";
+	values[] = {0 ,1};
+	texts[] = {"OFF", "ON"};
+	default = 0;
+	};
+	class ParamHorario {
+    title = "Horário";
+    values[] = {16,20,0,4};
+    texts[] = {"16:00","20:00","00:00","04:00"};
+    default = 0;
+  	};
+  	class ParamClima
+  	{
+    title = "Metereologia";
+    values[] = {0, 0.2, 0.5, 0.75, 1};
+    texts[] = {"Limpo", "Nuvens Parciais", "Nublado", "Chuva", "Tempestade"};
+    default = 0.2;
+  	};
+    class ParamTempoInicio
+	{
+	title = "Tempo para início";
+	values[] = {600, 900, 1200, 1800, -1};
+	texts[] = {"10 minutos", "15 minutos", "20 minutos", "30 minutos", "Aleatório"};
+	default = 900;
+	};
+    class ParamTempoOndas
+	{
+	title = "Tempo entre ataques (ondas)";
+	values[] = {180, 300, 480, 600, 780, -1};
+	texts[] = {"3 a 5 minutos", "5 a 7 minutos", "8 a 10 minutos", "10 a 12 minutos", "13 a 15 minutos", "Aleatório"};
+	default = 480;
+	};
+    class ParamTempoReforcos
+	{
+	title = "Tempo para chegada de reforços";
+	values[] = {7200, 10800, 14400};
+	texts[] = {"2 horas", "3 horas", "4 horas"};
+	default = 7200;
+	};
+	class ParamDificuldade
+  	{
+    title = "Quantidade máxima de inimigos (cada grupo inimigo contem 8 unidades)";
+    values[] = {40, 80, 96, 120, 160, 200};
+    texts[] = {"40 (5 grupos)", "80 (10 grupos)", "96 (12 grupos)", "120 (15 grupos)", "160 (20 grupos)", "200 (25 grupos)"};
+    default = 40;
+  	};
+	class ParamProbEsturro
+  	{
+    title = "Probabilidade Esturro";
+    values[] = {0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1};
+    texts[] = {"10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%"};
+    default = 0.8;
+  	};
+};
+
+class CfgSounds
+{
+  	sounds[]={mort1, mort2, mort3, mort4};
+    class mort1
+    {
+        name = "mort1";
+        sound[] = {\sounds\mort1.ogg, db+10, 1.0};
+        titles[] = {""};
+    };
+    class mort2
+    {
+        name = "mort2";
+        sound[] = {\sounds\mort2.ogg, db+10, 1.0};
+        titles[] = {""};
+    };
+    class mort3
+    {
+        name = "mort3";
+        sound[] = {\sounds\mort3.ogg, db+10, 1.0};
+        titles[] = {""};
+    };        
+    class mort4
+    {
+        name = "mort4";
+        sound[] = {\sounds\mort4.ogg, db+10, 1.0};
+        titles[] = {""};
+    };
+    class whip
+    {
+        name = "whip";
+        sound[] = {\sounds\Whip.ogg, db+5, 1.0};
+        titles[] = {""};
+    };
+    class onlyU
+    {
+        name = "onlyU";
+        sound[] = {\sounds\OnlyU.ogg, db+5, 1.0};
+        titles[] = {""};
+    };
+};
+
+class CfgMusic
+{
+    sounds[] = {whipMsc, onlyUmsc};
+    class whipMsc
+    {
+        name = "whipMsc";
+        sound[] = {\sounds\Whip.ogg, 1, 1.0};
+        titles[] = {""};
+    };
+    class onlyUmsc
+    {
+        name = "onlyUmsc";
+        sound[] = {\sounds\OnlyU.ogg, 1, 1.0};
+        titles[] = {""};
+    };
+};
