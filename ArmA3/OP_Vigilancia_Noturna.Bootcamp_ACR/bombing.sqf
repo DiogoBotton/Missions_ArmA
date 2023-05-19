@@ -3,7 +3,7 @@
 // Baseado na quantidade de targets criados, alterar variavel _qtdAlvos (subtrair -1, pois a contagem inicia de 0)
 // OBS. Criar um H (invisível) nomeado como "alvomort"
 
-_salvos = 80;
+_salvos = 60;
 _qtdAlvos = 209;
 //executar somente no servidor
 

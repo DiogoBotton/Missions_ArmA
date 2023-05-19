@@ -51,7 +51,7 @@ TempoReforcos = (ParamTempoReforcos);
 
 QtdMaxInimigos = (ParamDificuldade);
 
-ProbEsturro = (ParamProbEsturro);
+ProbEsturro = (ParamProbEsturro)/10;
 
 Horario = (ParamHorario);
 
@@ -64,10 +64,10 @@ if (Clima == 1) then {_valorChuva = 1;};
 1 setOvercast Clima;
 1 setRain _valorChuva;
 
-setDate [2008, 5, 11, Horario, 0];
+setDate [2008, 10, 8, Horario, 0];
 
-hmmwv1 addAction ["Espantar Inimigos", "musica.sqf"];
-hmmwv1 addAction ["Nao me Aperte", "whiplash.sqf"];
+hmmwv1 addAction ["Espantar Inimigos", "musica.sqf", [],1,false,true,"","_this distance _target < 6"];
+hmmwv1 addAction ["Nao me Aperte", "whiplash.sqf", [],1,false,true,"","_this distance _target < 6"];
 
 if (isServer) then {
 	execVM "attacks.sqf";

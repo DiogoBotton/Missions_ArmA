@@ -12,5 +12,5 @@ sleep 250;
 //tocarMusicaWhip = false;
 //publicVariable "tocarMusica";
 
-hmmwv1 addAction ["Espantar Inimigos", "musica.sqf"];
-hmmwv1 addAction ["Nao me Aperte", "whiplash.sqf"];
+hmmwv1 addAction ["Espantar Inimigos", "musica.sqf", [],1,false,true,"","_this distance _target < 6"];
+hmmwv1 addAction ["Nao me Aperte", "whiplash.sqf", [],1,false,true,"","_this distance _target < 6"];

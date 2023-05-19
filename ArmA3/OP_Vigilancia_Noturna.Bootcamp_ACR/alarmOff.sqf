@@ -1,0 +1,1 @@
+deleteVehicle speaker_alarm;
