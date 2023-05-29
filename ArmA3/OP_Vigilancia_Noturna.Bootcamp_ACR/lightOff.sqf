@@ -1,0 +1,6 @@
+_centroDesligamento = _this select 0;
+_distancia = _this select 1;
+_types = ["Land_TentLamp_01_Suspended_F", "Land_TentLamp_01_Suspended_red_F", "Land_Lampa_ind_zebr", "Land_Lampa_sidl_3", "Land_Lampa_vysoka", "Land_Lampa_ind", "Land_Lampa_ind_b", "Land_Lampa_sidl", "StreetLamp","PowerLines_Small_base_F","PowerLines_Wires_base_F", "Land_LampDecor_F","Land_LampHalogen_F","Land_LampHarbour_F","Land_LampShabby_F","Land_NavigLight","Land_runway_edgelight","Land_PowerPoleWooden_L_F","Land_PortableLight_double_F","Land_PortableLight_single_F","Land_FloodLight_F","Land_NavigLight","Land_NavigLight_3_F","Land_Flush_Light_yellow_F","Land_Flush_Light_red_F","Land_Flush_Light_green_F","Land_runway_edgelight","Land_runway_edgelight_blue_F","Land_Runway_PAPI","Land_Runway_PAPI_2","Land_Runway_PAPI_3","Land_Runway_PAPI_4","Lamps_Base_F","PowerLines_base_F","Land_PowerPoleWooden_F","Land_LampHarbour_F","Land_LampShabby_F","Land_PowerPoleWooden_L_F","Land_PowerPoleWooden_small_F","Land_LampDecor_F","Land_LampHalogen_F","Land_LampSolar_F","Land_LampStreet_small_F","Land_LampStreet_F","Land_LampAirport_F","Land_PowerPoleWooden_L_F"];
+
+_lamps = (_centroDesligamento nearObjects _distancia);
+{_x switchLight "OFF";} forEach _lamps;

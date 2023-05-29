@@ -1,3 +1,6 @@
 if (isServer) then {
-	nul = [speaker_alarm, "siren", 2000] call fn_netSay3D;
+	tocarAlarme = true;
+	publicVariable "tocarAlarme";
+
+	speaker_alarm addAction ["Desligar Alarme", "alarmOff.sqf", [],1,false,true,"","_this distance _target < 6"];
 };

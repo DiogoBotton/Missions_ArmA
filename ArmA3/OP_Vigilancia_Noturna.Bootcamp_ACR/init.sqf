@@ -37,6 +37,9 @@ publicVariable "tocarMusicaOnlyU";
 tocarMusicaWhip = false;
 publicVariable "tocarMusicaWhip";
 
+tocarAlarme = false;
+publicVariable "tocarAlarme";
+
 // Desabilita artilharia computadorizada para todos
 enableEngineArtillery false;
 

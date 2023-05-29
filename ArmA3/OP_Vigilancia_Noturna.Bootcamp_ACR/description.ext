@@ -63,7 +63,7 @@ class Params
 
 class CfgSounds
 {
-  	sounds[]={mort1, mort2, mort3, mort4};
+  	sounds[]={mort1, mort2, mort3, mort4, whip, onlyU};
     class mort1
     {
         name = "mort1";
@@ -98,12 +98,6 @@ class CfgSounds
     {
         name = "onlyU";
         sound[] = {\sounds\OnlyU.ogg, db+5, 1.0};
-        titles[] = {""};
-    };
-    class siren
-    {
-        name = "siren";
-        sound[] = {\sounds\siren.ogg, db+5, 1.0};
         titles[] = {""};
     };
 };
