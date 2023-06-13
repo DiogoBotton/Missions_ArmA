@@ -50,7 +50,7 @@ class Params
 		title = "$STR_A3_fastravel1";
 		values[] = {1, 0, 2, 3, 4};
 		texts[] = { $STR_A3_WL_param3_value1, $STR_A3_WL_param3_value2, $STR_A3_WL_param3_value3, $STR_A3_WL_param3_value4, $STR_A3_WL_param3_value5 };
-		default = 0;
+		default = 1;
 	};
 	class BIS_WLScanEnabled
 	{
@@ -168,20 +168,58 @@ class CfgWLRequisitionPresets
 					cost = 450;
 					requirements[] = {};
 				};
-				class CUP_B_nM1025_M240_USA_WDL
+				class CUP_B_MTVR_Ammo_USMC
 				{
 					cost = 600;
 					requirements[] = {};
 				};
+				class CUP_B_MTVR_Refuel_USMC
+				{
+					cost = 600;
+					requirements[] = {};
+				};
+				class CUP_B_MTVR_Repair_USMC
+				{
+					cost = 600;
+					requirements[] = {};
+				};
+				class CUP_B_nM1025_M240_USA_WDL
+				{
+					cost = 800;
+					requirements[] = {};
+				};
 				class CUP_B_nM1025_M2_DF_USA_WDL
 				{
-					cost = 1000;
+					cost = 1200;
+					requirements[] = {};
+				};
+				class CUP_B_nM1097_AVENGER_USA_WDL
+				{
+					cost = 1300;
 					requirements[] = {};
 				};
 				class CUP_B_M113A1_USA
 				{
 					cost = 1500;
 					requirements[] = {};
+				};
+				class CUP_B_LAV25M240_USMC
+				{
+					cost = 2100;
+					requirements[] = {};
+				};
+			};
+			class Aircraft
+			{
+				class CUP_B_AH6J_USA
+				{
+					cost = 2500;
+					requirements[] = { "H" };
+				};
+				class CUP_B_UH60M_US
+				{
+					cost = 2500;
+					requirements[] = { "H" };
 				};
 			};
 			class Naval
@@ -214,19 +252,19 @@ class CfgWLRequisitionPresets
 					cost = 200;
 					requirements[] = {};
 				};
-				class CUP_BOX_US_ARMY_WpsSpecial_F
+				class CUP_BOX_USMC_Wps_F
 				{
 					cost = 200;
+					requirements[] = {};
+				};
+				class CUP_BOX_US_ARMY_WpsSpecial_F
+				{
+					cost = 300;
 					requirements[] = {};
 				};
 				class CUP_BOX_USMC_WpsSpecial_F
 				{
-					cost = 200;
-					requirements[] = {};
-				};
-				class CUP_BOX_USMC_Wps_F
-				{
-					cost = 200;
+					cost = 300;
 					requirements[] = {};
 				};
 				class CUP_BOX_US_ARMY_AmmoOrd_F
@@ -241,7 +279,7 @@ class CfgWLRequisitionPresets
 				};
 				class CUP_BOX_USMC_WpsLaunch_F
 				{
-					cost = 200;
+					cost = 300;
 					requirements[] = {};
 				};
 				class CUP_BOX_USMC_Grenades_F
@@ -249,19 +287,37 @@ class CfgWLRequisitionPresets
 					cost = 200;
 					requirements[] = {};
 				};
-				class CUP_BOX_US_ARMY_Grenades_F
-				{
-					cost = 200;
-					requirements[] = {};
-				};
 				class ACE_medicalSupplyCrate
 				{
-					cost = 200;
+					cost = 250;
 					requirements[] = {};
 				};
 				class ACE_medicalSupplyCrate_advanced
 				{
 					cost = 350;
+					requirements[] = {};
+				};
+			};
+			class Defences
+			{
+				class CUP_B_CUP_SearchLight_static_US
+				{
+					cost = 100;
+					requirements[] = {};
+				};
+				class CUP_B_M2StaticMG_US
+				{
+					cost = 600;
+					requirements[] = {};
+				};
+				class CUP_B_M252_US
+				{
+					cost = 600;
+					requirements[] = {};
+				};
+				class CUP_B_TOW_TriPod_US
+				{
+					cost = 600;
 					requirements[] = {};
 				};
 			};
