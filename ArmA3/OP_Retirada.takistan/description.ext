@@ -1,0 +1,154 @@
+respawn = "bird";
+respawndelay = 3;
+
+class Params
+{
+    class ParamDEBUGAR
+	{
+	title = "DEBUGAR";
+	values[] = {0,1};
+	texts[] = {"OFF", "ON"};
+	default = 0;
+	};
+};
+
+class CfgSounds
+{
+  	sounds[]={mort1, mort2, mort3, mort4, one, help_jilavur, help_feruzabad};
+    class mort1
+    {
+        name = "mort1";
+        sound[] = {\sounds\mort1.ogg, db+10, 1.0};
+        titles[] = {""};
+    };
+    class mort2
+    {
+        name = "mort2";
+        sound[] = {\sounds\mort2.ogg, db+10, 1.0};
+        titles[] = {""};
+    };
+    class mort3
+    {
+        name = "mort3";
+        sound[] = {\sounds\mort3.ogg, db+10, 1.0};
+        titles[] = {""};
+    };        
+    class mort4
+    {
+        name = "mort4";
+        sound[] = {\sounds\mort4.ogg, db+10, 1.0};
+        titles[] = {""};
+    };
+    class one
+    {
+        name = "one";
+        sound[] = {\sounds\one.ogg, db+10, 1.0};
+        titles[] = {""};
+    };
+    class help_jilavur
+    {
+        name = "help_jilavur";
+        sound[] = {\sounds\help_jilavur.ogg, db+5, 1.0};
+        titles[] = {""};
+    };
+    class help_feruzabad
+    {
+        name = "help_feruzabad";
+        sound[] = {\sounds\help_feruzabad.ogg, db+5, 1.0};
+        titles[] = {""};
+    };
+	class new_order_jilavur_sound
+    {
+        name = "new_order_jilavur";
+        sound[] = {\sounds\new_order_jilavur.ogg, db+5, 1.0};
+        titles[] = {""};
+    };
+	class new_order_feruzabad_sound
+    {
+        name = "new_order_feruzabad";
+        sound[] = {\sounds\new_order_feruzabad.ogg, db+5, 1.0};
+        titles[] = {""};
+    };
+};
+
+class RscText
+{
+ type = CT_STATIC;
+ idc = -1;
+ style = ST_MULTI;
+ colorBackground[] = {0,0,0,0};
+ colorText[] = {0,0,0,0};
+ font = "TahomaB";
+ sizeEx = 0.035;
+};
+
+class DiagText : RscText
+{
+ colorText[] = {1, 1, 1, 1};
+ shadow = 1;
+ x = safeZoneX+0.027;
+ y = safeZoneY+safeZoneH-0.30;
+ w = 1.151safeZoneH;
+ h = 0.057safeZoneH;
+ lineSpacing = 0.95;
+};
+
+class RscTitles {
+	Titles[] = {Help_Jilavur, Help_Feruzabad};
+	class Help_Jilavur
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=15;
+		FadeIn=1;
+		FadeOut=1;
+		Name="Help_Jilavur";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Atenção! Nossa base de Jilavur está sendo atacada! Necessitamos de reforços IMEDIATAMENTE!";
+		};
+	};
+	class Help_Feruzabad
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=15;
+		FadeIn=1;
+		FadeOut=1;
+		Name="Help_Feruzabad";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Atenção! Nossa base de Feruz Abad está sendo atacada! Necessitamos de reforços IMEDIATAMENTE!";
+		};
+	};
+	class new_order_jilavur
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=60;
+		FadeIn=1;
+		FadeOut=1;
+		Name="new_order_jilavur";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "NOVAS ORDENS: Dar apoio em Jilavur, destruir todo equipamento militar norte americano e retornar à base IMEDIATAMENTE.";
+		};
+	};
+	class new_order_feruzabad
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=60;
+		FadeIn=1;
+		FadeOut=1;
+		Name="new_order_feruzabad";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "NOVAS ORDENS: Dar apoio em Feruz Abad, destruir todo equipamento militar norte americano e retornar à base IMEDIATAMENTE.";
+		};
+	};
+};
