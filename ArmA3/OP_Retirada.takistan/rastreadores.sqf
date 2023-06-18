@@ -3,7 +3,7 @@
 
 _arrayInimigos = ["CUP_O_TK_INS_Soldier_TL", "CUP_O_TK_INS_Sniper", "CUP_O_TK_INS_Sniper", "CUP_O_TK_INS_Soldier_AT", "CUP_O_TK_INS_Soldier_GL", "CUP_O_TK_INS_Soldier_GL", "CUP_O_TK_INS_Soldier_MG", "CUP_O_TK_INS_Soldier_MG", "CUP_O_TK_INS_Soldier_AR", "CUP_O_TK_INS_Guerilla_Medic"];
 _distPista = 200;
-_distSpawnRastreadores = 1000;
+_distSpawnRastreadores = 700;
 _intervaloSpawn = 300;
 _distProximaPista = 50;
 

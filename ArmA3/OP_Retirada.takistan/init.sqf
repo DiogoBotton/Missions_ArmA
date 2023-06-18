@@ -33,9 +33,6 @@ PVEH_NetSay3D = [objNull,0,1];
     (_array select 0) say3D [(_array select 1), (_array select 2), 1];
 };
 
-locaisVerificados = 0;
-publicVariable "locaisVerificados";
-
 localAlvo = "";
 publicVariable "localAlvo";
 
@@ -44,11 +41,21 @@ publicVariable "txtRsc";
 txtRscActive = false;
 publicVariable "txtRscActive";
 
-counter = false;
-publicVariable "counter";
+vilaJilavur = false;
+vilaFeruzabad = false;
+vilaMulladost = false;
+publicVariable "vilaJilavur";
+publicVariable "vilaFeruzabad";
+publicVariable "vilaMulladost";
 
-// DETERMINA SE ESTA DEBUGANDO OU NAO
+// ADQUIRE PARAMETROS Description.ext
 debugar = (ParamDEBUGAR);
+qtdGruposAtaque = (ParamQtdGrupos);
+qtdCarrosAtaque = (ParamQtdCarros);
+qtdOndasAtaque = (ParamQtdOndas);
+IntervaloOndasAtaque = (ParamIntervaloOndas);
+ProbEsturroAtaque = (ParamProbEsturro);
+TempoIniciarAtaque = (ParamTempoIniciarAtaque);
 
 if (debugar == 1) then {
 	sleep 10;
@@ -56,3 +63,12 @@ if (debugar == 1) then {
 	sleep 10;
 	civil_ataque_musica setDamage 1;
 };
+
+if(isServer) then {
+	[ch_1, "spawnAirAmbience", "moveAirAmbience", 60] execVM "airAmbience.sqf";
+	[ch_2, "spawnAirAmbience", "moveAirAmbience", 120] execVM "airAmbience.sqf";
+};
+
+sleep 5;
+ch_1 lockDriver true;
+ch_2 lockDriver true;

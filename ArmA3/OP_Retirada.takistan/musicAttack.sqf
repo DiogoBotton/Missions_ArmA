@@ -29,28 +29,8 @@ if (isServer) then {
 
 	// Destroi hmmw's
 	{
-    	_alvoBomba = _x;
-    	//gera valor aleatório de 0 a 60
-    	_tempo          = floor (random 7);
-    	_tempo          = _tempo + 2;
-    	_ArrayMortSound = ["mort1","mort2","mort3","mort4"];
-    	_ArrayMortSound = _ArrayMortSound call BIS_fnc_selectRandom;
-
-		_detonarPos = position _alvoBomba;
-		alvomort setPos _detonarPos;
-
-    	_delaySom = _tempo - 2;
-    	sleep _delaySom;
-	
-    	nul = [alvomort, _ArrayMortSound, 500] call fn_netSay3D;
-	
-    	_delayBomba = _tempo - _delaySom;
-    	sleep _delayBomba;
-
-		tipoBomba = _arrayBombas call BIS_fnc_selectRandom;
-    	_bomb = tipoBomba createVehicle (_detonarPos);
 		[_x, ["hitEngine", 1]] remoteExec ["setHitPointDamage", _x];
-		sleep 30;
+		sleep 15;
 	} forEach _carsDestroy;
 };
 

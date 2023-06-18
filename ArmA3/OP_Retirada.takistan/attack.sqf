@@ -1,14 +1,15 @@
 _countThis = count _this;
 
 _localName = _this select 0;
-_qtdGroups = _this select 1;
-_qtdCars = _this select 2;
-_ondas = _this select 3;
-_tempoOndasSegundos = _this select 4;
+_qtdGroups = if (!isNil "qtdGruposAtaque") then [{qtdGruposAtaque},{_this select 1}];
+_qtdCars = if (!isNil "qtdCarrosAtaque") then [{qtdCarrosAtaque},{_this select 2}];
+_ondas = if (!isNil "qtdOndasAtaque") then [{qtdOndasAtaque},{_this select 3}];
+_tempoOndasSegundos = if (!isNil "IntervaloOndasAtaque") then [{IntervaloOndasAtaque},{_this select 4}];
 _probEsturro = if (_countThis >= 6) then [{_this select 5},{100}]; // Valor padrão 100% de probabilidade de esturro (OPCIONAL)
+_probEsturro = if (!isNil "ProbEsturroAtaque") then [{ProbEsturroAtaque},{_probEsturro}];
 
 _spawnMarkerLocalInfantry = "spawnMarker_infantry_" + _localName + "_";
-_qtdMarkersInfantry = 3; // Quantidade de markers de spawn de infantaria
+_qtdMarkersInfantry = 2; // Quantidade de markers de spawn de infantaria
 _spawnMarkerLocalCar = "spawnMarker_car_" + _localName + "_";
 _qtdMarkersCar = 2; // Quantidade de markers de spawn de carros
 _attackMarker = "attackMarker_" + _localName;

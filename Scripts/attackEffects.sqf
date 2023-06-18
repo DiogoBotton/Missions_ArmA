@@ -1,5 +1,22 @@
+_anyPlayersAround = true;
+_distanceMinToStartAttack = 1000;
+
 if (isServer) then {
-	if(debugar == 1 || debugar == -1) then {
+	// Função que verifica se há algum player por perto do local de ataque e espera até que fique distante
+	fnc_verifyPlayerAround = {
+		_anyPlayersAround = false;
+		_localAttack = _this select 0;
+		{
+			if (side _x == west && alive _x && isPlayer _x && _x distance _localAttack < _distanceMinToStartAttack) then
+			{
+				_anyPlayersAround = true;
+				break;
+			};
+		} forEach allUnits;
+		_anyPlayersAround;
+	};
+
+	if(debugar == 1) then {
 		sleep 5;
 	} else {
 		sleep TempoIniciarAtaque; // Variavel adquirida dos paramêtros
@@ -21,6 +38,10 @@ if (isServer) then {
 
 	// Define o ataque baseado no local mais distante
 	if(_distanciaJilavur > _distanciaFeruzabad) then {
+		while {_anyPlayersAround} do {
+			[_localJilavur] call fnc_verifyPlayerAround;
+			sleep 5;
+		};
 		soundHelp = "help_jilavur";
 
 		// Lança texto na tela
@@ -32,11 +53,17 @@ if (isServer) then {
 		localAlvo = "jilavur";
 		publicVariable "localAlvo";
 
+
 		unitsInTrigger = list trigger_jilavur_kill;
 		car_jilavur_1 setDamage 1;
 		car_jilavur_2 setDamage 1;
 		car_jilavur_3 setDamage 1;
 	} else {
+		while {_anyPlayersAround} do {
+			[_localFeruzabad] call fnc_verifyPlayerAround;
+			sleep 5;
+		};
+
 		soundHelp = "help_feruzabad";
 
 		// Lança texto na tela
@@ -48,6 +75,7 @@ if (isServer) then {
 		localAlvo = "feruzabad";
 		publicVariable "localAlvo";
 
+
 		unitsInTrigger = list trigger_feruzabad_kill;
 		car_feruzabad_1 setDamage 1;
 		car_feruzabad_2 setDamage 1;
@@ -57,7 +85,6 @@ if (isServer) then {
 	nul = [hmmw_1, soundHelp, 300] call fn_netSay3D;
 	nul = [hmmw_2, soundHelp, 250] call fn_netSay3D;
 	nul = [hmmw_3, soundHelp, 250] call fn_netSay3D;
-	nul = [liderBlufor, soundHelp, 50] call fn_netSay3D;
 
 	for [{i=0}, {i < 3}, {i=i+1}] do {
 		{
@@ -87,7 +114,6 @@ if (isServer) then {
 	nul = [hmmw_1, _soundName, 300] call fn_netSay3D;
 	nul = [hmmw_2, _soundName, 250] call fn_netSay3D;
 	nul = [hmmw_3, _soundName, 250] call fn_netSay3D;
-	nul = [liderBlufor, _soundName, 50] call fn_netSay3D;
 
 	publicVariable "txtRsc";
 	txtRscActive = true;
