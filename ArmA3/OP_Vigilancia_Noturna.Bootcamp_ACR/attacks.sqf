@@ -1,6 +1,5 @@
 // Nome de markers de spawn de inimigos/reforços
 _respawnInimigoMarker = ["enemyLocation_1", "enemyLocation_2", "enemyLocation_3", "enemyLocation_4", "enemyLocation_5", "enemyLocation_6", "enemyLocation_7"];
-_respawnReforcoMarker = ["reforcesLocation_1", "reforcesLocation_2"];
 
 _markersAtaque = ["attack_1", "attack_2"];
 

@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=744;
+		nextID=745;
 	};
 	class MarkerIDProvider
 	{
@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={1589.6903,344.74081,1131.0399};
-		dir[]={-0.87767285,-0.46941012,0.097788639};
-		up[]={-0.46652359,0.88298321,0.051978875};
-		aside[]={0.11074814,-9.4699499e-007,0.99398339};
+		dir[]={-0.87757725,-0.46935901,0.097778082};
+		up[]={-0.46647257,0.88300729,0.051973537};
+		aside[]={0.110733,0,0.99385023};
 	};
 };
 binarizationWanted=0;
@@ -72,13 +72,14 @@ addons[]=
 	"A3_Props_F_Oldman_Items",
 	"CUP_AirVehicles_A10",
 	"CUP_AirVehciles_Cessna",
-	"CUP_WheeledVehicles_M1030"
+	"CUP_WheeledVehicles_M1030",
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=43;
+		items=44;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -342,6 +343,13 @@ class AddonsMetaData
 			className="CUP_WheeledVehicles_M1030";
 			name="CUP_WheeledVehicles_M1030";
 		};
+		class Item43
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -426,7 +434,7 @@ class Mission
 	class Intel
 	{
 		briefingName="OP_Vigilancia_Noturna_WHIPLASH";
-		overviewText="Operação Vigilancia Noturna (WHIPLASH)";
+		overviewText="Após uma missão fracassada, unidades dos Espartanos 25 foram redesignadas para uma base no aeroporto de Bukovina para fazer a guarda do local. Não há mais nada para fazer, apenas observar e esperar a longa noite passar.";
 		timeOfChanges=1800.0002;
 		startWeather=0.25;
 		startWind=0.1;
@@ -447,7 +455,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=383;
+		items=384;
 		class Item0
 		{
 			dataType="Object";
@@ -524,6 +532,7 @@ class Mission
 			name="attack_1";
 			type="Empty";
 			id=52;
+			atlOffset=0.00015258789;
 		};
 		class Item6
 		{
@@ -532,6 +541,7 @@ class Mission
 			name="attack_2";
 			type="Empty";
 			id=53;
+			atlOffset=6.1035156e-005;
 		};
 		class Item7
 		{
@@ -1290,6 +1300,7 @@ class Mission
 			name="target_86";
 			type="Empty";
 			id=146;
+			atlOffset=0.00015258789;
 		};
 		class Item95
 		{
@@ -1378,6 +1389,7 @@ class Mission
 			name="target_97";
 			type="Empty";
 			id=157;
+			atlOffset=0.00015258789;
 		};
 		class Item106
 		{
@@ -1682,6 +1694,7 @@ class Mission
 			name="target_135";
 			type="Empty";
 			id=195;
+			atlOffset=0.013824463;
 		};
 		class Item144
 		{
@@ -2155,6 +2168,7 @@ class Mission
 			};
 			id=288;
 			type="ACE_medicalSupplyCrate";
+			atlOffset=6.1035156e-005;
 		};
 		class Item181
 		{
@@ -2171,6 +2185,7 @@ class Mission
 			};
 			id=290;
 			type="ACE_medicalSupplyCrate";
+			atlOffset=6.1035156e-005;
 		};
 		class Item182
 		{
@@ -2237,6 +2252,7 @@ class Mission
 			};
 			id=297;
 			type="Land_BagFence_Short_F";
+			atlOffset=6.1035156e-005;
 		};
 		class Item185
 		{
@@ -2253,6 +2269,7 @@ class Mission
 			};
 			id=299;
 			type="Land_BagFence_Short_F";
+			atlOffset=6.1035156e-005;
 		};
 		class Item186
 		{
@@ -2269,6 +2286,7 @@ class Mission
 			};
 			id=300;
 			type="Land_BagFence_Short_F";
+			atlOffset=6.1035156e-005;
 		};
 		class Item187
 		{
@@ -2300,7 +2318,7 @@ class Mission
 			};
 			id=302;
 			type="Land_BagFence_Short_F";
-			atlOffset=3.9987183;
+			atlOffset=3.9987488;
 		};
 		class Item189
 		{
@@ -5375,6 +5393,7 @@ class Mission
 			};
 			id=579;
 			type="ACE_Wheel";
+			atlOffset=0.00015258789;
 		};
 		class Item282
 		{
@@ -5451,6 +5470,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 			id=597;
+			atlOffset=6.1035156e-005;
 		};
 		class Item287
 		{
@@ -5645,7 +5665,7 @@ class Mission
 			};
 			id=619;
 			type="CUP_BOX_USMC_Ammo_F";
-			atlOffset=0.00039672852;
+			atlOffset=0.00042724609;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5974,7 +5994,7 @@ class Mission
 			};
 			id=657;
 			type="Land_TentLamp_01_suspended_red_F";
-			atlOffset=2.7691345;
+			atlOffset=2.7692871;
 		};
 		class Item321
 		{
@@ -7074,6 +7094,72 @@ class Mission
 			};
 			id=743;
 			type="EmptyDetector";
+		};
+		class Item383
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={222.728,347.17026,2452.4089};
+			};
+			id=744;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="#adminLogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 };

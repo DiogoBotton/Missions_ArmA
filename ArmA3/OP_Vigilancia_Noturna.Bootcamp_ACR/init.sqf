@@ -52,6 +52,8 @@ TempoOndas = (ParamTempoOndas);
 
 TempoReforcos = (ParamTempoReforcos);
 
+UnidadesReforcos = (ParamUnidadesReforcos);
+
 QtdMaxInimigos = (ParamDificuldade);
 
 ProbEsturro = (ParamProbEsturro)/10;

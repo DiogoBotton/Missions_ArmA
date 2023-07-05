@@ -1,7 +1,6 @@
 // Distribuir quantia X de objetos invisiveis (markers) nas posições que deseja bombardear
 // Os nomes devem seguir este padrão, target_0, target_1, target_2, target_3, e assim até chegar o número total de targets criados
 // Baseado na quantidade de targets criados, alterar variavel _qtdAlvos (subtrair -1, pois a contagem inicia de 0)
-// OBS. Criar um H (invisível) nomeado como "alvomort"
 
 _salvos = 50;
 _qtdAlvos = 209;
@@ -21,16 +20,18 @@ if (isServer) then {
 
     	_detonarPos = getMarkerPos _detonar;
     	alvomort setPos _detonarPos;
+		_alvoMort = createVehicle ["HeliHEmpty", _detonarPos,[],0, "NONE"];
 	
     	_delaySom = _tempo - 2;
     	sleep _delaySom;
 	
-    	nul = [alvomort, _ArrayMortSound, 500] call fn_netSay3D;
+    	nul = [_alvoMort, _ArrayMortSound, 500] call fn_netSay3D;
 	
     	_delayBomba = _tempo - _delaySom;
     	sleep _delayBomba;
 
 		tipoBomba = _arrayBombas call BIS_fnc_selectRandom;
     	_bomb = tipoBomba createVehicle (_detonarPos);
+		deleteVehicle _alvoMort;
 	};
 };
