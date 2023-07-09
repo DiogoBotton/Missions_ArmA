@@ -56,7 +56,7 @@ UnidadesReforcos = (ParamUnidadesReforcos);
 
 QtdMaxInimigos = (ParamDificuldade);
 
-ProbEsturro = (ParamProbEsturro)/10;
+ProbEsturro = (ParamProbEsturro)*10;
 
 Horario = (ParamHorario);
 

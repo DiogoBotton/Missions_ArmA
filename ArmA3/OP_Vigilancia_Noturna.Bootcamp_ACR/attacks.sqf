@@ -84,8 +84,8 @@ if (isServer) then {
 				_TipoDeUnidade = _ArrayInimigos call BIS_fnc_selectRandom;
 				_grupoInimigo createUnit [_TipoDeUnidade, [(getMarkerPos _localSpawn select 0),(getMarkerPos _localSpawn select 1),0], [], 10, "CAN_COLLIDE"];
 			};
-
-			randomNumber = random 1;
+			
+			randomNumber = [0,100] call BIS_fnc_randomInt;
 			_50CalProb = ProbEsturro;
 
 			// Caso número randomico for maior que a probabilidade de esturro, spawna carro com .50 e adiciona 2 unidades como driver e gunner
