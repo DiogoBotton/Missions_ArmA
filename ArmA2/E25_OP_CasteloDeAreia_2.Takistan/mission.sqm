@@ -1875,7 +1875,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=91;
+		items=92;
 		class Item0
 		{
 			position[]={6936.6841,73.628311,11647.547};
@@ -2294,8 +2294,8 @@ class Mission
 		};
 		class Item45
 		{
-			position[]={9824.9209,122.16515,11338.755};
-			azimut=-97.253418;
+			position[]={9820.7705,122.13712,11338.14};
+			azimut=-424.51379;
 			id=80;
 			side="EMPTY";
 			vehicle="Lada2_TK_CIV_EP1";
@@ -2943,6 +2943,18 @@ class Mission
 				"IEDaleatorio_5"
 			};
 			init="this setDir 0; this setVariable [""length"", 1];";
+		};
+		class Item91
+		{
+			position[]={3396.4744,100.50051,9548.0879};
+			azimut=-652.47351;
+			id=193;
+			side="EMPTY";
+			vehicle="Lada2_TK_CIV_EP1";
+			leader=1;
+			skill=0.59999996;
+			health=0.19779024;
+			init="null = [this] execVM ""carroBomba.sqf"";";
 		};
 	};
 	class Markers

@@ -1,5 +1,5 @@
 _object = _this select 0;
-_value = random 100;
+_value = [1, 100] call BIS_fnc_randomInt;
 
 if(isServer) then {
 	if (_value > nivelResistencia) then {
@@ -7,7 +7,7 @@ if(isServer) then {
 		_explodiu = false;
 		while {alive _object && !_explodiu} do
 	   	{
-	   		_targetArray = nearestObjects [(getPos _object), ["MAN", "LandVehicle"], 10];
+	   		_targetArray = nearestObjects [(getPos _object), ["MAN", "LandVehicle"], 20];
 	   		if ((count _targetArray) > 0) then
 	   		{
 	   			{
