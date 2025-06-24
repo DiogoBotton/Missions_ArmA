@@ -13,9 +13,17 @@ caixa2 addAction ["Pegar Caixa", "carryItem.sqf"];
 caixa3 addAction ["Pegar Caixa", "carryItem.sqf"];
 caixa4 addAction ["Pegar Caixa", "carryItem.sqf"];
 
+// String para avisos globais
+avisos = false;
+avisoMsg = "";
+totalCaixas = 4; // Total de caixas que devem ser destruídas
+
 fogo = false;
 qtdCaixasDestruidas = 0;
 if(isServer) then {
 	publicVariable "fogo";
 	publicVariable "qtdCaixasDestruidas";
+	publicVariable "avisos";
+	publicVariable "avisoMsg";
+	publicVariable "totalCaixas";
 };

@@ -14,5 +14,8 @@ fnc_cacheKilled = {
 		};
 		qtdCaixasDestruidas = qtdCaixasDestruidas +1;
 		publicVariable "qtdCaixasDestruidas";
+
+		_aviso = format ["Caixas destruidas: %1, Total: %2", qtdCaixasDestruidas, totalCaixas];
+		nul = [(_aviso)] execVM "hintGlobal.sqf";
 	};
 };
