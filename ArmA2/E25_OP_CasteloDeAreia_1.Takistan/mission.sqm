@@ -1854,7 +1854,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			position[]={927.82715,188.28325,12340.764};
@@ -1919,6 +1919,22 @@ class Mission
 			age="UNKNOWN";
 			expCond="avisos";
 			expActiv="hint avisoMsg;";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={8139.1851,151.02625,12787.207};
+			a=0;
+			b=0;
+			timeoutMin=20;
+			timeoutMid=20;
+			timeoutMax=20;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			expCond="qtdCaixasDestruidas >= 4";
 			class Effects
 			{
 			};
