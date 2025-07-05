@@ -51,6 +51,8 @@ w5Abastecido = false;
 qualTorre = objNull;
 tempoEspera = 300;
 
+finalizarMissao = false;
+
 if(isServer) then {
     publicVariable "rolarDado";
     publicVariable "numDado";
@@ -64,6 +66,7 @@ if(isServer) then {
     publicVariable "w1Abastecido";
     publicVariable "w1Abastecido";
     publicVariable "qualTorre";
+    publicVariable "finalizarMissao";
 };
 
 w1 addAction ["Abastecer Torre de Água", "abastecerTorreAguaLocal.sqf"];

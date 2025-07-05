@@ -2959,7 +2959,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=8;
+		items=13;
 		class Item0
 		{
 			position[]={6911.1724,52.603668,11683.512};
@@ -3008,10 +3008,45 @@ class Mission
 			name="hb_attack";
 			type="Empty";
 		};
+		class Item8
+		{
+			position[]={9723.7793,114.63577,11534.021};
+			name="flag_obj";
+			type="hd_objective";
+			colorName="ColorBlue";
+		};
+		class Item9
+		{
+			position[]={8212.0244,174.56581,7778.6685};
+			name="flag_obj_1";
+			type="hd_objective";
+			colorName="ColorBlue";
+		};
+		class Item10
+		{
+			position[]={5608.7471,81.919998,8904.6895};
+			name="flag_obj_2";
+			type="hd_objective";
+			colorName="ColorBlue";
+		};
+		class Item11
+		{
+			position[]={1820.123,150.26654,11852.865};
+			name="flag_obj_3";
+			type="hd_objective";
+			colorName="ColorBlue";
+		};
+		class Item12
+		{
+			position[]={3130.1414,60.310001,9977.0703};
+			name="flag_obj_4";
+			type="hd_objective";
+			colorName="ColorBlue";
+		};
 	};
 	class Sensors
 	{
-		items=28;
+		items=30;
 		class Item0
 		{
 			position[]={8126.2217,147.43716,12793.506};
@@ -3425,6 +3460,43 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			expActiv="civilPatrulhas setDamage 1;";
+			class Effects
+			{
+			};
+		};
+		class Item28
+		{
+			position[]={5770.5908,83.040001,11370.16};
+			a=150;
+			b=500;
+			angle=45.089298;
+			rectangular=1;
+			activationBy="WEST";
+			timeoutMin=5;
+			timeoutMid=5;
+			timeoutMax=5;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(vehicle player) in thislist && w1Abastecido && w2Abastecido && w3Abastecido && w4Abastecido && w5Abastecido";
+			expActiv="finalizarMissao = true; publicVariable ""finalizarMissao"";";
+			class Effects
+			{
+				titleType="TEXT";
+				title="Missão Concluída! Todas as vilas foram abastecidas com água.";
+			};
+		};
+		class Item29
+		{
+			position[]={8220.4307,164.03696,12795.105};
+			a=0;
+			b=0;
+			timeoutMin=20;
+			timeoutMid=20;
+			timeoutMax=20;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			expCond="finalizarMissao";
 			class Effects
 			{
 			};

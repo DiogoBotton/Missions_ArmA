@@ -1,6 +1,6 @@
 player createDiaryRecord ["Diary", ["Missão", "
 <br/>
-Os Espartanos 25 foram designados para esta missão.
+Vocês foram designados para esta missão.
 <br/>
 <br/>
 O objetivo é fazer a distribuição de água a partir de um caminhão pipa para algumas cidades e vilas mais afetadas pela falta de fornecimento de água.
