@@ -1,4 +1,4 @@
-_timeSleep = [1200, 1500, 1800, 2100];
+_timeSleep = [900, 1200, 1500];
 //_timeSleepTeste = [30, 40, 50, 60];
 
 if(isServer) then {
