@@ -1,5 +1,7 @@
 if(!alive coronel_aziz) exitWith {hint "Unidade já esta morta.";};
 
+if (alive civilRastreadores) then { civilRastreadores setDamage 1; };
+
 _unidade = _this select 0;
 _caller = _this select 1;
 _actionId = _this select 2;

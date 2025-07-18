@@ -1,0 +1,16 @@
+/////////////////////////////////////////////////////
+// Chame na caixa de armas com:
+//   null = this execVM "equip\staticWeapons.sqf";
+/////////////////////////////////////////////////////
+
+// Remove the stock items from the crate
+clearMagazineCargo _this;
+clearWeaponCargo _this;
+
+/////////////////////////////////////////////////////
+// ARMAS
+/////////////////////////////////////////////////////
+
+_this addMagazineCargo ["ACE_M2_CSWDM", 10];
+_this addWeaponCargo ["ACE_M2HBProxy", 3];
+_this addWeaponCargo ["ACE_M3TripodProxy", 3];

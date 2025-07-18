@@ -74,7 +74,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=26;
+		items=27;
 		class Item0
 		{
 			side="LOGIC";
@@ -1575,10 +1575,29 @@ class Mission
 				};
 			};
 		};
+		class Item26
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8190.541,296.04001,2020.6353};
+					id=165;
+					side="CIV";
+					vehicle="TK_CIV_Woman02_EP1";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.2;
+					description="Editor de missão (não entrar)";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=63;
+		items=64;
 		class Item0
 		{
 			position[]={6936.6841,54.429073,11647.547};
@@ -2316,6 +2335,16 @@ class Mission
 			vehicle="HeliHEmpty";
 			skill=0.60000002;
 			text="bigtank_fogo";
+		};
+		class Item63
+		{
+			position[]={6934.4951,54.478657,11607.285};
+			azimut=2.47155;
+			id=166;
+			side="EMPTY";
+			vehicle="ACE_SandBox";
+			skill=1;
+			init="null = this execVM ""equip\staticWeapons.sqf"";";
 		};
 	};
 	class Markers

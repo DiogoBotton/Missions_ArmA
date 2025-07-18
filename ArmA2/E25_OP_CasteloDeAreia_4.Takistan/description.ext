@@ -2,6 +2,18 @@ onLoadMission="E25 - Campanha Liberdade do Iraque EP4 - Criado por WolFros_Fay4"
 respawn = "bird";
 respawndelay = 3;
 
+class Params
+{
+    class ParamDEBUGAR
+	{
+	title = "DEBUGAR";
+	values[] = {0,1};
+	texts[] = {"OFF", "ON"};
+	default = 0;
+	};
+};
+
+
 class CfgSounds{
     sounds[]={allahuakbar};
     class allahuakbar
