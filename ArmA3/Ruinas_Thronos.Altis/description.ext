@@ -1,0 +1,39 @@
+class Params
+{
+    class ParamDEBUGAR
+	{
+		title = "DEBUGAR";
+		values[] = {0,1};
+		texts[] = {"OFF", "ON"};
+		default = 0;
+	};
+	class ParamTempo
+  	{
+  	    title = "Tempo mínimo para sobreviventes vencerem";
+  	  	values[] = {1200, 1800, 2400};
+  	  	texts[] = {"20 minutos", "30 minutos", "40 minutos"};
+  	  	default = 1200;
+  	};
+};
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Os sobreviventes venceram!";
+		subtitle = "";
+		description = "Parabéns! Por pura sorte os sobreviventes conseguiram sobreviver para contar história.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+    class Loser
+	{
+		title = "Os monstros venceram!";
+		subtitle = "";
+		description = "Todos os sobreviventes foram mortos";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = { 0.6, 0.1, 0.2, 1 };
+	};
+};

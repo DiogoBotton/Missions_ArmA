@@ -1,0 +1,209 @@
+respawn = "bird";
+
+class Params
+{
+    class ParamDEBUGAR
+	{
+		title = "DEBUGAR";
+		values[] = {0,1,-1};
+		texts[] = {"OFF", "ON", "Parcial"};
+		default = 0;
+	};
+	class ParamHorario
+  	{
+  	    title = "Horario";
+  	  	values[] = {25 ,12, 16, 18, 20, 0, 4, 8};
+  	  	texts[] = {"Aleatorio", "12:00", "16:00", "18:00", "20:00", "00:00", "04:00", "08:00"};
+  	  	default = 16;
+  	};
+  	class ParamClima
+  	{
+  		title = "Metereologia:";
+  		values[] = {2, 0, 0.2, 0.5, 0.75, 1};
+  	  	texts[] = {"Aleatorio", "Limpo", "Nuvens Parciais", "Nublado", "Chuva", "Tempestade"};
+  	  	default = 0;
+  	};
+	class ParamIntervaloAtaques
+  	{
+  	    title = "Dificuldade";
+  	    values[] = {120, 90, 60, 45};  
+  	    texts[] = {"Muito Fácil", "Fácil", "Normal", "Inferno"};
+  	    default = 45;
+  	};
+    class ParamEsturro
+	{
+		title = "Esturro?";
+		values[] = {1, 0};
+		texts[] = {"Sim", "Não",};
+		default = 1;
+	};
+	class ParamMorteiros
+  	{
+  	    title = "Morteiros?";
+  	    values[] = {1, 0};  
+  	    texts[] = {"Sim", "Nao"};
+  	    default = 1;  
+  	};
+  	class ParamDistMorteiros
+  	{
+  	    title = "Raio dos Morteiros";
+  	    values[] = {800, 650, 500, 350};  
+  	    texts[] = {"Psicologico", "Distante", "Interessante", "Efetivo"};
+  	    default = 650;
+  	};
+  	class ParamInterMorteiros
+  	{
+  	    title = "Intervalo dos Morteiros";
+  	    values[] = {0, 5, 10, 15, 20};  
+  	    texts[] = {"INFERNO", "WW1", "Eventualmente", "Quase nunca", "Talvez caiam"};
+  	    default = 10;  
+  	};
+  	class ParamQtdMorteiros
+  	{
+  	    title = "Quantidade de Morteiros";
+  	    values[] = {10, 16, 20, 30};  
+  	    texts[] = {"Pouquissimos", "Poucos", "Razoaveis", "Muitos"};
+  	    default = 16;
+  	};
+};
+
+class CfgSounds
+{
+  	sounds[]={mort1, mort2, mort3, mort4, arab1, arab2, arab3, arab4, arab5, arab6, arab7, arab8, arab9, arab10};
+    class mort1
+    {
+        name = "mort1";
+        sound[] = {\sounds\mort1.ogg, db+10, 1.0};
+        titles[] = {""};
+    };
+    class mort2
+    {
+        name = "mort2";
+        sound[] = {\sounds\mort2.ogg, db+10, 1.0};
+        titles[] = {""};
+    };
+    class mort3
+    {
+        name = "mort3";
+        sound[] = {\sounds\mort3.ogg, db+10, 1.0};
+        titles[] = {""};
+    };        
+    class mort4
+    {
+        name = "mort4";
+        sound[] = {\sounds\mort4.ogg, db+10, 1.0};
+        titles[] = {""};
+    };
+	class arab1
+    {
+        name = "arab1";
+        sound[] = {\sounds\1.ogg, db+8, 1.0};
+        titles[] = {""};
+    };
+    class arab2
+    {
+        name = "arab2";
+        sound[] = {\sounds\2.ogg, db+8, 1.0};
+        titles[] = {""};
+    };
+    class arab3
+    {
+        name = "arab3";
+        sound[] = {\sounds\3.ogg, db+8, 1.0};
+        titles[] = {""};
+    };
+    class arab4
+    {
+        name = "arab4";
+        sound[] = {\sounds\4.ogg, db+8, 1.0};
+        titles[] = {""};
+    };
+    class arab5
+    {
+        name = "arab5";
+        sound[] = {\sounds\5.ogg, db+8, 1.0};
+        titles[] = {""};
+    };        
+    class arab6
+    {
+        name = "arab6";
+        sound[] = {\sounds\6.ogg, db+8, 1.0};
+        titles[] = {""};
+    };        
+    class arab7
+    {
+        name = "arab7";
+        sound[] = {\sounds\7.ogg, db+8, 1.0};
+        titles[] = {""};
+    };  
+    class arab8
+    {
+        name = "arab8";
+        sound[] = {\sounds\8.ogg, db+8, 1.0};
+        titles[] = {""};
+    }; 
+    class arab9
+    {
+        name = "arab9";
+        sound[] = {\sounds\9.ogg, db+8, 1.0};
+        titles[] = {""};
+    };   
+    class arab10
+    {
+        name = "arab10";
+        sound[] = {\sounds\10.ogg, db+8, 1.0};
+        titles[] = {""};
+    };
+	class ONU1
+    {
+        name = "ONU1";
+        sound[] = {\sounds\ONU1.ogg, db+8, 1.0};
+        titles[] = {""};
+    };
+    class ONU2
+    {
+        name = "ONU2";
+        sound[] = {\sounds\ONU2.ogg, db+8, 1.0};
+        titles[] = {""};
+    };
+};
+
+class RscText
+{
+ type = CT_STATIC;
+ idc = -1;
+ style = ST_MULTI;
+ colorBackground[] = {0,0,0,0};
+ colorText[] = {0,0,0,0};
+ font = "TahomaB";
+ sizeEx = 0.035;
+};
+
+class DiagText : RscText
+{
+ colorText[] = {1, 1, 1, 1};
+ shadow = 1;
+ x = safeZoneX+0.027;
+ y = safeZoneY+safeZoneH-0.30;
+ w = 1.151safeZoneH;
+ h = 0.057safeZoneH;
+ lineSpacing = 0.95;
+};
+
+class RscTitles {
+	Titles[] = {Help_Jilavur};
+	class Help_Jilavur
+	{
+		idd = -1;
+		MovingEnable=0;
+		Duration=15;
+		FadeIn=1;
+		FadeOut=1;
+		Name="Help_Jilavur";
+		Controls[]={"Control01"};
+		class Control01 : DiagText
+		{
+			text = "Atenção! Nossa base de Jilavur está sendo atacada! Necessitamos de reforços IMEDIATAMENTE!";
+		};
+	};
+};

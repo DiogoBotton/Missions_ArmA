@@ -10,7 +10,7 @@ if (isServer) then {
 		localCivil = civil_ataque_feruzabad;
 	};
 	
-	nul = [localSpeaker, "one", 400] call fn_netSay3D;
+	nul = [localSpeaker, "one", 800] call fn_netSay3D;
 	
 	if(debugar == 1) then {
 		sleep 5;
@@ -21,17 +21,17 @@ if (isServer) then {
 	// Inicia ataque
 	localCivil setDamage 1;
 
-	if(debugar == 1) then {
-		sleep 30;
-	} else {
-		sleep 60;
-	};
+	// if(debugar == 1) then {
+	// 	sleep 30;
+	// } else {
+	// 	sleep 60;
+	// };
 
 	// Destroi hmmw's
-	{
-		[_x, ["hitEngine", 1]] remoteExec ["setHitPointDamage", _x];
-		sleep 15;
-	} forEach _carsDestroy;
+	// {
+	// 	[_x, ["hitEngine", 1]] remoteExec ["setHitPointDamage", _x];
+	// 	sleep 15;
+	// } forEach _carsDestroy;
 };
 
 execVM "noWayOut.sqf";

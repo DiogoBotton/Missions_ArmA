@@ -15,7 +15,7 @@ _qtdMarkersCar = 2; // Quantidade de markers de spawn de carros
 _attackMarker = "attackMarker_" + _localName;
 
 // Todas as unidades deste array serão spawnados para infantaria
-_arrayInimigos = ["CUP_O_TK_INS_Soldier_TL", "CUP_O_TK_INS_Sniper", "CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_AT", "CUP_O_TK_INS_Soldier_GL", "CUP_O_TK_INS_Bomber", "CUP_O_TK_INS_Soldier_MG", "CUP_O_TK_INS_Soldier_MG", "CUP_O_TK_INS_Soldier_AR", "CUP_O_TK_INS_Guerilla_Medic"];
+_arrayInimigos = ["CUP_O_TK_INS_Soldier_TL", "CUP_O_TK_INS_Sniper", "CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_Soldier_AT", "CUP_O_TK_INS_Soldier_GL", "CUP_O_TK_INS_Soldier_AA", "CUP_O_TK_INS_Soldier_MG", "CUP_O_TK_INS_Soldier_MG", "CUP_O_TK_INS_Soldier_AR", "CUP_O_TK_INS_Guerilla_Medic"];
 // Os carros e unidades deste array serão sorteados
 _arrayCars = ["CUP_O_Hilux_DSHKM_TK_INS", "CUP_O_Hilux_DSHKM_TK_INS", "CUP_O_Hilux_DSHKM_TK_INS", "CUP_O_Hilux_armored_DSHKM_TK_INS"];
 _qtdUnitsPerCar = 2;

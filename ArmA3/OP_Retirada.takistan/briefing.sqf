@@ -1,3 +1,4 @@
+if(side player == west) then {
 player createDiaryRecord ["Diary", ["Missão", "
 <br/>
 Senhores,
@@ -64,3 +65,78 @@ A Operação Retirada Estratégica tinha como objetivo principal garantir a reti
 fornecia apoio às forças de segurança locais para fortalecer a estabilidade.
 <br/>
 "]];
+};
+
+if(side player == civilian) then {
+player createDiaryRecord ["Diary", ["Sua Missão", "
+<br/>
+Denis Takistani, ainda triste pelo ocorrido com seu irmão, foi culpado como responsável pelos atos de Amir e foi punido: Denis deveria ficar para trás e morrer 
+por Allah, garantindo assim suas setenta virgens após a morte.
+<br/>
+<br/>
+SEU OBJETIVO:
+<br/>
+<br/>
+Você deverá resistir à qualquer patrulha norte americana que se aproximar da cidade de Mulladost. Use os poucos equipamentos que deixaram com você para isto.
+<br/>
+<br/>
+Faça como quiser, use sua própria estratégia para mostrar aos infiéis a FÚRIA de Allah e vingue seu querido irmão Amir!
+<br/>
+<br/>
+_ Você dispõe de uma AKM com algumas munições ou se preferir um rifle de precisão, há uma SVD com scope na caixa.
+<br/>
+_ Alguns explosivos para minar o que desejar.
+<br/>
+_ Granadas de fumaça e de fragmentação.
+<br/>
+_ Há alguns carros para seu uso espalhado pela vila, onde um deles contem uma RPG. Caso quiser, PROCURE!
+<br/>
+<br/>
+O tempo está correndo e a cada segundo os norte americanos se aproximam de Mulladost.
+<br/>
+<br/>
+QUE ALLAH TENHA PIEDADE DE SUAS ALMAS!
+<br/>
+QUE ALLAH ESTEJA COM VOCÊ!
+"]];
+
+player createDiaryRecord ["Diary", ["Contexto", "
+<br/>
+Você é Denis Takistani, um velho ancião apoiador da causa Free Takistan que recentemente passou por uma perda catastrófica: perdeu seu querido irmão, Amir.
+<br/>
+<br/>
+A causa Free Takistan tem como objetivo a luta contra a presença dos Estados Unidos na região de Takistan. Amir apoiava a causa, mas também era um idealista e pacifista e não
+compartilhava da ideia de pegar em armas para resolver seus problemas políticos do país. Por conta disto, Amir sempre entrava em discussões com Denis, que não compartilha 
+de seus ideais pacifistas. Mas apesar disso, os dois por serem irmãos ainda tinham respeito um pelo outro.
+<br/>
+<br/>
+Até que um dia Amir ficou sabendo de alguns planos obscuros da guerrilha que não concordou: seu irmão, Denis Takistani serviria de homem bomba para destruir um assentamento norte americano
+no ataque que estava pra ocorrer em algum dos seus postos avançados ao sul de Mulladost, Jilavur ou Feruz Abad. Ele ainda não havia como saber quando e onde seria o ataque e então, 
+decidiu agir em defesa de seu irmão.
+<br/>
+<br/>
+Amir saiu escondido de madrugada e foi em direção ao posto avançado mais próximo de Mulladost: Jilavur. Quando chegou, contou os planos da guerrilha e sobre seu irmão aos soldados 
+com a esperança de que fazendo isso o ataque pudesse ser descoberto e adiado, e assim, seu irmão poderia ser salvo.
+<br/>
+<br/>
+Amir voltou na manhã para a cidade, onde logo foi interrogado por membros da guerrilha do motivo de sua saída na madrugada. Amir tentou inventar desculpas que foi comprar trigo e 
+fermento para fazer pão, mas os guerrilheiros não ficaram convencidos completamente sobre isso.
+<br/>
+<br/>
+Amir contou tudo ao seu irmão sobre o que fez, Denis ficou FURIOSO e tiveram uma discussão acirrada. 
+<br/>
+<br/>
+Logo mais tarde daquele mesmo dia os norte americanos interceptaram várias comunicações da guerrilha sobre o ataque e as patrulhas se intensificaram nas regiões dos postos 
+avançados de Jilavur e Feruz Abad.
+<br/>
+<br/>
+A guerrilha furiosa com o ocorrido procurava alguém para culpar e havia uma pessoa que desconfiavam: Amir.
+<br/>
+<br/>
+Amir foi levado a força e violentamente interrogado. Por ser um homem idoso, não conseguiu resistir à pressão onde se confessou e acabou morto pelas mãos da guerrilha por traição.
+<br/>
+<br/>
+Logo após, a guerrilha se retirou às pressas da vila de Mulladost. Pegaram tudo o que podiam levar, destruiram o resto e partiram para outro lugar.
+<br/>
+"]];
+};

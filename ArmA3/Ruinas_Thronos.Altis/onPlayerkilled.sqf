@@ -1,0 +1,1 @@
+if (!wasKilled) then {wasKilled = true;};

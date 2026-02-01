@@ -1,10 +1,10 @@
 // Este script irá spawnar tropas rastreadoras enquanto houver unidades blufor player vivas
 // Caso todas as unidades rastreadores forem mortas, spawnará outra após tempo determinado na váriavel: _intervaloSpawn
 
-_arrayInimigos = ["CUP_O_TK_INS_Soldier_TL", "CUP_O_TK_INS_Sniper", "CUP_O_TK_INS_Sniper", "CUP_O_TK_INS_Soldier_AT", "CUP_O_TK_INS_Soldier_GL", "CUP_O_TK_INS_Soldier_GL", "CUP_O_TK_INS_Soldier_MG", "CUP_O_TK_INS_Soldier_MG", "CUP_O_TK_INS_Soldier_AR", "CUP_O_TK_INS_Guerilla_Medic"];
+_arrayInimigos = ["CUP_O_TK_INS_Soldier_TL", "CUP_O_TK_INS_Sniper", "CUP_O_TK_INS_Soldier_AT", "CUP_O_TK_INS_Soldier_AT", "CUP_O_TK_INS_Soldier_GL", "CUP_O_TK_INS_Soldier_GL", "CUP_O_TK_INS_Soldier_MG", "CUP_O_TK_INS_Soldier_MG", "CUP_O_TK_INS_Soldier_AR", "CUP_O_TK_INS_Guerilla_Medic"];
 _distPista = 200;
 _distSpawnRastreadores = 700;
-_intervaloSpawn = 300;
+_intervaloSpawn = 120;
 _distProximaPista = 50;
 
 anyBluforAlive = true;
@@ -17,14 +17,15 @@ if(isServer) then {
 
 		// Retorna o atual líder de blufor
 		{
-			if (side _x == west && alive _x && isPlayer _x && (leader group _x == leader _x)) then
+			if (side _x == west && alive _x && isPlayer _x && (leader group _x == leader _x) && typeOf vehicle _x != "CUP_B_US_Pilot_Light") then
 				{
 					liderBlufor = _x;
 				};
 		} forEach allUnits;
 
-		// Define local para spawnar rastreadores baseado na posição do líder blufor
-		_spawnLocal = createVehicle ["HeliHEmpty", (position liderBlufor),[],(_distSpawnRastreadores), "NONE"];
+		// Define local para spawnar rastreadores baseado na posição do líder blufor - TODO (spawnar no eixo z 0)
+		_liderPosition = position liderBlufor;
+		_spawnLocal = createVehicle ["HeliHEmpty", [(_liderPosition select 0), (_liderPosition select 1), 0],[],(_distSpawnRastreadores), "NONE"];
 
 		// Cria grupo de rastreador
 		_grupoAtaque = createGroup EAST;
@@ -77,7 +78,7 @@ if(isServer) then {
 				{
 					if (side _x == east && alive _x && (leader group _x == leader _x)) then
 					{
-						if(_x distance _pista <= _distProximaPista) then {
+						if((_x distance _pista <= _distProximaPista) && _x distance liderBlufor >= _distProximaPista) then {
 							_grupoPertoDaPista = true;
 							break;
 						} else {

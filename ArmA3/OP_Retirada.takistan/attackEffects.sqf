@@ -10,7 +10,7 @@ if (isServer) then {
 
 	// Retorna o atual líder de blufor
 	{
-		if (side _x == west && alive _x && isPlayer _x && (leader group _x == leader _x)) then
+		if (side _x == west && alive _x && isPlayer _x && (leader group _x == leader _x) && typeOf vehicle _x != "CUP_B_US_Pilot_Light") then
 			{
 				liderBlufor = _x;
 			};

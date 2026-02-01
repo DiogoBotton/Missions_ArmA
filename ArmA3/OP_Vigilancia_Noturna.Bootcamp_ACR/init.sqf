@@ -1,3 +1,5 @@
+execVM "briefing.sqf";
+
 // SALVA OS PARÂMETROS DO LOBBY COMO VARIÁVEIS GLOBAIS
 if (isNil "paramsArray") then
 	{

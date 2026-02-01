@@ -1,6 +1,6 @@
 _arrayInimigos = ["CUP_O_TK_INS_Soldier_AT", "CUP_O_TK_INS_Soldier_AT"];
 _minDistanceToAttack = 1000;
-_carsDestroy = [hmmw_1, hmmw_2, hmmw_3];
+_carsDestroy = [hmmw_1, hmmw_2, hmmw_3, caminhao_1];
 _listCarsToDestroy = [];
 
 if(isServer) then {

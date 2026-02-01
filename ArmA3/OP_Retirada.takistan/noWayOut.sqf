@@ -25,6 +25,13 @@ if(isServer) then {
 			sleep 60;
 		};
 	};
+	
+	if(localAlvo == "jilavur") then {
+		newAttack = "feruzabad";
+	} else {
+		newAttack = "jilavur";
+	};
 
 	civil_rastreadores setDamage 1;
+	nul = [newAttack, 1, 1, 4, 360, 60] execVM "attack.sqf";
 };

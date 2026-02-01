@@ -34,7 +34,6 @@ PVEH_NetSay3D = [objNull,0,1];
 };
 
 localAlvo = "";
-publicVariable "localAlvo";
 
 txtRsc = "";
 publicVariable "txtRsc";
@@ -44,9 +43,6 @@ publicVariable "txtRscActive";
 vilaJilavur = false;
 vilaFeruzabad = false;
 vilaMulladost = false;
-publicVariable "vilaJilavur";
-publicVariable "vilaFeruzabad";
-publicVariable "vilaMulladost";
 
 // ADQUIRE PARAMETROS Description.ext
 debugar = (ParamDEBUGAR);
@@ -67,6 +63,11 @@ if (debugar == 1) then {
 if(isServer) then {
 	[ch_1, "spawnAirAmbience", "moveAirAmbience", 60] execVM "airAmbience.sqf";
 	[ch_2, "spawnAirAmbience", "moveAirAmbience", 120] execVM "airAmbience.sqf";
+	
+	publicVariable "localAlvo";
+	publicVariable "vilaJilavur";
+	publicVariable "vilaFeruzabad";
+	publicVariable "vilaMulladost";
 };
 
 sleep 5;

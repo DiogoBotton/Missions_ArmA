@@ -48,8 +48,8 @@ class Params
     class ParamTempoIniciarAtaque
 	{
 	title = "Tempo para iniciar ataque";
-	values[] = {120, 180, 240, 300, 360, 420, 480, 540, 600};
-	texts[] = {"2 minutos", "3 minutos", "4 minutos", "5 minutos", "6 minutos", "7 minutos", "8 minutos", "9 minutos", "10 minutos"};
+	values[] = {120, 180, 240, 300, 360, 420, 480, 540, 600, 900};
+	texts[] = {"2 minutos", "3 minutos", "4 minutos", "5 minutos", "6 minutos", "7 minutos", "8 minutos", "9 minutos", "10 minutos", "15 minutos"};
 	default = 300;
 	};
 };
